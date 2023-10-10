@@ -2,8 +2,8 @@
 name: 'BUG: '
 about: Bug Template
 title: ''
-labels: ''
-assignees: ''
+labels: bug
+assignees: Dayana-N
 
 ---
 

@@ -2,8 +2,8 @@
 name: 'USER STORY: '
 about: User Story Template
 title: ''
-labels: ''
-assignees: ''
+labels: User Story
+assignees: Dayana-N
 
 ---
 

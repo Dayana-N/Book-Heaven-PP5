@@ -2,8 +2,8 @@
 name: 'DEV TASK:'
 about: Dev Task template
 title: ''
-labels: ''
-assignees: ''
+labels: Dev Task
+assignees: Dayana-N
 
 ---
 
