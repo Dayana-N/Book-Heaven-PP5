@@ -31,6 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+CSRF_TRUSTED_ORIGINS = [os.environ.get(
+    "CSRF_TRUSTED_ORIGINS")]
 
 ALLOWED_HOSTS = [
     'book-heaven-e537b3f88787.herokuapp.com',
