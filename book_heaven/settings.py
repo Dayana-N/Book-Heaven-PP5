@@ -33,7 +33,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    'https://book-heaven-e537b3f88787.herokuapp.com',
+    'book-heaven-e537b3f88787.herokuapp.com',
     os.environ.get("LOCAL_HOST")]
 
 
