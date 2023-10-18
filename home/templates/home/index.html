@@ -1,4 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock title %}
+
 {% block content %}
-<h2>Index.html</h2>
+
+{% include 'partials/hero-section.html' %}
+
 {% endblock %}
