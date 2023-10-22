@@ -9,4 +9,109 @@ Home
 
 {% include 'partials/hero-section.html' %}
 
+<section class="trust-badges mt-5 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-4">
+
+                <figure class="itemside">
+                    <div class="aside text-center">
+                        <span class="icon">
+                            <i class="fa-solid fa-truck fa-fade"></i>
+                        </span>
+                    </div>
+                    <figcaption class="info text-center">
+                        <h6 class="title">Fast Delivery</h6>
+                        <p class="text-muted">Same Day Shipping!</p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+
+            <div class="col-12 col-sm-4">
+
+                <figure class="itemside">
+                    <div class="aside text-center">
+                        <span class="icon">
+                            <i class="fa-regular fa-credit-card fa-flip"></i>
+                        </span>
+                    </div>
+                    <figcaption class="info text-center">
+                        <h6 class="title">Secure Payment</h6>
+                        <p class="text-muted">Payment system by Stripe.</p>
+                    </figcaption>
+                </figure> <!-- iconbox // -->
+
+
+            </div>
+
+            <div class="col-12 col-sm-4">
+
+                <figure class="itemside">
+                    <div class="aside text-center">
+                        <span class="icon">
+                            <i class="fa-solid fa-rotate-left fa-spin"></i>
+                        </span>
+                    </div>
+                    <figcaption class="info text-center">
+                        <h6 class="title">Free Returns!</h6>
+                        <p class="text-muted">Free returns on all books within 30 days! </p>
+                    </figcaption>
+                </figure>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="products">
+    <div class="container text-center mt-5">
+        <div class="row mt-5 justify-content-center">
+            {% for book in books %}
+            <div class="col-12 col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            {% if book.image %}
+                            <img src="{{ book.image.url }}">
+                            {% endif %}
+                        </a>{% if book.price_discount %}
+                        <span class="product-discount-label">-{{ book.price_discount }}%</span>
+                        {% endif %}
+                        <ul class="product-links">
+
+                            <li><a href="#"><i class="fa fa-heart"></i></a></li>
+
+                        </ul>
+                        <a href="" class="add-to-cart">Add to Cart</a>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">{{ book.title }}</a></h3>
+                        {% if book.sale_price %}
+                        <div class="price">€ {{ book.sale_price }}
+
+                            <span>€{{ book.price }}</span>
+                        </div>
+                        {% else %}
+                        <div class="price">€ {{ book.price }}
+
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+
+
+            {% endfor %}
+
+
+        </div>
+    </div>
+</section>
+<section style="height: 300px;"></section>
+
 {% endblock %}
