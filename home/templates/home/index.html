@@ -72,7 +72,7 @@ Home
         <div class="row mt-5 justify-content-center">
             {% for book in books %}
             <div class="col-12 col-md-3 col-sm-6">
-                <div class="product-grid">
+                <div class="product-grid d-flex flex-column align-items-center">
                     <div class="product-image">
                         <a href="#" class="image">
                             {% if book.image %}
@@ -82,36 +82,53 @@ Home
                         <span class="product-discount-label">-{{ book.price_discount }}%</span>
                         {% endif %}
                         <ul class="product-links">
-
                             <li><a href="#"><i class="fa fa-heart"></i></a></li>
-
                         </ul>
                         <a href="" class="add-to-cart">Add to Cart</a>
                     </div>
                     <div class="product-content">
-                        <h3 class="title"><a href="#">{{ book.title }}</a></h3>
+                        <h3 class="title text-truncate"><a href="#">{{ book.title }}</a></h3>
+                        {% for author in book.author.all|slice:':1'  %}
+                        <p class="mb-0">{{ author }}</p>
+                        {% endfor %}
                         {% if book.sale_price %}
                         <div class="price">€ {{ book.sale_price }}
-
                             <span>€{{ book.price }}</span>
                         </div>
                         {% else %}
                         <div class="price">€ {{ book.price }}
-
                         </div>
                         {% endif %}
                     </div>
                 </div>
             </div>
-
-
-
             {% endfor %}
-
-
         </div>
     </div>
 </section>
-<section style="height: 300px;"></section>
+<section class="newsletter pt-5" style="height: 300px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 justify-content-center text-center">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="subscribe">
+                    <h4>Subscribe To Our Newsletter</h4>
+                    <p>Join out subscribers list to get the latest news, updates and special offeres delivered
+                        directly in your inbox.</p>
+                </div>
+                <div class="container">
+                    <form class="d-flex justify-content-center flex-wrap" method="POST" action="#">
+                        <div class="my-2 px-2 col-md-6"><input class="form-control" type="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="my-2"><button class="btn btn-orange" type="submit">Subscribe
+                            </button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}

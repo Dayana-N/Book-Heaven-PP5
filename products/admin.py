@@ -8,6 +8,8 @@ class BookAdmin(admin.ModelAdmin):
     list_filter = ['genre', 'date_published']
     search_fields = ['title', 'author__name',]
 
+    ordering = ('-created',)
+
 
 # Register your models here.
 admin.site.register(Category)
