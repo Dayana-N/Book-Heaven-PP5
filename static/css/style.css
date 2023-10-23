@@ -4,6 +4,7 @@
     --orange: #f58669;
     --dark-orange: #de502c;
     --offwhite: #ebe8e0;
+    --offwhite2: #efefed;
     --dark-gray: #574c49;
     --white: #ffff;
 }
@@ -193,6 +194,7 @@ body {
 /* footer */
 #footer {
     background-color: var(--orange);
+    margin-top: auto;
 }
 
 #social-links a {
