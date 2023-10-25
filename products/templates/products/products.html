@@ -14,8 +14,22 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mx-auto text-center">
-                <h3>All Books</h3>
-                <hr>
+                {% if category %}
+
+                {% for item in category %}
+                <h3>{{ item.name }}</li>
+                    {% endfor %}
+
+                    {% elif genre %}
+
+                    {% for item in genre %}
+                    <h3>{{ item.name }}</h3>
+                    {% endfor %}
+                    {% else %}
+                    <h3>All Books</h3>
+                    {% endif %}
+
+                    <hr>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
@@ -50,7 +64,7 @@
                     </div>
                 </div>
                 <!-- Product sort end  -->
-                <div class="row">
+                <div class="row mt-3 d-flex justify-content-center">
                     {% for book in books %}
                     <div class="col-12 col-md-3 col-sm-6">
                         <div class="product-grid d-flex flex-column align-items-center">

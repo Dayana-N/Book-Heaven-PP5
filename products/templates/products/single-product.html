@@ -7,8 +7,9 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
                 <li class="breadcrumb-item"><a href="{% url 'all-products' %}">Books</a></li>
-                <li class="breadcrumb-item"><a href="">{{ book.genre.category.name }}</a></li>
-                <li class="breadcrumb-item"><a href="">{{ book.genre }}</a></li>
+                <li class="breadcrumb-item"><a
+                        href="{% url 'all-products' %}?category={{ book.genre.category.name }}">{{ book.genre.category.name }}</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'all-products' %}?genre={{ book.genre.name }}">{{ book.genre }}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{ book.title }}</li>
             </ol>
         </nav>
