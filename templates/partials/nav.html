@@ -6,12 +6,12 @@
     </div>
     <div id="topnav" class="row pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-            <a href="/" class="nav-link">
+            <a href="{% url 'home' %}" class="nav-link">
                 <h2 class="logo-font text-orange my-0"><strong>Book</strong>Heaven</h2>
             </a>
         </div>
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-            <form method="" action="#">
+            <form method="" action="{% url 'all-products' %}">
                 <div class="input-group w-100">
                     <input class="form-control border mx-1 rounded-0" type="text" name="q" placeholder="Hunt for books...">
                     <div class="input-group-append">
@@ -79,7 +79,7 @@
                     </div>
                 </a>
                 <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
-                    <form class="form" method="GET" action="#">
+                    <form class="form" method="GET" action="{% url 'all-products' %}">
                         <div class="input-group w-100">
                             <input class="form-control border rounded-0" type="text" name="q" placeholder="Hunt for books..">
                             <div class="input-group-append">
@@ -131,18 +131,42 @@
             <div class="navbar-collapse collapse" id="main-nav">
                 <ul class="navbar-nav w-auto mx-auto">
                     <li class="nav-item d-block d-md-none">
-                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="home-link">
+                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
                             Home
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'all-products' %}">Books</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" aria-haspopup="true"
-                            aria-expanded="false" data-bs-toggle="dropdown">Categories</a>
+                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fiction-link" aria-haspopup="true"
+                            aria-expanded="false" data-bs-toggle="dropdown">Fiction</a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="#" class="dropdown-item">Historical Fiction</a>
+                            <a href="#" class="dropdown-item ">Horror</a>
+                            <a href="#" class="dropdown-item ">Fantasy Romance</a>
+                            <a href="{% url 'all-products' %}" class="dropdown-item">All Fiction</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="non-fiction-link" aria-haspopup="true"
+                            aria-expanded="false" data-bs-toggle="dropdown">Non-Fiction</a>
                         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                             <a href="#" class="dropdown-item">Biography</a>
-                            <a href="#" class="dropdown-item ">Computing</a>
-                            <a href="#" class="dropdown-item ">Science</a>
-                            <a href="{% url 'all-products' %}" class="dropdown-item">All Books</a>
+                            <a href="#" class="dropdown-item ">History</a>
+                            <a href="#" class="dropdown-item ">Educational</a>
+                            <a href="{% url 'all-products' %}" class="dropdown-item">All Non-Fiction</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="children-link" aria-haspopup="true"
+                            aria-expanded="false" data-bs-toggle="dropdown">Children</a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="#" class="dropdown-item">Baby & Toddler</a>
+                            <a href="#" class="dropdown-item ">Teenage</a>
+                            <a href="{% url 'all-products' %}" class="dropdown-item">All Children</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
