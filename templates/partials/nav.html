@@ -164,9 +164,9 @@
                         <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="children-link" aria-haspopup="true"
                             aria-expanded="false" data-bs-toggle="dropdown">Children</a>
                         <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                            <a href="#" class="dropdown-item">Baby & Toddler</a>
-                            <a href="#" class="dropdown-item ">Teenage</a>
-                            <a href="{% url 'all-products' %}" class="dropdown-item">All Children</a>
+                            <a href="{% url 'all-products' %}?genre=Toddler" class="dropdown-item">Toddler</a>
+                            <a href="{% url 'all-products' %}?genre=Teenage" class="dropdown-item ">Teenage</a>
+                            <a href="{% url 'all-products' %}?category=Children" class="dropdown-item">All Children</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">

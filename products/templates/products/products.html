@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div class="container">
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -17,19 +17,21 @@
                 {% if category %}
 
                 {% for item in category %}
-                <h3>{{ item.name }}</li>
-                    {% endfor %}
+                <h3>{{ item.name }}</h3>
+                {% endfor %}
 
-                    {% elif genre %}
+                {% elif genre %}
 
-                    {% for item in genre %}
-                    <h3>{{ item.name }}</h3>
-                    {% endfor %}
-                    {% else %}
-                    <h3>All Books</h3>
-                    {% endif %}
+                {% for item in genre %}
+                <h3>{{ item.name }}</h3>
+                {% endfor %}
+                {% elif search_query %}
+                <h3>Results</h3>
+                {% else %}
+                <h3>All Books</h3>
+                {% endif %}
 
-                    <hr>
+                <hr>
             </div>
         </div>
         <div class="row d-flex justify-content-center">
@@ -39,21 +41,33 @@
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper">
                             <select id="sort-selector" class="form-select">
-                                <option value="reset" selected="">Sort by...</option>
-                                <option value="price_asc">Price (low to high)
+
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}> Price (low to high)
                                 </option>
-                                <option value="price_desc">Price (high to low)
+
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)
                                 </option>
-                                <option value="rating_asc">Rating (low to high)
+
+                                <option value="title_asc" {% if current_sorting == 'title_asc' %}selected{% endif %}>Title (A-Z)</option>
+
+                                <option value="title_desc" {% if current_sorting == 'title_desc' %}selected{% endif %}>Title (Z-A)</option>
+
+                                {% if category or genre %}
+                                {% else %}
+                                <option value="genre_asc" {% if current_sorting == 'genre_asc' %}selected{% endif %}>Genre (A-Z)
                                 </option>
-                                <option value="rating_desc">Rating (high to low)
+
+                                <option value="genre_desc" {% if current_sorting == 'genre_desc' %}selected{% endif %}>Genre (Z-A)
                                 </option>
-                                <option value="name_asc">Name (A-Z)</option>
-                                <option value="name_desc">Name (Z-A)</option>
-                                <option value="category_asc">Category (A-Z)
+
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)
                                 </option>
-                                <option value="category_desc">Category (Z-A)
+
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)
                                 </option>
+                                {% endif %}
                             </select>
                         </div>
                     </div>
@@ -104,3 +118,8 @@
     </div>
 </section>
 {% endblock content %}
+
+{% block extra_js %}
+{{ block.super }}
+<script src="{% static 'js/products.js' %}"></script>
+{% endblock%}

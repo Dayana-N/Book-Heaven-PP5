@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 
 from .models import Book, Category, Genre
@@ -10,12 +11,30 @@ def all_products(request):
     '''
     Render all products on products page
     '''
-    books = Book.objects.all().order_by('-created')
+    books = Book.objects.all()
     query = None
     genre = None
     category = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sort_value = request.GET['sort']
+            sort = sort_value
+            if sort_value == 'title':
+                sort_value = 'lower_name'
+                books = books.annotate(lower_name=Lower('title'))
+            if sort_value == 'genre':
+                sort_value = 'genre__name'
+            if sort_value == 'category':
+                sort_value = 'genre__category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sort_value = f'-{sort_value}'
+            books = books.order_by(sort_value)
+
         if 'genre' in request.GET:
             search_genre = request.GET['genre'].split(',')
             books = books.filter(genre__name__in=search_genre)
@@ -37,11 +56,14 @@ def all_products(request):
                 description__icontains=query) | Q(author__name__icontains=query)
             books = books.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'books': books,
         'search_query': query,
         'genre': genre,
-        'category': category
+        'category': category,
+        'current_sorting': current_sorting,
     }
     return render(request, 'products/products.html', context)
 
