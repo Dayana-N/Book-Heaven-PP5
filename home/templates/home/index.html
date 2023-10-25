@@ -74,7 +74,7 @@ Home
             <div class="col-12 col-md-3 col-sm-6">
                 <div class="product-grid d-flex flex-column align-items-center">
                     <div class="product-image">
-                        <a href="#" class="image">
+                        <a href="{% url 'product' book.id %}" class="image">
                             {% if book.image %}
                             <img src="{{ book.image.url }}">
                             {% endif %}

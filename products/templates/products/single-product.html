@@ -1,61 +1,141 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="container">
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'all-products' %}">Books</a></li>
-            <li class="breadcrumb-item"><a href="">{{ book.genre.category.name }}</a></li>
-            <li class="breadcrumb-item"><a href="">{{ book.genre }}</a></li>
-            <li class="breadcrumb-item active" aria-current="page">{{ book.title }}</li>
-        </ol>
-    </nav>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12 col-md-6 d-flex justify-content-center">
-            <img src="{{ book.image.url }}" alt="{{ book.title }} image">
-        </div>
-        <div class="col-md-6 col-12 mt-3">
-            <h2>{{book.title}}</h2>
-            <p>by
-                {% for author in book.author.all|slice:':3' %}
-                <a href="#"> {{ author }} </a>
-            </p>
-            {% endfor %}
-            <p>Publisher: {{ book.publisher }}</p>
-            {% if book.sale_price %}
-            <div class="price"><s>€{{ book.price }}</s>
-                <p style="font-size: 2rem;"> €{{ book.sale_price }}</p>
+<section class="product-content">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'all-products' %}">Books</a></li>
+                <li class="breadcrumb-item"><a href="">{{ book.genre.category.name }}</a></li>
+                <li class="breadcrumb-item"><a href="">{{ book.genre }}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ book.title }}</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <img src="{{ book.image.url }}" alt="{{ book.title }} image">
             </div>
-            {% else %}
-            <div class="price">
-                <p style="font-size: 2rem;">€{{ book.price }}</p>
-            </div>
-            {% endif %}
-            <div class="row">
-                <div class="col-12">
-                    <form action="" method="POST">
-                        {% csrf_token %}
-                        <p>Quantity:</p>
-                        <select name="quantity" id="quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                        <input type="submit" class="btn-orange" value="Add To Cart">
-                    </form>
+            <div class="col-md-6 col-12 mt-3">
+                <h2>{{book.title}}</h2>
+                <p>by
+                    {% for author in book.author.all|slice:':3' %}
+                    <a href="#"> {{ author }} </a>
+                </p>
+                {% endfor %}
+                <p>Publisher: {{ book.publisher }}</p>
+                <div class="rating">
+                    <p class="mb-0">Reviews:</p>
+                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
+                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
+                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
+                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
+                    <i class="fa-solid fa-star-half-stroke" style="color: #f0bc00;"></i>
+                </div>
+
+
+                {% if book.sale_price %}
+                <div class="price"><s>€{{ book.price }}</s>
+                    <p style="font-size: 2rem;"> €{{ book.sale_price }}</p>
+                </div>
+                {% else %}
+                <div class="price">
+                    <p style="font-size: 2rem;">€{{ book.price }}</p>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="col-12">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <p>Quantity:</p>
+                            <select name="quantity" id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <input type="submit" class="btn-orange" value="Add To Cart">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
-</div>
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-10 custom-border">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link text-black active" data-bs-toggle="tab" aria-current="page" aria-selected="true"
+                            data-bs-target="#description">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-bs-toggle="tab" data-bs-target="#details">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" data-bs-toggle="tab" data-bs-target="#reviews">Reviews</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="description" class="tab-pane fade show active">
+                        <h5 class="my-2">Description:</h5>
+                        <p>{{ book.description }}</p>
+                    </div>
+                    <div id="details" class="tab-pane fade">
+                        <h5 class="my-2">Details:</h5>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-8">
+                                    <table class="table description">
+                                        <thead>
+                                            <tr>
+                                                <p class="mb-2">Book Information</p>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>ISBN:</td>
+                                                <td>{{ book.isbn }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Publisher:</td>
+                                                <td>{{ book.publisher }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Language: </td>
+                                                <td>{{ book.language }}</td>
+                                            </tr>
+                                            {% if book.pages %}
+                                            <tr>
+                                                <td>Pages:</td>
+                                                <td>{{ book.pages }}</td>
+                                            </tr>
+                                            {% endif %}
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="reviews" class="tab-pane fade">
+                        <h5 class="my-2">Reviews</h5>
+                        <p>Some reviews</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div class="section" style="height: 300px;"></div>
 {% endblock content %}

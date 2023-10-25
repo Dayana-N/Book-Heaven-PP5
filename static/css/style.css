@@ -191,6 +191,28 @@ body {
 
 /*end card */
 
+/* Single product page */
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    font-weight: 500;
+    background-color: #eeebe3;
+    border-bottom: solid 1px var(--dark-orange);
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link:hover {
+    cursor: pointer;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-color: #97908e;
+}
+
+.table > :not(caption) > * > * {
+    background-color: transparent;
+    border-bottom-color: var(--dark-gray);
+}
 /* footer */
 #footer {
     background-color: var(--orange);
