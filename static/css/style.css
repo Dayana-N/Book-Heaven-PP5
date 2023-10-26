@@ -38,6 +38,10 @@ body {
 .navbar-nav .nav-link:hover {
     color: var(--dark-orange) !important;
 }
+
+.message-container {
+    min-height: 30px;
+}
 /* Hero Section */
 .hero-text {
     font-family: 'Libre Baskerville', serif;
@@ -64,6 +68,9 @@ body {
 .custom-border {
     border: var(--orange) 1px solid;
     border-radius: 20px;
+    box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
 }
 .text-orange {
     color: var(--orange);
