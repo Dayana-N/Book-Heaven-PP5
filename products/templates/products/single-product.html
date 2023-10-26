@@ -48,10 +48,10 @@
                 {% endif %}
                 <div class="row">
                     <div class="col-12">
-                        <form action="" method="POST">
+                        <form action="{% url 'add-to-cart' book.id %}" method="POST">
                             {% csrf_token %}
                             <p>Quantity:</p>
-                            <select name="quantity" id="quantity">
+                            <select name="quantity" id="id_qty_{{ book.id }}" data-item-id="{{ book.id }}">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -64,6 +64,7 @@
                                 <option value="10">10</option>
                             </select>
                             <input type="submit" class="btn-orange" value="Add To Cart">
+                            <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </form>
                     </div>
                 </div>
