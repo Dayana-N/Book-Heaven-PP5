@@ -23,6 +23,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('products/', include('products.urls')),
     path('accounts/', include('allauth.urls')),
+    path('cart/', include('cart.urls')),
 ]
 
 # set url for user uploaded content

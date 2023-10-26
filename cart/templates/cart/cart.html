@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="cart my-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3>Shopping Cart</h3>
+                <hr>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-7 p-0 ">
+                    <div class="custom-border p-3">
+                        <!-- Medium screens -->
+                        <table class="table cart d-none d-sm-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Sub-total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="cart-item-picture">
+                                            <img src="../../../static/images/books/product-not-found.png" alt="">
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="cart-item-description">
+                                            <p><a href="">Tough Crowd</a></p>
+                                            <p>Graham Linehan</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-item-price">
+                                            <p>€11.99</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-item-quantity">
+                                            <input type="number" step="1" min="1" class="form-control item-quantity" name="quantity"
+                                                pattern="^[1-9]+[0-9]*" value="1">
+                                            <div class="cart-controls d-flex justify-content-around">
+                                                <a href="" class=""><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></a>
+                                                <a href="" class=""><i class="fa-solid fa-rotate-right" style="color: #e66e2d;"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-item-total-price">
+                                            <p>€11.99</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- Mobile -->
+                        <table class="table cart d-table d-sm-none">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Sub-total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="cart-item-picture">
+                                            <img src="../../../static/images/books/product-not-found.png" alt="">
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="cart-item-description">
+                                            <p><a href="">Tough Crowd</a></p>
+                                            <p>Graham Linehan small</p>
+                                        </div>
+                                        <div class="cart-item-quantity">
+                                            <input type="number" step="1" min="1" class="form-control item-quantity" name="quantity"
+                                                pattern="^[1-9]+[0-9]*" value="1">
+                                            <div class="cart-controls d-flex justify-content-around">
+                                                <a href="" class=""><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></a>
+                                                <a href="" class=""><i class="fa-solid fa-rotate-right" style="color: #e66e2d;"></i></a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-item-price">
+                                            <p>€11.99</p>
+                                        </div>
+                                    </td>
+
+                                    <td>
+                                        <div class="cart-item-total-price">
+                                            <p>€11.99</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-10 col-md-4 col-lg-3 mt-3 mt-md-0 custom-border ms-2 p-3">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Discount Code</h5>
+                            <form action="">
+                                <input class="mb-md-0 mb-2" type="text" name="" id="">
+                                <button type="submit" class="btn-orange mt-md-2">Add</button>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="subtotal d-flex justify-content-between">
+                                <p>SubTotal:</p>
+                                <p>€23.98</p>
+                            </div>
+                            <div class="delivery d-flex justify-content-between">
+                                <p>Delivery:</p>
+                                <p>€10.00</p>
+                            </div>
+                            <div class="discount d-flex justify-content-between">
+                                <p>Discount:</p>
+                                <p>€8.00</p>
+                            </div>
+                            <hr>
+                            <div class="total d-flex justify-content-between">
+                                <h5>Total:</h5>
+                                <h5>€48.00</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock content %}
