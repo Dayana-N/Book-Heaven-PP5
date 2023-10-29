@@ -1,5 +1,6 @@
 from django.contrib import messages
-from django.shortcuts import get_object_or_404, redirect, render, reverse
+from django.shortcuts import (HttpResponse, get_object_or_404, redirect,
+                              render, reverse)
 
 from products.models import Book
 
@@ -54,3 +55,19 @@ def update_cart(request, item_id):
     print(cart)
 
     return redirect(reverse('view-cart'))
+
+
+def remove_from_cart(request, item_id):
+    ''' Remove item from cart'''
+
+    cart = request.session.get('cart', {})
+    book = get_object_or_404(Book, pk=item_id)
+    if item_id in cart.keys():
+        try:
+            cart.pop(item_id)
+            messages.success(request, f'{book.title} removed from cart.')
+            request.session['cart'] = cart
+            return redirect(reverse('view-cart'))
+        except Exception as e:
+            messages.error(request, f'An error occured {e}')
+            return redirect(reverse('view-cart'))
