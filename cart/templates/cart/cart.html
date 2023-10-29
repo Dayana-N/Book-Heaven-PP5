@@ -8,8 +8,9 @@
                 <h3>Shopping Cart</h3>
                 <hr>
             </div>
-            <div class="row d-flex justify-content-md-between">
-                <div class="col-12 col-md-7 p-0 ">
+            {% if cart_items %}
+            <div class="row d-flex justify-content-md-between justify-content-center">
+                <div class="col-12 col-lg-8 p-0 ">
                     <div class="custom-border p-3">
                         <!-- Medium screens -->
                         <table class="table cart d-none d-sm-table">
@@ -20,6 +21,7 @@
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Sub-total</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -40,23 +42,43 @@
                                     </td>
                                     <td>
                                         <div class="cart-item-price">
+                                            {% if item.book.sale_price %}
+                                            <p>€{{ item.book.sale_price }}</p>
+                                            {% else %}
                                             <p>€{{ item.book.price }}</p>
+                                            {% endif %}
                                         </div>
                                     </td>
                                     <td>
                                         <div class="cart-item-quantity">
-                                            <input type="number" step="1" min="1" class="form-control item-quantity" name="quantity"
-                                                pattern="^[1-9]+[0-9]*" value="{{ item.quantity }}">
-                                            <div class="cart-controls d-flex justify-content-around">
-                                                <a href="" class=""><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></a>
-                                                <a href="" class=""><i class="fa-solid fa-rotate-right" style="color: #e66e2d;"></i></a>
-                                            </div>
+                                            <form action="{% url 'update-cart' item.book.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <select name="quantity">
+                                                    <option value="1" {% if item.quantity == 1 %} selected {% endif %}>1</option>
+                                                    <option value="2" {% if item.quantity == 2 %} selected {% endif %}>2</option>
+                                                    <option value="3" {% if item.quantity == 3 %} selected {% endif %}>3</option>
+                                                    <option value="4" {% if item.quantity == 4 %} selected {% endif %}>4</option>
+                                                    <option value="5" {% if item.quantity == 5 %} selected {% endif %}>5</option>
+                                                    <option value="6" {% if item.quantity == 6 %} selected {% endif %}>6</option>
+                                                    <option value="7" {% if item.quantity == 7 %} selected {% endif %}>7</option>
+                                                    <option value="8" {% if item.quantity == 8 %} selected {% endif %}>8</option>
+                                                    <option value="9" {% if item.quantity == 9 %} selected {% endif %}>9</option>
+                                                    <option value="10" {% if item.quantity == 10 %} selected {% endif %}>10</option>
+                                                </select>
+                                                <button type="submit"><i class="fa-solid fa-rotate-right"
+                                                        style="color: #e66e2d;"></i></button>
+                                            </form>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="cart-item-total-price">
-                                            <p>€</p>
+                                            <p>€928392</p>
                                         </div>
+                                    </td>
+                                    <td>
+                                        <form action="">
+                                            <button type="submit"><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></button>
+                                        </form>
                                     </td>
                                 </tr>
                                 {% endfor %}
@@ -70,6 +92,7 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Sub-total</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -88,22 +111,42 @@
                                             {% endfor %}
                                         </div>
                                         <div class="cart-item-quantity">
-                                            <input type="number" step="1" min="1" class="form-control item-quantity" name="quantity"
-                                                pattern="^[1-9]+[0-9]*" value="{{ item.quantity }}">
-                                            <div class="cart-controls d-flex justify-content-around">
-                                                <a href="" class=""><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></a>
-                                                <a href="" class=""><i class="fa-solid fa-rotate-right" style="color: #e66e2d;"></i></a>
+                                            <div class="cart-item-quantity">
+                                                <form action="{% url 'update-cart' item.book.id %}" method="POST">
+                                                    {% csrf_token %}
+                                                    <select name="quantity">
+                                                        <option value="1" {% if item.quantity == 1 %} selected {% endif %}>1</option>
+                                                        <option value="2" {% if item.quantity == 2 %} selected {% endif %}>2</option>
+                                                        <option value="3" {% if item.quantity == 3 %} selected {% endif %}>3</option>
+                                                        <option value="4" {% if item.quantity == 4 %} selected {% endif %}>4</option>
+                                                        <option value="5" {% if item.quantity == 5 %} selected {% endif %}>5</option>
+                                                        <option value="6" {% if item.quantity == 6 %} selected {% endif %}>6</option>
+                                                        <option value="7" {% if item.quantity == 7 %} selected {% endif %}>7</option>
+                                                        <option value="8" {% if item.quantity == 8 %} selected {% endif %}>8</option>
+                                                        <option value="9" {% if item.quantity == 9 %} selected {% endif %}>9</option>
+                                                        <option value="10" {% if item.quantity == 10 %} selected {% endif %}>10</option>
+                                                    </select>
+                                                    <button type="submit"><i class="fa-solid fa-rotate-right"
+                                                            style="color: #e66e2d;"></i></button>
+                                                </form>
                                             </div>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="cart-item-price">
+                                            {% if item.book.sale_price %}
+                                            <p>€{{ item.book.sale_price }}</p>
+                                            {% else %}
                                             <p>€{{ item.book.price }}</p>
+                                            {% endif %}
                                         </div>
                                     </td>
                                     <td>
                                         <div class="cart-item-total-price">
                                             <p>€11.99</p>
+                                            <form action="">
+                                                <button type="submit"><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></button>
+                                            </form>
                                         </div>
                                     </td>
                                 </tr>
@@ -112,7 +155,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mt-3 mt-md-0 custom-border ms-2 p-4">
+                <div class="col-12 col-md-8 col-lg-3 mt-3 mt-lg-0 custom-border p-4">
                     <div class="row">
                         <div class="col-12">
                             <h5>Discount Code</h5>
@@ -155,6 +198,28 @@
 
                 </div>
             </div>
+
+            {% else %}
+            <div class="row d-flex justify-content-md-between justify-content-center">
+                <div class="col-12 col-lg-8 p-0 mx-auto">
+                    <div class="custom-border p-5">
+                        <div class="text-center">
+                            <h5>Your cart is empty.</h5>
+                            <a href="{% url 'all-products' %}" class="btn btn-orange mt-2"><i class="fa-solid fa-arrow-left"
+                                    style="color: #fff;"></i> Continue
+                                Shopping</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            {% endif %}
+
+
+
+
+
         </div>
     </div>
 </section>

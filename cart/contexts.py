@@ -1,3 +1,4 @@
+from django.contrib import messages
 from django.shortcuts import get_object_or_404
 
 from products.models import Book
@@ -13,16 +14,31 @@ def cart_contents(request):
     total = 0
     product_count = 0
     cart = request.session.get('cart', {})
+    items_to_remove = []
 
     for item_id, quantity in cart.items():
         book = get_object_or_404(Book, pk=item_id)
-        total += quantity * book.price
-        product_count += quantity
+        # remove items that are out of stock
+        if book.in_stock is False:
+            items_to_remove.append(item_id)
+
+        if book.sale_price:
+            total += int(quantity) * int(book.sale_price)
+        else:
+            total += int(quantity) * int(book.price)
+        product_count += int(quantity)
         cart_items.append({
             'item_id': item_id,
-            'quantity': quantity,
+            'quantity': int(quantity),
             'book': book,
         })
+
+    for item_id in items_to_remove:
+        cart.pop(item_id)
+        messages.error(
+            request, f'{book.title} is out of stock and has been removed from your cart.')
+
+    request.session['cart'] = cart
 
     if total > delivery_threshold or total == 0:
         delivery_fee = 0

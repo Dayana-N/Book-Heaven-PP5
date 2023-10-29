@@ -1,4 +1,7 @@
-from django.shortcuts import redirect, render
+from django.contrib import messages
+from django.shortcuts import get_object_or_404, redirect, render, reverse
+
+from products.models import Book
 
 
 # Create your views here.
@@ -16,10 +19,38 @@ def add_to_cart(request, item_id):
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
+    book = get_object_or_404(Book, pk=item_id)
 
-    if item_id in list(cart.keys()):
-        cart[item_id] += quantity
+    if book.in_stock:
+        if item_id in list(cart.keys()):
+            cart[item_id] += quantity
+        else:
+            cart[item_id] = quantity
     else:
-        cart[item_id] = quantity
+        messages.error(request, 'This item is out of stock.')
     request.session['cart'] = cart
     return redirect(redirect_url)
+
+
+def update_cart(request, item_id):
+    '''
+    Update cart
+    '''
+
+    cart = request.session.get('cart', {})
+    book = get_object_or_404(Book, pk=item_id)
+    quantity = request.POST.get('quantity')
+
+    if item_id in list(cart.keys()):
+        if int(quantity) > 0 and int(book.stock_amount) >= int(quantity):
+            cart[item_id] = quantity
+            print(cart[item_id])
+        else:
+            messages.error(request, 'Not enough stock to fulfil this order')
+    else:
+        messages.error(request, 'Something went wrong. Please try again.')
+
+    request.session['cart'] = cart
+    print(cart)
+
+    return redirect(reverse('view-cart'))

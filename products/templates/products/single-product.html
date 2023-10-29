@@ -46,6 +46,14 @@
                     <p style="font-size: 2rem;">€{{ book.price }}</p>
                 </div>
                 {% endif %}
+                <div class="stock d-flex ">
+                    {% if book.in_stock %}
+                    <p class="in-stock-label me-3"> <strong>IN STOCK</strong></p>
+                    <p class="p-2 mb-0"> <strong>{{ book.stock_amount }}</strong></p>
+                    {% else %}
+                    <p class="out-of-stock-label"><strong>OUT OF STOCK</strong></p>
+                    {% endif %}
+                </div>
                 <div class="row">
                     <div class="col-12">
                         <form action="{% url 'add-to-cart' book.id %}" method="POST">
@@ -63,7 +71,11 @@
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                             </select>
+                            {% if book.in_stock %}
                             <input type="submit" class="btn-orange" value="Add To Cart">
+                            {% else %}
+                            <input type="submit" class="btn-gray" value="Add To Cart" disabled>
+                            {% endif %}
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </form>
                     </div>
