@@ -1,5 +1,6 @@
 # Book-Heaven-PP5
 ![BookHeaven website preview](./assets/readme-images/responsive.PNG)
+[Link to deployed site](https://book-heaven-e537b3f88787.herokuapp.com/)
 Book Heaven is an online book shop, built using Python, Django, HTML, CSS, JavaScript, Amazon S3 and Stripe. 
 
 
