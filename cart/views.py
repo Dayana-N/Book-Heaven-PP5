@@ -21,13 +21,22 @@ def add_to_cart(request, item_id):
     cart = request.session.get('cart', {})
     book = get_object_or_404(Book, pk=item_id)
 
-    if book.in_stock:
+    if book.in_stock and quantity < book.stock_amount:
         if item_id in list(cart.keys()):
-            cart[item_id] += quantity
+            total_quantity = cart[item_id] + quantity
+            if total_quantity <= book.stock_amount:
+                cart[item_id] += quantity
+                messages.success(
+                    request, f'{book.title} was successfully added to your cart')
+            else:
+                messages.error(
+                    request, 'Not enough stock to fulfil this order.')
         else:
             cart[item_id] = quantity
+            messages.success(
+                request, f'{book.title} was successfully added to your cart')
     else:
-        messages.error(request, 'This item is out of stock.')
+        messages.error(request, 'Not enough stock to fulfil this order.')
     request.session['cart'] = cart
     return redirect(redirect_url)
 
