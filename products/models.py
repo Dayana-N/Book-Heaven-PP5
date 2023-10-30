@@ -98,4 +98,6 @@ class Book(models.Model):
     def save(self, *args, **kwargs):
         self.discount = self.price_discount
         self.in_stock = self.product_in_stock
+        if not self.on_sale:
+            self.sale_price = 0
         super().save(*args, **kwargs)
