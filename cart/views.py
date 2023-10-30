@@ -53,6 +53,8 @@ def update_cart(request, item_id):
     if item_id in list(cart.keys()):
         if int(quantity) > 0 and int(book.stock_amount) >= int(quantity):
             cart[item_id] = quantity
+            messages.success(
+                request, f'{book.title} quantity updated successfully.')
         else:
             messages.error(request, 'Not enough stock to fulfil this order')
     else:

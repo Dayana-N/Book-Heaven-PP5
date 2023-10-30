@@ -14,20 +14,25 @@
 
 <body>
     {% include 'partials/nav.html' %}
-    <div class="container-fluid message-container">
-        <div class="row justify-content-center">
-            <div class="col-md-5 col-12 p-0">
-                {% if messages %}
-                {% for message in messages %}
-                <div class="alert alert-dismissible m-0 p-0 {{ message.tags }}" role="alert">
-                    <button type="button" class="btn-close p-1" data-bs-dismiss="alert" aria-label="x"></button>
-                    <p class="p-0 m-0 {{ message.tags }}">{{ message }}</p>
-                </div>
-                {% endfor %}
-                {% endif %}
-            </div>
-        </div>
+
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+        {% with message.level as level %}
+        {% if level == 40 %}
+        {% include 'partials/toasts/toast_error.html' %}
+        {% elif level == 30 %}
+        {% include 'partials/toasts/toast_warning.html' %}
+        {% elif level == 25 %}
+        {% include 'partials/toasts/toast_success.html' %}
+        {% else %}
+        {% include 'partials/toasts/toast_info.html' %}
+        {% endif %}
+        {% endwith %}
+        {% endfor %}
     </div>
+    {% endif %}
+
     {% block content %}
     {% endblock %}
 
@@ -97,6 +102,11 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     {% block extra_js %}
     {% endblock %}
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.toast').toast('show');
+        });
+    </script>
 
 </body>
 

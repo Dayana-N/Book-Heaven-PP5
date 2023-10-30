@@ -43,6 +43,19 @@ body {
 .message-container {
     min-height: 30px;
 }
+
+/* Toasts */
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
 /* Hero Section */
 .hero-text {
     font-family: 'Libre Baskerville', serif;
