@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load bag_tools %}
 
 {% block content %}
 <section class="cart my-4">
@@ -42,11 +43,7 @@
                                     </td>
                                     <td>
                                         <div class="cart-item-price">
-                                            {% if item.book.sale_price %}
-                                            <p>€{{ item.book.sale_price }}</p>
-                                            {% else %}
-                                            <p>€{{ item.book.price }}</p>
-                                            {% endif %}
+                                            <p>{{ item.book.product_price }}</p>
                                         </div>
                                     </td>
                                     <td>
@@ -72,7 +69,7 @@
                                     </td>
                                     <td>
                                         <div class="cart-item-total-price">
-                                            <p>€928392</p>
+                                            <p>€{{ item.book.product_price|calc_subtotal:item.quantity }}</p>
                                         </div>
                                     </td>
                                     <td>
@@ -135,16 +132,12 @@
                                     </td>
                                     <td>
                                         <div class="cart-item-price">
-                                            {% if item.book.sale_price %}
-                                            <p>€{{ item.book.sale_price }}</p>
-                                            {% else %}
-                                            <p>€{{ item.book.price }}</p>
-                                            {% endif %}
+                                            <p>{{ item.book.producy_price }}</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="cart-item-total-price">
-                                            <p>€11.99</p>
+                                            <p>€{{ item.book.product_price|calc_subtotal:item.quantity }}</p>
                                             <form action="{% url 'remove-item-cart' item.book.id %}" method="POST">
                                                 {% csrf_token %}
                                                 <button type="submit"><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></button>

@@ -1,6 +1,5 @@
 from django.contrib import messages
-from django.shortcuts import (HttpResponse, get_object_or_404, redirect,
-                              render, reverse)
+from django.shortcuts import get_object_or_404, redirect, render, reverse
 
 from products.models import Book
 
@@ -45,14 +44,12 @@ def update_cart(request, item_id):
     if item_id in list(cart.keys()):
         if int(quantity) > 0 and int(book.stock_amount) >= int(quantity):
             cart[item_id] = quantity
-            print(cart[item_id])
         else:
             messages.error(request, 'Not enough stock to fulfil this order')
     else:
         messages.error(request, 'Something went wrong. Please try again.')
 
     request.session['cart'] = cart
-    print(cart)
 
     return redirect(reverse('view-cart'))
 

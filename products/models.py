@@ -51,6 +51,7 @@ class Book(models.Model):
     stock_amount = models.IntegerField(
         default=1, validators=[MinValueValidator(0), MaxValueValidator(1000)])
     in_stock = models.BooleanField(default=True)
+    on_sale = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     discount = models.IntegerField(null=True, blank=True)
     sale_price = models.DecimalField(
@@ -83,6 +84,16 @@ class Book(models.Model):
             return True
         else:
             return False
+
+    @property
+    def product_price(self):
+        ''' 
+        Returns the price of item based on
+        if item is on sale
+        '''
+        if self.on_sale and self.sale_price < self.price:
+            return self.sale_price
+        return self.price
 
     def save(self, *args, **kwargs):
         self.discount = self.price_discount
