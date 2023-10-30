@@ -22,10 +22,7 @@ def cart_contents(request):
         if book.in_stock is False:
             items_to_remove.append(item_id)
 
-        if book.sale_price:
-            total += int(quantity) * int(book.sale_price)
-        else:
-            total += int(quantity) * int(book.price)
+        total += book.product_price * int(quantity)
         product_count += int(quantity)
         cart_items.append({
             'item_id': item_id,
