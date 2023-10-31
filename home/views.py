@@ -14,3 +14,7 @@ def home(request):
         'books': books,
     }
     return render(request, 'home/index.html', context)
+
+
+def faq_page(request):
+    return render(request, 'home/faq.html')

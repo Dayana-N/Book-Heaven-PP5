@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+FAQ
+{% endblock title %}
+
+{% block content %}
+
+<section class="faq">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <p>If you have any queries regarding an order made, have a look below at our
+                    Top FAQs and hopefully you will find the information you are looking for.</p>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <p><strong>Why did I receive only part of my order?</strong></p>
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p><strong>Deliveries within Ireland:</strong><br>
+                                    Most orders will be delivered in&nbsp;<strong>2-3 working days</strong>. On some occasions, depending on
+                                    the item, it may take up to <strong>5 working days</strong> if the book has to be first sent to our
+                                    distribution centre. An Post deliver all our packages and they deliver Monday to Friday, 9am – 6pm.
+                                    Saturday and Sunday are not working days therefore are not included within the delivery timeframe. Once
+                                    your order has been despatched you will receive an email notification and thereafter you will receive
+                                    delivery updates from An Post keeping you up to date with the progress of your delivery and when to
+                                    expect them to deliver your order.</p>
+                                <p>If you have opted to deliver your order to a country other than Ireland, the delivery times will vary to
+                                    that above.</p>
+                                <p>UK – up to 6 working days<br>
+                                    Europe – up to 7 working days<br>
+                                    USA &amp; Canada – up to 10 working days<br>
+                                    Rest of World – up to 12 working days</p>
+                                <p>If your order should have been delivered by now, and hasn’t been, you can email us at
+                                    bookheaven@gmail.com
+                                    and we will look into it for you.</p>
+
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <p><strong>Why did I receive only part of my order?</strong></p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>While we endeavour to deliver all items in your order together, we will occasionally ship part of
+                                        your order separately due to stock issues. For example, if you order three items and one of them is
+                                        out of stock, we may dispatch the two in-stock items while we await new stock of the third item. On
+                                        these occasions, we will continue to update you via email as your order progresses. If you
+                                        still have questions, or want to query a specific order, you can email bookheaven@gmail.com or call
+                                        us
+                                        on 01 123456.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    <p><strong>How much does delivery cost?</strong></p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p><strong>Delivery Charges –&nbsp;</strong><strong>Under €50<br>
+                                        </strong>Ireland &amp; UK – €12<br>
+                                        Rest of World – €12</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                    <p><strong>How can I pay for my order?</strong></p>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <p>To order online you will need a VISA, VISA Debit, MasterCard or Maestro card. All payments
+                                        are&nbsp;made in Euro.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+</section>
+{% endblock content %}
