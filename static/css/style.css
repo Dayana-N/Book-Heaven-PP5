@@ -280,6 +280,14 @@ body {
     border-color: var(--dark-orange) !important;
 }
 
+/* Forms */
+.form-error ul {
+    padding: 0;
+}
+.form-error ul li {
+    list-style-type: none;
+}
+
 /* footer */
 #footer {
     background-color: var(--orange);
