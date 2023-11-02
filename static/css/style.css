@@ -79,6 +79,12 @@ body {
     background-color: var(--brown);
     color: var(--white);
 }
+
+.btn-brown:hover {
+    background-color: #2b221f;
+    color: var(--white);
+}
+
 .bg-orange {
     background-color: var(--orange);
 }
