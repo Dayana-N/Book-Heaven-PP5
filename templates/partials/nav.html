@@ -135,8 +135,14 @@
                             Home
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'all-products' %}">Books</a>
+                    <li class="nav-item dropdown">
+                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fiction-link" aria-haspopup="true"
+                            aria-expanded="false" data-bs-toggle="dropdown">Books</a>
+                        <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                            <a href="{% url 'all-products' %}" class="dropdown-item">All Books</a>
+                            <a href="{% url 'authors' %}" class="dropdown-item ">By Author</a>
+
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="fiction-link" aria-haspopup="true"

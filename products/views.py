@@ -3,7 +3,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 
-from .models import Book, Category, Genre
+from .models import Author, Book, Category, Genre
 
 
 # Create your views here.
@@ -75,3 +75,10 @@ def product(request, pk):
     book = get_object_or_404(Book, pk=pk)
     context = {'book': book, }
     return render(request, 'products/single-product.html', context)
+
+
+def authors(request):
+    ''' Renders a list of all authors '''
+    authors = Author.objects.all().order_by('name')
+    context = {'authors': authors}
+    return render(request, 'products/authors.html', context)
