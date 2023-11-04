@@ -247,12 +247,14 @@ body {
 }
 
 .in-stock-label {
+    box-shadow: 2px 3px 2px 1px #8f8f8f;
     background-color: #a5d9a5;
     border-radius: 9px;
     padding: 6px;
 }
 
 .out-of-stock-label {
+    box-shadow: 2px 3px 2px 1px #8f8f8f;
     background-color: #ff7a7a;
     border-radius: 9px;
     padding: 6px;
@@ -273,6 +275,11 @@ body {
 
 .cart-item-quantity input {
     width: 80px;
+}
+
+/* Author page */
+.author-image {
+    max-height: 250px;
 }
 
 /* FAQ page */

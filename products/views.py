@@ -77,8 +77,16 @@ def product(request, pk):
     return render(request, 'products/single-product.html', context)
 
 
-def authors(request):
+def all_authors(request):
     ''' Renders a list of all authors '''
     authors = Author.objects.all().order_by('name')
     context = {'authors': authors}
     return render(request, 'products/authors.html', context)
+
+
+def author(request, pk):
+    author = get_object_or_404(Author, pk=pk)
+    books = author.books.all()
+    context = {'author': author,
+               'books': books, }
+    return render(request, 'products/author.html', context)

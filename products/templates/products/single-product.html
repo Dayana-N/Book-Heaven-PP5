@@ -23,7 +23,7 @@
                 <h2>{{book.title}}</h2>
                 <p>by
                     {% for author in book.author.all|slice:':3' %}
-                    <a href="#"> {{ author }} </a>
+                    <a href="{% url 'author' author.id %}"> {{ author }} </a>
                 </p>
                 {% endfor %}
                 <p>Publisher: {{ book.publisher }}</p>
