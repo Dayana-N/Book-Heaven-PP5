@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib import messages
 from django.shortcuts import get_object_or_404
 
@@ -8,8 +9,8 @@ def cart_contents(request):
     '''
     Handles the shopping cart contents
     '''
-    delivery_threshold = 50
-    delivery_fee = 12
+    delivery_threshold = settings.DELIVERY_THRESHOLD
+    delivery_fee = settings.DELIVERY_FEE
     cart_items = []
     total = 0
     product_count = 0

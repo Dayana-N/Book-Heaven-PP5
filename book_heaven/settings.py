@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'products.apps.ProductsConfig',
     'cart.apps.CartConfig',
+    'checkout.apps.CheckoutConfig',
 
     'storages',
     'widget_tweaks',
@@ -200,3 +201,7 @@ AWS_S3_REGION_NAME = 'eu-west-1'
 
 
 AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.eu-west-1.amazonaws.com'
+
+# Delivery fees
+DELIVERY_THRESHOLD = 50
+DELIVERY_FEE = 12
