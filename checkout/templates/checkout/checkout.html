@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load bag_tools %}
+
+{% block content %}
+<section class="checkout-section">
+    <div class="container my-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 custom-border py-4">
+                <h3>Checkout</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+
+
+
+                        <form class="checkout-form mt-2" id="" method="POST" action="">
+                            {% csrf_token %}
+                            <!-- Name Field -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.full_name|add_required_class:"is-required"|attr:"autofocus:True"|attr:"title:Please enter valid name"|attr:"pattern=^[A-Za-z\s\-]+$" class="form-control" placeholder=order_form.full_name.label %}
+                                <label for="{{ order_form.full_name.id_for_label }}" class="form-label">Name:*</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Email Field -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.email|add_required_class:"is-required" class="form-control" placeholder=order_form.email.label %}
+                                <label for="{{ order_form.email.id_for_label }}" class="form-label">Email:*</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Phone Field -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.phone_number|add_required_class:"is-required"|attr:"pattern:^(?:\+?\d{1,4}|\d{1,4}00)(\d{9})$"|attr:"title:'Please enter a valid phone number'" class="form-control" placeholder=order_form.phone_number.label %}
+                                <label for="{{ order_form.phone_number.id_for_label }}" class="form-label">Phone:*</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Address1 -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.street_address1|add_required_class:"is-required" class="form-control" placeholder=order_form.street_address1.label %}
+                                <label for="{{ order_form.street_address1.id_for_label }}" class="form-label">Address 1:*</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Address2 -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.street_address2 class="form-control" placeholder=order_form.street_address2.label %}
+                                <label for="{{ order_form.street_address2.id_for_label }}" class="form-label">Address 2:</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Town/City -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.town_or_city|add_required_class:"is-required" class="form-control" placeholder=order_form.town_or_city.label %}
+                                <label for="{{ order_form.town_or_city.id_for_label }}" class="form-label">Town/City:*</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- County -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.county class="form-control" placeholder=order_form.county.label %}
+                                <label for="{{ order_form.county.id_for_label }}" class="form-label">County:</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Postcode -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.postcode class="form-control" placeholder=order_form.postcode.label %}
+                                <label for="{{ order_form.postcode.id_for_label }}" class="form-label">Postcode:*</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Country -->
+                            <div class="form-floating mb-2">
+                                {% render_field order_form.country|add_required_class:"is-required" class="form-control" placeholder=order_form.country.label %}
+                                <label for="{{ order_form.country.id_for_label }}" class="form-label">Country:*</label>
+                                {{ form.name.errors }}
+                                {% for error in form.name.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                            <!-- Catching general form errors  -->
+                            {% if form.non_field_errors %}
+                            <div class="alert alert-block alert-danger">
+                                <span class="text-danger form-error"> {{ form.non_field_errors  }}</span>
+                            </div>
+                            {% endif %}
+                        </form>
+                    </div>
+                    <!-- Checkout items -->
+                    <div class="col-12 col-md-6 mt-3 mt-md-0">
+                        <p>Order summary: <strong>{{ product_count }} Items</strong></p>
+                        <table class="table cart">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Item</th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Sub-total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in cart_items %}
+                                <tr>
+                                    <th scope="row">
+                                        <div class="cart-item-picture">
+                                            <img src="{{ item.book.image.url }}" alt="{{ item.book.image.url }} image">
+                                        </div>
+                                    </th>
+                                    <td>
+                                        <div class="cart-item-description">
+                                            <p class="mb-0">{{ item.book.title }}</p>
+                                            {% for author in item.book.author.all|slice:':1' %}
+                                            <p class="mb-0">{{ author }}</p>
+                                            {% endfor %}
+                                        </div>
+                                        <div class="cart-item-quantity">
+                                            <div class="cart-item-quantity">
+                                                <p class="mb-0">Quantity: {{ item.quantity }}</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-item-price">
+                                            <p>€ {{ item.book.product_price }}</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="cart-item-total-price">
+                                            <p>€{{ item.book.product_price|calc_subtotal:item.quantity }}</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        <div class="row justify-content-end">
+                            <div class="col-7 text-end">
+                                <p class="my-0">Order Total:</p>
+                                <p class="my-0">Delivery:</p>
+                                <p class="my-0">Grand Total:</p>
+                            </div>
+                            <div class="col-3 text-center">
+                                <p class="my-0">€{{ total | floatformat:2 }}</p>
+                                <p class="my-0">€{{ delivery_fee | floatformat:2 }}</p>
+                                <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

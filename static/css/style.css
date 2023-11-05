@@ -300,6 +300,10 @@ body {
 .form-error ul li {
     list-style-type: none;
 }
+.checkout-form {
+    border: 1px solid var(--dark-gray);
+    padding: 19px;
+}
 
 /* footer */
 #footer {
