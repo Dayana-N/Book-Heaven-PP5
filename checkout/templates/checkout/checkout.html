@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load widget_tweaks %}
 {% load bag_tools %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/checkout.css' %}">
+{% endblock extra_css %}
 {% block content %}
 <section class="checkout-section">
     <div class="container my-5">
@@ -10,98 +14,79 @@
                 <h3>Checkout</h3>
                 <hr>
                 <div class="row">
-                    <div class="col-12 col-md-6">
-
-
-
-                        <form class="checkout-form mt-2" id="" method="POST" action="">
+                    <div class="col-12 col-md-5">
+                        <p>Your Details:</p>
+                        <form class="checkout-form mt-2" id="checkout-form" method="POST" action="{% url 'checkout' %}">
                             {% csrf_token %}
                             <!-- Name Field -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.full_name|add_required_class:"is-required"|attr:"autofocus:True"|attr:"title:Please enter valid name"|attr:"pattern=^[A-Za-z\s\-]+$" class="form-control" placeholder=order_form.full_name.label %}
                                 <label for="{{ order_form.full_name.id_for_label }}" class="form-label">Name:*</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in  order_form.full_name.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- Email Field -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.email|add_required_class:"is-required" class="form-control" placeholder=order_form.email.label %}
                                 <label for="{{ order_form.email.id_for_label }}" class="form-label">Email:*</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.email.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- Phone Field -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.phone_number|add_required_class:"is-required"|attr:"pattern:^(?:\+?\d{1,4}|\d{1,4}00)(\d{9})$"|attr:"title:'Please enter a valid phone number'" class="form-control" placeholder=order_form.phone_number.label %}
                                 <label for="{{ order_form.phone_number.id_for_label }}" class="form-label">Phone:*</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.phone_number.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- Address1 -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.street_address1|add_required_class:"is-required" class="form-control" placeholder=order_form.street_address1.label %}
                                 <label for="{{ order_form.street_address1.id_for_label }}" class="form-label">Address 1:*</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.street_address1.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- Address2 -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.street_address2 class="form-control" placeholder=order_form.street_address2.label %}
                                 <label for="{{ order_form.street_address2.id_for_label }}" class="form-label">Address 2:</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.street_address2.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- Town/City -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.town_or_city|add_required_class:"is-required" class="form-control" placeholder=order_form.town_or_city.label %}
                                 <label for="{{ order_form.town_or_city.id_for_label }}" class="form-label">Town/City:*</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.town_or_city.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- County -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.county class="form-control" placeholder=order_form.county.label %}
                                 <label for="{{ order_form.county.id_for_label }}" class="form-label">County:</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.county.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- Postcode -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.postcode class="form-control" placeholder=order_form.postcode.label %}
                                 <label for="{{ order_form.postcode.id_for_label }}" class="form-label">Postcode:*</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.postcode.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <!-- Country -->
                             <div class="form-floating mb-2">
                                 {% render_field order_form.country|add_required_class:"is-required" class="form-control" placeholder=order_form.country.label %}
                                 <label for="{{ order_form.country.id_for_label }}" class="form-label">Country:*</label>
-                                {{ form.name.errors }}
-                                {% for error in form.name.errors %}
+                                {% for error in order_form.country.errors %}
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
@@ -111,6 +96,20 @@
                                 <span class="text-danger form-error"> {{ form.non_field_errors  }}</span>
                             </div>
                             {% endif %}
+                            <p class="my-2">Payment details:</p>
+                            <hr>
+                            <!-- A Stripe card element will go here -->
+                            <div class="mb-3" id="card-element"></div>
+                            <!-- Used to display form errors -->
+                            <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                            <!-- Form buttons -->
+                            <div class="row justify-content-end">
+                                <div class="col-10 text-end">
+                                    <a class="btn btn-orange" href="{% url 'view-cart' %}">Back to Cart</a>
+                                    <button class="btn btn-brown" id="submit-button">Complete Order <i class="fa-solid fa-lock fa-shake"
+                                            style="color: #ffffff;"></i></button>
+                                </div>
+                            </div>
                         </form>
                     </div>
                     <!-- Checkout items -->
@@ -148,7 +147,7 @@
                                     </td>
                                     <td>
                                         <div class="cart-item-price">
-                                            <p>€ {{ item.book.product_price }}</p>
+                                            <p>€{{ item.book.product_price }}</p>
                                         </div>
                                     </td>
                                     <td>
@@ -180,3 +179,8 @@
     </div>
 </section>
 {% endblock content %}
+{% block extra_js %}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'js/stripe_elements.js' %}"></script>
+{% endblock %}

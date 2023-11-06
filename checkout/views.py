@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib import messages
 from django.shortcuts import redirect, render
 
@@ -14,5 +15,9 @@ def checkout(request):
 
     order_form = OrderForm()
 
-    context = {'order_form': order_form}
+    context = {
+        'order_form': order_form,
+        'stripe_public_key': settings.STRIPE_PUBLIC_KEY,
+        'client_secret': settings.STRIPE_SECRET_KEY,
+    }
     return render(request, 'checkout/checkout.html', context)
