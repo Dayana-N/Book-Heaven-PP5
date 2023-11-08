@@ -15,19 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #ebeae5;
-    /* background: linear-gradient(
-        85deg,
-        hsl(38deg 25% 94%) 0%,
-        hsl(38deg 25% 93%) 9%,
-        hsl(39deg 25% 92%) 17%,
-        hsl(40deg 24% 92%) 24%,
-        hsl(41deg 24% 91%) 31%,
-        hsl(42deg 24% 90%) 38%,
-        hsl(44deg 23% 90%) 47%,
-        hsl(45deg 23% 89%) 58%,
-        hsl(46deg 22% 88%) 73%,
-        hsl(47deg 13.2% 76.58%) 100%
-    ); */
 }
 
 /* Nav */
@@ -40,12 +27,9 @@ body {
     color: var(--dark-orange) !important;
 }
 
-.message-container {
-    min-height: 30px;
-}
-
 /* Toasts */
 .message-container {
+    min-height: 30px;
     position: fixed;
     top: 72px;
     right: 15px;
@@ -308,6 +292,21 @@ body {
     color: #aab7c4;
 }
 
+/* Checkout success page */
+.checkout-success i {
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+
+.delivery-details p {
+    margin: 0;
+    padding: 0;
+}
+
+.order-number {
+    overflow-wrap: break-word;
+}
+
 /* footer */
 #footer {
     background-color: var(--orange);
@@ -345,6 +344,12 @@ body {
 @media (max-width: 460px) {
     .hero-image {
         height: 284px;
+    }
+
+    /* Toasts */
+    .message-container {
+        right: 0px;
+        max-width: 310px;
     }
 }
 /* card */

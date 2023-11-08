@@ -1,13 +1,13 @@
 import stripe
 from django.conf import settings
 from django.contrib import messages
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 
 from cart.contexts import cart_contents
 from products.models import Book
 
 from .forms import OrderForm
-from .models import OrderLineItem
+from .models import Order, OrderLineItem
 
 
 # Create your views here.
@@ -91,4 +91,14 @@ def checkout(request):
 
 def checkout_success(request, order_number):
     ''' Renders checkout success page '''
-    return render(request, 'checkout/checkout-success.html')
+    order = get_object_or_404(Order, order_number=order_number)
+    messages.success(request, 'Your order has been placed.')
+
+    if 'cart' in request.session:
+        del request.session['cart']
+
+    context = {
+        'order': order,
+    }
+
+    return render(request, 'checkout/checkout-success.html', context)
