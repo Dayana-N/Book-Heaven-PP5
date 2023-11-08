@@ -38,7 +38,7 @@ def checkout(request):
                 try:
                     book = Book.objects.get(id=item_id)
                     if book.stock_amount > 0:
-                        book.stock_amount -= item_quantity
+                        book.stock_amount -= int(item_quantity)
                         book.save()
                     else:
                         messages.error(
@@ -48,7 +48,7 @@ def checkout(request):
                     order_line_item = OrderLineItem(
                         order=order,
                         product=book,
-                        quantity=item_quantity,
+                        quantity=int(item_quantity),
                     )
                     order_line_item.save()
 
