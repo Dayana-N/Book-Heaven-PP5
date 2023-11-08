@@ -171,11 +171,17 @@
                                 <p class="my-0"><strong>€{{ grand_total | floatformat:2 }}</strong></p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="loading-overlay">
+        <h1 class="text-light logo-font loading-spinner">
+            <span class="icon">
+                <i class="fa-solid fa-spinner fa-spin-pulse fa-xl"></i>
+            </span>
+        </h1>
     </div>
 </section>
 {% endblock content %}
