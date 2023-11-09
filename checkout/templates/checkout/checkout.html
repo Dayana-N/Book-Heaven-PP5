@@ -84,7 +84,7 @@
                             </div>
                             <!-- Country -->
                             <div class="form-floating mb-2">
-                                {% render_field order_form.country|add_required_class:"is-required" class="form-control" placeholder=order_form.country.label %}
+                                {% render_field order_form.country|add_required_class:"is-required" class="form-select" %}
                                 <label for="{{ order_form.country.id_for_label }}" class="form-label">Country:*</label>
                                 {% for error in order_form.country.errors %}
                                 <span class="text-danger">{{ error }}</span>
