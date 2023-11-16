@@ -285,7 +285,6 @@ body {
     list-style-type: none;
 }
 .checkout-form {
-    border: 1px solid var(--dark-gray);
     padding: 8px;
 }
 .checkout-form .form-floating > label {
