@@ -4,15 +4,22 @@
 <section class="checkout-success">
     <div class="container">
         <div class="row">
-            <div class="col-12 custom-border text-center my-3 p-4">
-                <i class="fa-solid fa-circle-check fa-bounce" style="color: #de502c;"></i>
-                <h4>Thank you for your order!</h4>
-                <p>An order confirmation email with details will be sent to {{ order.email }} </p>
+            <div class="col-12 custom-border text-center my-3 p-3">
+                {% if order_history %}
+                <h4 class="pb-3">Order placed on: {{ order.date }}</h4>
+                {% else %}
+                <div class="order-success">
+                    <i class="fa-solid fa-circle-check fa-bounce" style="color: #de502c;"></i>
+                    <h4>Thank you for your order!</h4>
+                    <p>An order confirmation email with details will be sent to {{ order.email }} </p>
+                </div>
+                {% endif %}
                 <div class="row">
                     <div class="col-12 text-start mt-3">
                         <p class="order-number"><strong>Order number: {{ order.order_number }}</strong></p>
                     </div>
                 </div>
+
                 <div class="row text-start">
                     <div class="col-12 col-lg-6 mt-3 mt-md-0">
                         <p>Order summary:</p>
@@ -148,7 +155,11 @@
                 </div>
                 <div class="row d-flex justify-content-center mt-5">
                     <div class="col-10">
+                        {% if order_history %}
+                        <button class="btn btn-orange" onclick="history.back()">Go back</button>
+                        {% else %}
                         <a href="{% url 'all-products' %}" class="btn btn-orange">Continue Shopping</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>

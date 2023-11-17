@@ -2,6 +2,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404, render
 
+from checkout.models import Order
+
 from .forms import UserProfileForm
 from .models import UserProfile
 
@@ -28,3 +30,14 @@ def profile_page(request, pk):
         'orders': orders,
     }
     return render(request, 'profiles/profile.html', context)
+
+
+def order_history(request, pk):
+    ''' Renders order history page '''
+    order = get_object_or_404(Order, id=pk)
+
+    context = {
+        'order': order,
+        'order_history': True,
+    }
+    return render(request, 'checkout/checkout-success.html', context)
