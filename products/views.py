@@ -46,6 +46,12 @@ def all_products(request):
                 genre__category__name__in=search_category)
             category = Category.objects.filter(name__in=search_category)
 
+        if 'deals' in request.GET:
+            books = books.filter(on_sale=True)
+
+        if 'new_arrivals' in request.GET:
+            books = books.order_by('-created')[:6]
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:

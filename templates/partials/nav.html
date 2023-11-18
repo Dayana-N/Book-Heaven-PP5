@@ -185,15 +185,15 @@
                             Special Offers
                         </a>
                         <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                            <a href="#" class="dropdown-item">New Arrivals</a>
-                            <a href="#" class="dropdown-item">Deals</a>
+                            <a href="{% url 'all-products' %}?new_arrivals" class="dropdown-item">New Arrivals</a>
+                            <a href="{% url 'all-products' %}?deals" class="dropdown-item">Deals</a>
                         </div>
                     </li>
                     <li class="nav-item">
                         <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'faq-page' %}">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#">About Us</a>
+                        <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'about-page' %}">About Us</a>
                     </li>
                 </ul>
             </div>

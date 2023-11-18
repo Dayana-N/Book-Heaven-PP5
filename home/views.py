@@ -17,4 +17,10 @@ def home(request):
 
 
 def faq_page(request):
+    ''' Renders FAQ page  '''
     return render(request, 'home/faq.html')
+
+
+def about_page(request):
+    ''' Renders About us page '''
+    return render(request, 'home/about.html')
