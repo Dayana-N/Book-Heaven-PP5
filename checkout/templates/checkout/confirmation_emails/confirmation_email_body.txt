@@ -1,0 +1,27 @@
+Hi, {{ order.full_name }},
+
+Thank you for choosing BookHeaven! This email is to confirm that we have received your order {{ order.order_number }} placed on {{ order.date}} for the following item(s):
+
+ {% for i, item in order.lineitems.all %}
+    {{ i }}. Title: {{item.product.title }},
+    Quantity: {{ item.quantity }},
+    Price:  €{{ item.product.product_price }}
+ {% endfor %}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Delivery Address: 
+{{ order.street_address1 }},
+{{ order.town_or_city }}, 
+{{ order.country }}
+
+We are currently processing your order and will keep you updated on its status.
+
+If you have any questions or need further assistance, please feel free to contact our customer service team at {{ contact_email }}.
+
+Thank you again for shopping with us. We truly appreciate your business.
+
+Best regards,
+BookHeaven
