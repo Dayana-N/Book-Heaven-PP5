@@ -8,7 +8,7 @@ def home(request):
     '''
     A view to render the home page
     '''
-    books = Book.objects.all().order_by('-created')
+    books = Book.objects.all().order_by('-created')[:6]
 
     context = {
         'books': books,

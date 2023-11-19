@@ -330,6 +330,18 @@ body {
     overflow-y: auto;
 }
 
+/* Pagination */
+/* Pagination */
+.page-link {
+    color: var(--orange);
+}
+
+.page-item.active .page-link {
+    color: var(--white);
+    background-color: var(--orange);
+    border-color: var(--dark-orange);
+}
+
 /* footer */
 #footer {
     background-color: var(--orange);

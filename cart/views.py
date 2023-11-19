@@ -21,7 +21,7 @@ def add_to_cart(request, item_id):
     cart = request.session.get('cart', {})
     book = get_object_or_404(Book, pk=item_id)
 
-    if book.in_stock and quantity < book.stock_amount:
+    if book.in_stock and quantity <= book.stock_amount:
         if item_id in list(cart.keys()):
             total_quantity = cart[item_id] + quantity
             if total_quantity <= book.stock_amount:

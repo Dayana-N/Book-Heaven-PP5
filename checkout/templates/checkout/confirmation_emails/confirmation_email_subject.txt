@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+BookHeaven Confirmation for Order Number {{ order.order_number }}

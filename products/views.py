@@ -4,6 +4,7 @@ from django.db.models.functions import Lower
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 
 from .models import Author, Book, Category, Genre
+from .utils import products_pagination
 
 
 # Create your views here.
@@ -11,7 +12,7 @@ def all_products(request):
     '''
     Render all products on products page
     '''
-    books = Book.objects.all()
+    books = Book.objects.all().order_by('-created')
     query = None
     genre = None
     category = None
@@ -50,7 +51,7 @@ def all_products(request):
             books = books.filter(on_sale=True)
 
         if 'new_arrivals' in request.GET:
-            books = books.order_by('-created')[:6]
+            books = books[:6]
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -61,6 +62,7 @@ def all_products(request):
             queries = Q(title__icontains=query) | Q(
                 description__icontains=query) | Q(author__name__icontains=query)
             books = books.filter(queries)
+    books, page_number = products_pagination(request, books)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -70,6 +72,7 @@ def all_products(request):
         'genre': genre,
         'category': category,
         'current_sorting': current_sorting,
+        'values': request.GET,
     }
     return render(request, 'products/products.html', context)
 
