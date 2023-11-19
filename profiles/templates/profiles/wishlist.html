@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+
+
+{% block title %}
+Profile
+{% endblock title %}
+
+{% block content %}
+<section class="profile mb-3">
+    <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Profile</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="custom-border p-3">
+                    <div class="row">
+                        {% include 'profiles/partials/sidebar.html' %}
+
+                        <div class="col-12 col-lg-10 mt-4 mt-lg-0">
+                            <p class="text-start">My wishlist:</p>
+                            {% if wishlist %}
+                            {% else %}
+                            <div class="d-grid gap-2">
+                                <p class="text-center">No items in wishlist</p>
+                                <a href="{% url 'all-products' %}" class="btn btn-orange d-block mx-auto">Browse Books</a>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</section>
+{% endblock content %}

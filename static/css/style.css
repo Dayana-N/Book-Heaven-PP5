@@ -324,13 +324,6 @@ body {
     height: 100%;
 }
 
-/* Profile page */
-.order-history {
-    max-height: 529px;
-    overflow-y: auto;
-}
-
-/* Pagination */
 /* Pagination */
 .page-link {
     color: var(--orange);
@@ -340,6 +333,31 @@ body {
     color: var(--white);
     background-color: var(--orange);
     border-color: var(--dark-orange);
+}
+
+/* Profile page */
+.order-history {
+    max-height: 529px;
+    overflow-y: auto;
+}
+
+/* Sidebar profile page */
+.btn-sidebar {
+    color: var(--dark-gray);
+    text-decoration: none;
+}
+.btn-sidebar:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn-sidebar.active {
+    color: var(--dark-orange);
+    font-weight: 500;
+}
+
+.sidebar {
+    border-right: 1px solid gray;
 }
 
 /* footer */

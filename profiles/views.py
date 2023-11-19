@@ -22,14 +22,30 @@ def profile_page(request, pk):
             messages.success(request, 'Profile updated successfully')
 
     form = UserProfileForm(instance=profile)
-    orders = profile.orders.all()
 
     context = {
         'profile': profile,
         'form': form,
-        'orders': orders,
     }
     return render(request, 'profiles/profile.html', context)
+
+
+def my_wishlist(request, pk):
+    ''' Renders wishlist page '''
+    context = {
+
+    }
+    return render(request, 'profiles/wishlist.html', context)
+
+
+def my_orders(request, pk):
+    ''' Renders my orders page '''
+    profile = get_object_or_404(UserProfile, id=pk)
+    orders = profile.orders.all()
+    context = {
+        'orders': orders,
+    }
+    return render(request, 'profiles/my_orders.html', context)
 
 
 def order_history(request, pk):
