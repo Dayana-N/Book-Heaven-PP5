@@ -4,6 +4,8 @@ from django.db.models.functions import Lower
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 
 from profiles.models import Wishlist
+from reviews.forms import ProductReviewForm
+from reviews.models import ProductReview
 
 from .models import Author, Book, Category, Genre
 from .utils import products_pagination
@@ -88,7 +90,11 @@ def product(request, pk):
     profile = request.user.userprofile
     if Wishlist.objects.filter(user=profile, product=book).exists():
         wishlist = True
-    context = {'book': book, 'wishlist': wishlist}
+
+    # reviews
+    review_form = ProductReviewForm()
+    context = {'book': book, 'wishlist': wishlist,
+               'review_form': review_form, }
     return render(request, 'products/single-product.html', context)
 
 

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load widget_tweaks %}
 
 {% block content %}
 <section class="product-content">
@@ -35,8 +36,6 @@
                     <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
                     <i class="fa-solid fa-star-half-stroke" style="color: #f0bc00;"></i>
                 </div>
-
-
                 {% if book.sale_price %}
                 <div class="price"><s>€{{ book.price }}</s>
                     <p style="font-size: 2rem;"> €{{ book.sale_price }}</p>
@@ -98,7 +97,7 @@
     </div>
     <div class="container mt-5">
         <div class="row d-flex justify-content-center">
-            <div class="col-10 custom-border">
+            <div class="col-12 col-md-10 custom-border product-details">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link text-black active" data-bs-toggle="tab" aria-current="page" aria-selected="true"
@@ -155,7 +154,7 @@
                     </div>
                     <div id="reviews" class="tab-pane fade">
                         <h5 class="my-2">Reviews</h5>
-                        <p>Some reviews</p>
+                        {% include 'reviews/partials/add_review.html' %}
                     </div>
                 </div>
             </div>

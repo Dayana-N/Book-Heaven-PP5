@@ -253,6 +253,16 @@ button.wishlist {
     font-size: 25px;
 }
 
+.product-details {
+    min-height: 350px;
+}
+
+.product-details .form-control {
+    min-height: 150px;
+}
+#id_rating {
+    color: #f0bc00;
+}
 /* Shopping cart page */
 .cart-item-picture img {
     height: 70px;

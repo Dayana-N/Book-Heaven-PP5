@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'checkout.apps.CheckoutConfig',
     'profiles.apps.ProfilesConfig',
+    'reviews.apps.ReviewsConfig',
 
     'storages',
     'widget_tweaks',
