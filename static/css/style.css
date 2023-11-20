@@ -131,7 +131,7 @@ body {
 .product-grid:hover .product-links {
     right: 10px;
 }
-.product-grid .product-links li a {
+.product-grid .product-links button {
     color: var(--orange);
     background: transparent;
     font-size: 17px;
@@ -142,11 +142,10 @@ body {
     border-bottom: none;
     display: block;
     transition: all 0.3s;
-}
-.product-grid .product-links li:last-child a {
     border-bottom: 1px solid #333;
 }
-.product-grid .product-links li a:hover {
+
+.product-grid .product-links button:hover {
     color: #fff;
     background: var(--orange);
 }

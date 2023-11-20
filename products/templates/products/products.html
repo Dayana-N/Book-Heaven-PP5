@@ -91,9 +91,11 @@
                                 </a>{% if book.price_discount %}
                                 <span class="product-discount-label">-{{ book.price_discount }}%</span>
                                 {% endif %}
-                                <ul class="product-links">
-                                    <li><a href="#"><i class="fa fa-heart"></i></a></li>
-                                </ul>
+                                <form class="product-links" method="POST" action="{% url 'wishlist-add' book.id %}">
+                                    {% csrf_token %}
+                                    <button type="submit" name="wishlist" value="submit"><i class="fa fa-heart"></i></button>
+                                    <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
+                                </form>
                                 <form action="{% url 'add-to-cart' book.id %}" method="POST">
                                     {% csrf_token %}
                                     <input type="hidden" name="quantity" value="1">

@@ -4,6 +4,8 @@ from django.contrib.auth.models import User
 from django.db import models
 from django_countries.fields import CountryField
 
+from products.models import Book
+
 
 # Create your models here.
 class UserProfile(models.Model):
@@ -28,3 +30,12 @@ class UserProfile(models.Model):
 
     def __str__(self):
         return self.user.username
+
+
+class Wishlist(models.Model):
+    user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    product = models.ForeignKey(Book, on_delete=models.CASCADE)
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return str(self.product)
