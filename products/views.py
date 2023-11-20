@@ -3,6 +3,8 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 
+from profiles.models import Wishlist
+
 from .models import Author, Book, Category, Genre
 from .utils import products_pagination
 
@@ -81,8 +83,12 @@ def product(request, pk):
     '''
     Renders single produc page
     '''
+    wishlist = False
     book = get_object_or_404(Book, pk=pk)
-    context = {'book': book, }
+    profile = request.user.userprofile
+    if Wishlist.objects.filter(user=profile, product=book).exists():
+        wishlist = True
+    context = {'book': book, 'wishlist': wishlist}
     return render(request, 'products/single-product.html', context)
 
 

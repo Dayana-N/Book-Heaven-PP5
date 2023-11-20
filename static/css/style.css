@@ -247,6 +247,12 @@ body {
     background-color: #cdc8c8;
     color: var(--white);
 }
+
+button.wishlist {
+    color: var(--orange);
+    font-size: 25px;
+}
+
 /* Shopping cart page */
 .cart-item-picture img {
     height: 70px;

@@ -56,6 +56,18 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
+                        <form class="product-links" method="POST" action="{% url 'wishlist-add' book.id %}">
+                            {% csrf_token %}
+                            {% if wishlist %}
+                            <button type="submit" class="wishlist" name="wishlist" value="submit"><i class="fa-solid fa-heart"></i></button>
+                            <p>Added to wishlist</p>
+                            {% else %}
+                            <button type="submit" class="wishlist" name="wishlist" value="submit"><i
+                                    class="fa fa-heart fa-fade"></i></button>
+                            <p>Add to wishlist</p>
+                            {% endif %}
+                            <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
+                        </form>
                         <form action="{% url 'add-to-cart' book.id %}" method="POST">
                             {% csrf_token %}
                             <p>Quantity:</p>
