@@ -87,9 +87,10 @@ def product(request, pk):
     '''
     wishlist = False
     book = get_object_or_404(Book, pk=pk)
-    profile = request.user.userprofile
-    if Wishlist.objects.filter(user=profile, product=book).exists():
-        wishlist = True
+    if request.user.is_authenticated:
+        profile = request.user.userprofile
+        if Wishlist.objects.filter(user=profile, product=book).exists():
+            wishlist = True
 
     # reviews
     review_form = ProductReviewForm()
