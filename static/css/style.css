@@ -258,6 +258,7 @@ body {
 .btn-gray {
     background-color: #cdc8c8;
     color: var(--white);
+    cursor: not-allowed;
 }
 
 button.wishlist {
@@ -276,6 +277,10 @@ button.wishlist {
 }
 #id_rating {
     color: #f0bc00;
+}
+
+.user-image {
+    max-height: 40px;
 }
 /* Shopping cart page */
 .cart-item-picture img {

@@ -86,16 +86,25 @@ def product(request, pk):
     Renders single produc page
     '''
     wishlist = False
+    user_review = None
     book = get_object_or_404(Book, pk=pk)
     if request.user.is_authenticated:
         profile = request.user.userprofile
+        user_review = ProductReview.objects.all().filter(product=pk, user=profile)
         if Wishlist.objects.filter(user=profile, product=book).exists():
             wishlist = True
 
     # reviews
     review_form = ProductReviewForm()
-    context = {'book': book, 'wishlist': wishlist,
-               'review_form': review_form, }
+    reviews = ProductReview.objects.all().filter(product=pk)
+
+    context = {
+        'book': book,
+        'wishlist': wishlist,
+        'review_form': review_form,
+        'reviews': reviews,
+        'user_review': user_review,
+    }
     return render(request, 'products/single-product.html', context)
 
 

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 <section class="product-content">
@@ -28,12 +29,14 @@
                 {% endfor %}
                 <p>Publisher: {{ book.publisher }}</p>
                 <div class="rating">
+                    {% if book.product_reviews %}
                     <p class="mb-0">Reviews:</p>
-                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
-                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
-                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
-                    <i class="fa-solid fa-star" style="color: #f0bc00;"></i>
-                    <i class="fa-solid fa-star-half-stroke" style="color: #f0bc00;"></i>
+                    {% for i in book.get_average_rating %}
+                    <i class="fa-solid fa-star" style="color:#f0bc00"></i>
+                    {% endfor %}
+                    {% else %}
+                    <p>No Reviews yet</p>
+                    {% endif %}
                 </div>
                 {% if book.sale_price %}
                 <div class="price"><s>€{{ book.price }}</s>
@@ -92,12 +95,11 @@
                 </div>
             </div>
         </div>
-
     </div>
-    <div class="container mt-5">
+    <div class="container my-5">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-10 custom-border product-details">
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs pt-2">
                     <li class="nav-item">
                         <a class="nav-link text-black active" data-bs-toggle="tab" aria-current="page" aria-selected="true"
                             data-bs-target="#description">Description</a>
@@ -144,7 +146,6 @@
                                                 <td>{{ book.pages }}</td>
                                             </tr>
                                             {% endif %}
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -153,13 +154,40 @@
                     </div>
                     <div id="reviews" class="tab-pane fade">
                         <h5 class="my-2">Reviews</h5>
+                        {% if user.is_authenticated %}
                         {% include 'reviews/partials/add_review.html' %}
+                        {% else %}
+                        <p>Please <a href="{% url 'account_login' %}" class="text-orange">Log In</a> to leave a review</p>
+                        {% endif %}
+                        <div class=" row review">
+                            {% for review in reviews %}
+                            <div class="col-12 col-md-8">
+                                <div class="card mb-3">
+                                    <div class="card-body">
+                                        <div class="user-info d-flex">
+                                            <img src="{% static 'images/authors/default-author.png' %}" class="user-image"
+                                                alt="default user image">
+                                            <div class="user-rating">
+                                                <h6 class="ms-2">{{ review.user }}</h6>
+                                                <div class="rating ms-2">
+                                                    {% for i in review.get_rating_range %}
+                                                    <i class="fa-solid fa-star" style="color:#f0bc00"></i>
+                                                    {% endfor %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <small>{{ review.created }}</small>
+                                        <hr>
+                                        <p class="card-text">{{ review.review }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
-<div class="section" style="height: 300px;"></div>
 {% endblock content %}

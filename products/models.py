@@ -2,6 +2,7 @@ import uuid
 
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
+from django.db.models import Avg
 
 
 # Create your models here.
@@ -63,6 +64,29 @@ class Book(models.Model):
 
     def __str__(self):
         return str(self.title)
+
+    @property
+    def product_reviews(self):
+        '''
+        Returns boolean value based on
+        if book has reviews
+        '''
+        reviews = self.reviews.all()
+        if reviews:
+            return True
+        else:
+            return False
+
+    @property
+    def get_average_rating(self):
+        '''return the average rating for book'''
+        reviews = self.reviews.all()
+
+        if reviews:
+            average_rating = reviews.aggregate(Avg('rating'))
+            return range(int(average_rating['rating__avg']))
+        else:
+            return range(0)
 
     @property
     def price_discount(self):
