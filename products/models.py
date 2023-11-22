@@ -85,8 +85,8 @@ class Book(models.Model):
         if reviews:
             average_rating = reviews.aggregate(Avg('rating'))
             return range(int(average_rating['rating__avg']))
-        else:
-            return range(0)
+
+        return range(0)
 
     @property
     def price_discount(self):
