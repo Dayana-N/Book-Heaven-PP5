@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% block title %}
+{{ book.title }}
+{% endblock title %}
 {% block content %}
 <section class="product-content">
     <div class="container">
@@ -184,12 +186,17 @@
                                         <p class="card-text">{{ review.review }}</p>
                                     </div>
                                     {% if request.user.userprofile == review.user or request.user.is_superuser %}
-                                    <div class="delte-review">
-                                        <form action="{% url 'delete-review' book.id %}" method="POST">
-                                            {% csrf_token %}
-                                            <input type="hidden" name="review_id" value="{{ review.id }}">
-                                            <button class="btn btn-sm btn-danger mb-2 ms-2" type="submit">Delete</button>
-                                        </form>
+                                    <div class="review-actions d-flex">
+                                        <div class="delte-review">
+                                            <form action="{% url 'delete-review' book.id %}" method="POST">
+                                                {% csrf_token %}
+                                                <input type="hidden" name="review_id" value="{{ review.id }}">
+                                                <button class="btn btn-sm btn-danger mb-2 ms-2" type="submit">Delete</button>
+                                            </form>
+                                        </div>
+                                        <div class="edit-review">
+                                            <a href="{% url 'edit-review' review.id %}" class="btn btn-sm btn-orange mb-2 ms-2">Edit</a>
+                                        </div>
                                     </div>
                                     {% endif %}
                                 </div>

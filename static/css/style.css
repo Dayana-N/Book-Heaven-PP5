@@ -282,6 +282,11 @@ button.wishlist {
 .user-image {
     max-height: 40px;
 }
+
+/* Edit review page*/
+.edit-review-form textarea {
+    min-height: 150px !important;
+}
 /* Shopping cart page */
 .cart-item-picture img {
     height: 70px;

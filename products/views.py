@@ -83,7 +83,7 @@ def all_products(request):
 
 def product(request, pk):
     '''
-    Renders single produc page
+    Renders single product page
     '''
     wishlist = False
     user_review = None
