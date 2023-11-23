@@ -2,7 +2,6 @@ from django.contrib import messages
 from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 
-from discount_codes.forms import DiscountCodeForm
 from discount_codes.models import DiscountCode
 from products.models import Book
 
@@ -96,9 +95,25 @@ def add_discount(request):
             if code.active:
                 discount = code.discount
                 request.session['discount'] = discount
-                messages.success(request, 'Success.')  # success
+                messages.success(request, 'Discount code applied successfully')
             else:
                 messages.error(request, 'The code is not active')
         except ObjectDoesNotExist:
             messages.error(request, 'Invalid discount code.')
+    return redirect('view-cart')
+
+
+def remove_discount(request):
+    '''
+    A view that handles removing
+    discount codes
+    '''
+    if 'discount' in request.session:
+        try:
+            del request.session['discount']
+            messages.success(request, 'Discount code removed.')
+        except KeyError:
+            messages.error(request, 'Failed to remove discount code')
+    else:
+        messages.info(request, 'No discount code found')
     return redirect('view-cart')

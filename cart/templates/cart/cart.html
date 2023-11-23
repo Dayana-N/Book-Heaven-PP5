@@ -160,7 +160,8 @@
                             <h5>Discount Code</h5>
                             {% if discount_amount > 0 %}
                             <p class="text-success">Discount code applied.</p>
-                            <a href="" class="btn btn-sm btn-brown"><i class="fa-solid fa-trash-can"></i> Remove</a>
+                            <a href="{% url 'remove-discount' %}" class="btn btn-sm btn-brown"><i class="fa-solid fa-trash-can"></i>
+                                Remove</a>
                             {% else %}
                             <form action="{% url 'add-discount' %}" method="POST">
                                 {% csrf_token %}
@@ -179,7 +180,7 @@
                             </div>
                             <div class="delivery d-flex justify-content-between">
                                 <p>Delivery:</p>
-                                <p>€{{ delivery_fee }}</p>
+                                <p>€{{ delivery_fee|floatformat:2 }}</p>
                             </div>
                             <div class="discount d-flex justify-content-between">
                                 <p>Discount:</p>
