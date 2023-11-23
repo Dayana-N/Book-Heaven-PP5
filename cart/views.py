@@ -1,6 +1,9 @@
 from django.contrib import messages
+from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import get_object_or_404, redirect, render, reverse
 
+from discount_codes.forms import DiscountCodeForm
+from discount_codes.models import DiscountCode
 from products.models import Book
 
 
@@ -79,3 +82,23 @@ def remove_from_cart(request, item_id):
         except Exception as e:
             messages.error(request, f'An error occured {e}')
             return redirect(reverse('view-cart'))
+
+
+def add_discount(request):
+    '''
+    A view that handles applying
+    discount codes
+    '''
+    if request.method == 'POST':
+        code = request.POST.get('discount-code')
+        try:
+            code = DiscountCode.objects.get(code__iexact=code)
+            if code.active:
+                discount = code.discount
+                request.session['discount'] = discount
+                messages.success(request, 'Success.')  # success
+            else:
+                messages.error(request, 'The code is not active')
+        except ObjectDoesNotExist:
+            messages.error(request, 'Invalid discount code.')
+    return redirect('view-cart')

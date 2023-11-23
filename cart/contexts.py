@@ -16,6 +16,8 @@ def cart_contents(request):
     product_count = 0
     cart = request.session.get('cart', {})
     items_to_remove = []
+    discount = request.session.get('discount')
+    discount_amount = 0
 
     for item_id, quantity in cart.items():
         book = get_object_or_404(Book, pk=item_id)
@@ -38,6 +40,11 @@ def cart_contents(request):
 
     request.session['cart'] = cart
 
+    # Apply discount to total amount excluding delivery
+    if discount:
+        discount_amount = (total * discount)/100
+        total -= discount_amount
+
     if total > delivery_threshold or total == 0:
         delivery_fee = 0
         free_delivery_delta = 0
@@ -45,6 +52,7 @@ def cart_contents(request):
         free_delivery_delta = delivery_threshold - total
 
     grand_total = total + delivery_fee
+
     context = {
         'cart_items': cart_items,
         'total': total,
@@ -53,5 +61,6 @@ def cart_contents(request):
         'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': delivery_threshold,
         'grand_total': grand_total,
+        'discount_amount': discount_amount,
     }
     return context
