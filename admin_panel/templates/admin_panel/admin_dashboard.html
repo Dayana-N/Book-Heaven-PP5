@@ -71,10 +71,11 @@
             </div>
             {% else %}
             <div class="d-grid gap-2">
-                <p class="text-center">You have no new orders</p>
-                <a href="{% url 'all-products' %}" class="btn btn-orange d-block mx-auto">Browse Books</a>
+                <p class="text-center">No orders to display</p>
+
             </div>
             {% endif %}
         </div>
     </div>
-    {% endblock admin_content %}
+</div>
+{% endblock admin_content %}

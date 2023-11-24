@@ -34,7 +34,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="nav-link text-black"> Discount Codes
+                                    <a href="{% url 'admin-discounts' %}"
+                                        class="nav-link text-black {% if 'discount_codes' in request.path %} active {% endif %}"> Discount
+                                        Codes
                                     </a>
                                 </li>
                             </ul>
@@ -47,8 +49,6 @@
                     <div class="col-12 custom-border py-3">
                         {% block admin_content %}
                         {% endblock admin_content %}
-
-
 
                     </div>
                 </div>
