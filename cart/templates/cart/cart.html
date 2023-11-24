@@ -174,6 +174,12 @@
                     <hr>
                     <div class="row">
                         <div class="col-12">
+                            {% if discount_amount > 0 %}
+                            <div class="discount d-flex justify-content-between">
+                                <p class="text-success fw-bold">Discount:</p>
+                                <p class="text-success fw-bold">- €{{ discount_amount|floatformat:2 }}</p>
+                            </div>
+                            {% endif %}
                             <div class="subtotal d-flex justify-content-between">
                                 <p>SubTotal:</p>
                                 <p>€{{ total|floatformat:2 }}</p>
@@ -182,12 +188,6 @@
                                 <p>Delivery:</p>
                                 <p>€{{ delivery_fee|floatformat:2 }}</p>
                             </div>
-                            {% if discount_amount > 0 %}
-                            <div class="discount d-flex justify-content-between">
-                                <p class="text-success fw-bold">Discount:</p>
-                                <p class="text-success fw-bold">- €{{ discount_amount|floatformat:2 }}</p>
-                            </div>
-                            {% endif %}
                             <hr>
                             <div class="total d-flex justify-content-between">
                                 <h5>Total:</h5>
