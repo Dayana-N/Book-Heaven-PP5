@@ -403,6 +403,40 @@ button.wishlist {
     border-right: 1px solid gray;
 }
 
+/*Admin section */
+#admin-nav .nav-link.active {
+    border-bottom: 1px solid var(--orange);
+}
+.offcanvas {
+    background-color: #f1f1f1;
+}
+
+.stats-container {
+    border: 1px solid var(--dark-gray);
+    border-radius: 5px;
+    box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
+}
+
+.stats-container.users {
+    background: rgb(143, 179, 124);
+    background: linear-gradient(287deg, rgba(143, 179, 124, 1) 0%, rgba(175, 217, 152, 1) 100%);
+}
+
+.stats-container.products {
+    background: rgb(196, 153, 125);
+    background: linear-gradient(287deg, rgba(196, 153, 125, 1) 0%, rgba(241, 188, 153, 1) 100%);
+}
+
+.stats-container.orders {
+    background: rgb(116, 135, 163);
+    background: linear-gradient(287deg, rgba(116, 135, 163, 1) 0%, rgba(178, 200, 231, 0.9808298319327731) 100%);
+}
+
+.stats-container p {
+    font-size: 1.3rem;
+}
 /* footer */
 #footer {
     background-color: var(--orange);

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="admin-page">
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-12 col-lg-2">
+                <div class="admin-nav">
+                    <button class="btn btn-lg btn-orange d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasAdmin" aria-controls="offcanvasAdmin">
+                        Menu
+                    </button>
+
+                    <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasAdmin" aria-labelledby="offcanvasAdminLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasAdminLabel"><i class="fa-solid fa-book" style="color: #000;"></i> Admin
+                                Panel
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasAdmin"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav flex-column mb-auto" id="admin-nav">
+                                <li>
+                                    <a href="{% url 'admin-panel' %}" class="nav-link text-black active">Dashboard
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-black">Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-black">Orders
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav-link text-black"> Discount Codes
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-10 mt-3 mt-lg-0">
+                <div class="row">
+                    <div class="col-12 custom-border py-3">
+                        {% block admin_content %}
+                        {% endblock admin_content %}
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</section>
+{% endblock content %}
