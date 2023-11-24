@@ -41,6 +41,7 @@ def checkout(request):
     ''' Renders the checkout page '''
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
+    discount = request.session.get('discount')
 
     if request.method == 'POST':
         cart = request.session.get('cart', {})
@@ -87,6 +88,13 @@ def checkout(request):
                         request, 'Unknown item in shopping cart. Please try again later.')
                     order.delete()
                     return redirect('view-cart')
+
+            # calculate discount
+            if discount:
+                discount_amount = (order.order_total * discount)/100
+                order.discount = discount_amount
+                order.update_total()
+                order.save()
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect('checkout-success', order.order_number)
@@ -166,6 +174,8 @@ def checkout_success(request, order_number):
 
     if 'cart' in request.session:
         del request.session['cart']
+    if 'discount' in request.session:
+        del request.session['discount']
 
     context = {
         'order': order,

@@ -182,10 +182,12 @@
                                 <p>Delivery:</p>
                                 <p>€{{ delivery_fee|floatformat:2 }}</p>
                             </div>
+                            {% if discount_amount > 0 %}
                             <div class="discount d-flex justify-content-between">
-                                <p>Discount:</p>
-                                <p>€{{ discount_amount|floatformat:2 }}</p>
+                                <p class="text-success fw-bold">Discount:</p>
+                                <p class="text-success fw-bold">- €{{ discount_amount|floatformat:2 }}</p>
                             </div>
+                            {% endif %}
                             <hr>
                             <div class="total d-flex justify-content-between">
                                 <h5>Total:</h5>
