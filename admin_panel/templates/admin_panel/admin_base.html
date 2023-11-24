@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <section class="admin-page">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row my-4">
             <div class="col-12 col-lg-2">
                 <div class="admin-nav">
@@ -21,7 +21,8 @@
                         <div class="offcanvas-body">
                             <ul class="nav flex-column mb-auto" id="admin-nav">
                                 <li>
-                                    <a href="{% url 'admin-panel' %}" class="nav-link text-black active">Dashboard
+                                    <a href="{% url 'admin-panel' %}"
+                                        class="nav-link text-black {% if 'dashboard' in request.path %} active {% endif %}">Dashboard
                                     </a>
                                 </li>
                                 <li>

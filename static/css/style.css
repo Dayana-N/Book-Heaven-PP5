@@ -437,6 +437,10 @@ button.wishlist {
 .stats-container p {
     font-size: 1.3rem;
 }
+
+.order-table-row {
+    background-color: rgb(241 161 139);
+}
 /* footer */
 #footer {
     background-color: var(--orange);
