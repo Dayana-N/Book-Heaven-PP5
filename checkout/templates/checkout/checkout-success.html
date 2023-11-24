@@ -70,20 +70,20 @@
                         </table>
                         <div class="row justify-content-end">
                             <div class="col-7 text-end">
-                                {% if discount_amount > 0 %}
+                                {% if order.discount > 0 %}
                                 <p class="my-0 text-success fw-bold">Discount:</p>
                                 {% endif %}
                                 <p class="my-0">Order Total:</p>
                                 <p class="my-0">Delivery:</p>
                                 <p class="my-0">Grand Total:</p>
                             </div>
-                            <div class="col-3 text-center">
-                                {% if discount_amount > 0 %}
-                                <p class="my-0 text-success fw-bold">- €{{ discount_amount | floatformat:2 }}</p>
+                            <div class="col-3 text-end">
+                                {% if order.discount > 0 %}
+                                <p class="my-0 text-success fw-bold">-€{{ order.discount | floatformat:2 }}</p>
                                 {% endif %}
                                 <p class="my-0">€{{ order.order_total }}</p>
                                 <p class="my-0">€{{ order.delivery_cost}}</p>
-                                <p class="my-0"><strong>€{{ order.grand_total }}</strong></p>
+                                <p class="my-0"><strong> €{{ order.grand_total }}</strong></p>
                             </div>
                         </div>
                     </div>
