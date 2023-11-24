@@ -95,6 +95,7 @@ def checkout(request):
                 order.discount = discount_amount
                 order.update_total()
                 order.save()
+                print(f'checkout view {order.grand_total}')
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect('checkout-success', order.order_number)
@@ -171,7 +172,7 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
     messages.success(request, 'Your order has been placed.')
-
+    print(f'checkout success {order.grand_total}')
     if 'cart' in request.session:
         del request.session['cart']
     if 'discount' in request.session:
