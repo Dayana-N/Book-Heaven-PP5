@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'profiles.apps.ProfilesConfig',
     'reviews.apps.ReviewsConfig',
     'discount_codes.apps.DiscountCodesConfig',
+    'admin_panel.apps.AdminPanelConfig',
 
     'storages',
     'widget_tweaks',

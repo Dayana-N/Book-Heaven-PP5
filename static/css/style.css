@@ -64,6 +64,10 @@ body {
     color: var(--white);
 }
 
+.hero-btn {
+    -webkit-box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
+}
+
 .btn-brown:hover {
     background-color: #2b221f;
     color: var(--white);

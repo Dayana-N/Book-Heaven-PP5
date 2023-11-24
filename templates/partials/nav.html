@@ -37,7 +37,7 @@
                     <div class="dropdown-menu border-0" aria-labelledby="account-options">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <a href="#" class="dropdown-item">Admin</a>
+                        <a href="{% url 'admin-panel' %}" class="dropdown-item">Admin</a>
                         {% endif %}
                         <a href="{% url 'profile' user.userprofile.id %}" class="dropdown-item">My Profile</a>
                         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -105,7 +105,7 @@
                     <div class="dropdown-menu border-0" aria-labelledby="user-options">
                         {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
-                        <a href="#" class="dropdown-item">Admin</a>
+                        <a href="{% url 'admin-panel' %}" class="dropdown-item">Admin</a>
                         {% endif %}
                         <a href="{% url 'profile' user.userprofile.id %}" class="dropdown-item">My Profile</a>
                         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>

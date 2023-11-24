@@ -27,6 +27,7 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('profiles/', include('profiles.urls')),
     path('reviews/', include('reviews.urls')),
+    path('admin_panel/', include('admin_panel.urls')),
 ]
 
 # set url for user uploaded content
