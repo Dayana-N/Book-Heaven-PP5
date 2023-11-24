@@ -5,5 +5,5 @@ from .models import DiscountCode
 
 class DiscountCodeForm(forms.ModelForm):
     class Meta:
-        model: DiscountCode
+        model = DiscountCode
         fields = '__all__'
