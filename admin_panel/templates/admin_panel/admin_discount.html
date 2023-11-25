@@ -33,7 +33,7 @@
     </div>
     {% if discount_codes %}
     {% for code in discount_codes %}
-    <div class="card custom-border col-10 col-md-4 m-2">
+    <div class="card custom-border code-card col-10 col-md-4 m-2">
         <div class="card-body text-center">
             <h5 class="card-title">{{ code.code }}</h5>
             <p class="card-text">Discount: {{ code.discount }}%</p>
@@ -43,10 +43,17 @@
             <p class="text-danger fw-bold">Not Active</p>
             {% endif %}
             <a href="#" class="card-link">Edit</a>
-            <a href="{% url 'admin-discounts-delete' code.id %}" class="card-link">Delete</a>
+            <a href="{% url 'admin-discounts-delete' code.id %}" class="btn btn-danger">Delete</a>
         </div>
     </div>
     {% endfor %}
     {% endif %}
+
+
+
+
+
+
+
 </div>
 {% endblock admin_content %}

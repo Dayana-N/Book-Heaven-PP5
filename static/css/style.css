@@ -441,6 +441,12 @@ button.wishlist {
 .order-table-row {
     background-color: rgb(241 161 139);
 }
+
+/*admin codes*/
+.code-card {
+    background: linear-gradient(to bottom, #a58b53, #ffe4a9, #9f9153);
+    border: #635b3d 1px solid;
+}
 /* footer */
 #footer {
     background-color: var(--orange);

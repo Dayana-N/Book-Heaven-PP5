@@ -2,7 +2,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Sum
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 
 from checkout.models import Order
 from discount_codes.forms import DiscountCodeForm
@@ -63,11 +63,17 @@ def admin_discounts_delete(request, pk):
         messages.error(request, 'You need admin rights to access this page.')
         return redirect('home')
 
-    try:
-        code = DiscountCode.objects.get(pk=pk)
-        code.delete()
-        messages.success(request, 'Code deleted successfully.')
-    except ObjectDoesNotExist:
-        messages.error(request, 'The code cannot be found in the database.')
+    code = get_object_or_404(DiscountCode, pk=pk)
+    if request.method == 'POST':
+        try:
+            code.delete()
+            messages.success(request, 'Code deleted successfully.')
+        except ObjectDoesNotExist:
+            messages.error(
+                request, 'The code cannot be found in the database.')
+        return redirect('admin-discounts')
 
-    return redirect('admin-discounts')
+    context = {
+        'code': code,
+    }
+    return render(request, 'admin_panel/delete_confirmation.html', context)
