@@ -4,14 +4,14 @@
 <hr>
 
 <div class="row d-flex justify-content-around">
-    <div class="col-12">
+    <div class="col-12 text-center">
 
         <button type="button" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#formModal">
             Create Code
         </button>
 
         <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h1 class="modal-title fs-5" id="formModalLabel">Add Dicount Code</h1>
@@ -43,7 +43,7 @@
             <p class="text-danger fw-bold">Not Active</p>
             {% endif %}
             <a href="#" class="card-link">Edit</a>
-            <a href="#" class="card-link">Delete</a>
+            <a href="{% url 'admin-discounts-delete' code.id %}" class="card-link">Delete</a>
         </div>
     </div>
     {% endfor %}

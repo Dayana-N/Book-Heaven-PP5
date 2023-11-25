@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Sum
 from django.shortcuts import redirect, render
 
@@ -37,7 +38,7 @@ def admin_discounts(request):
         messages.error(request, 'You need admin rights to access this page.')
         return redirect('home')
 
-    discount_codes = DiscountCode.objects.all()
+    discount_codes = DiscountCode.objects.all().order_by('-active')
     form = DiscountCodeForm()
 
     if request.method == 'POST':
@@ -53,3 +54,20 @@ def admin_discounts(request):
     context = {'discount_codes': discount_codes,
                'form': form, }
     return render(request, 'admin_panel/admin_discount.html', context)
+
+
+@login_required
+def admin_discounts_delete(request, pk):
+    '''A view to delete discount codes '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    try:
+        code = DiscountCode.objects.get(pk=pk)
+        code.delete()
+        messages.success(request, 'Code deleted successfully.')
+    except ObjectDoesNotExist:
+        messages.error(request, 'The code cannot be found in the database.')
+
+    return redirect('admin-discounts')
