@@ -25,9 +25,9 @@ def add_to_cart(request, item_id):
 
     if book.in_stock and quantity <= book.stock_amount:
         if item_id in list(cart.keys()):
-            total_quantity = cart[item_id] + quantity
+            total_quantity = int(cart[item_id]) + quantity
             if total_quantity <= book.stock_amount:
-                cart[item_id] += quantity
+                cart[item_id] = int(cart[item_id]) + quantity
                 messages.success(
                     request, f'{book.title} was successfully added to your cart')
             else:
