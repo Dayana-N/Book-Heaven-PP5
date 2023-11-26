@@ -455,6 +455,17 @@ button.wishlist {
     background: linear-gradient(287deg, rgba(244, 174, 137, 1) 8%, rgba(251, 204, 179, 1) 100%);
     margin-bottom: 10px;
 }
+
+/*Admin Orders*/
+#status-cell-completed {
+    background-color: #c7dbd2 !important;
+}
+#status-cell-cancelled {
+    background-color: #eccccf !important;
+}
+#status-cell-progress {
+    background-color: #c5d7f2 !important;
+}
 /* footer */
 #footer {
     background-color: var(--orange);

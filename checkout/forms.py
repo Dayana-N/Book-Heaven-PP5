@@ -9,4 +9,4 @@ class OrderForm(forms.ModelForm):
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',
                   'town_or_city', 'county', 'postcode', 'country',
-                  )
+                  'status',)

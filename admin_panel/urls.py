@@ -9,4 +9,5 @@ urlpatterns = [
          views.admin_discounts_delete, name='admin-discounts-delete'),
     path('discount_codes_edit/<str:pk>/',
          views.admin_discounts_edit, name='admin-discounts-edit'),
+    path('orders/', views.admin_orders, name='admin-orders'),
 ]

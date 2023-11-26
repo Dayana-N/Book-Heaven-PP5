@@ -104,3 +104,25 @@ def admin_discounts_edit(request, pk):
     }
 
     return render(request, 'admin_panel/edit_code.html', context)
+
+
+@login_required
+def admin_orders(request):
+    '''A view to manage orders '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    orders = Order.objects.all().order_by('-date')
+    orders_count = orders.count()
+    orders_in_progress = orders.filter(status='in_progress')
+    orders_completed = orders.filter(status='completed')
+    orders_cancelled = orders.filter(status='cancelled')
+    context = {
+        'orders': orders,
+        'orders_count': orders_count,
+        'orders_in_progress': orders_in_progress,
+        'orders_completed': orders_completed,
+        'orders_cancelled': orders_cancelled,
+    }
+    return render(request, 'admin_panel/admin_orders.html', context)

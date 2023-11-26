@@ -10,6 +10,11 @@ from products.models import Book
 from profiles.models import UserProfile
 
 # Create your models here.
+STATUS = (
+    ('in_progress', 'In Progress'),
+    ('completed', 'Completed'),
+    ('cancelled', 'Cancelled'),
+)
 
 
 class Order(models.Model):
@@ -37,6 +42,8 @@ class Order(models.Model):
     original_cart = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(
         max_length=254, null=False, blank=False, default='')
+    status = models.CharField(
+        max_length=200, null=True, blank=True, choices=STATUS, default=STATUS[0][0])
 
     def _generate_order_number(self):
         '''
