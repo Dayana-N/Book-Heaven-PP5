@@ -109,12 +109,21 @@ def admin_discounts_edit(request, pk):
 
 @login_required
 def admin_orders(request):
-    '''A view to manage orders '''
+    '''A view to render and refine orders '''
     if not request.user.is_superuser:
         messages.error(request, 'You need admin rights to access this page.')
         return redirect('home')
 
+    refine_value = None
     orders = Order.objects.all().order_by('-date')
+
+    if request.GET:
+        if 'refine' in request.GET:
+            refine_value = request.GET['refine']
+            orders = Order.objects.filter(orderstatus__status=refine_value)
+            if refine_value == 'recent':
+                orders = Order.objects.all().order_by('-date')
+
     orders_in_progress = Order.objects.filter(
         orderstatus__status='in_progress')
     orders_completed = Order.objects.filter(orderstatus__status='completed')
@@ -125,6 +134,7 @@ def admin_orders(request):
         'orders_in_progress': orders_in_progress,
         'orders_completed': orders_completed,
         'orders_cancelled': orders_cancelled,
+        'current_sorting': refine_value,
 
     }
     return render(request, 'admin_panel/admin_orders.html', context)
