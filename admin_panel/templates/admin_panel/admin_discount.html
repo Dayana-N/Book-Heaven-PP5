@@ -1,5 +1,6 @@
 {% extends 'admin_panel/admin_base.html' %}
 {% load widget_tweaks %}
+{% block title %} Admin Discounts{% endblock title %}
 {% block admin_content %}
 <h3 class="text-black">Discount Codes</h3>
 <hr>
@@ -56,16 +57,19 @@
     </div>
     {% if discount_codes %}
     {% for code in discount_codes %}
-    <div class="card custom-border code-card col-10 col-sm-8 col-md-4 m-2">
+    <div class="card code-card col-8 col-sm-6 col-md-4 col-lg-3 m-2">
         <div class="card-body text-center">
-            <h5 class="card-title">{{ code.code }}</h5>
+            <p class="card-title fw-bold fs-3">{{ code.code }}</p>
             <p class="card-text">Discount: {{ code.discount }}%</p>
             {% if code.active %}
-            <p class="text-success fw-bold">Active</p>
+            <p class="text-success fw-bold fs-4">Active</p>
             {% else %}
-            <p class="text-danger fw-bold">Not Active</p>
+            <p class="text-danger fw-bold fs-4 ">Not Active</p>
             {% endif %}
             <hr>
+        </div>
+        <div class="text-center mb-2">
+
             <a href="{% url 'admin-discounts-delete' code.id %}" class="btn btn-danger mx-2">Delete</a>
             <a href="{% url 'admin-discounts-edit' code.id %}" class="btn btn-brown mx-2">Edit</a>
         </div>
