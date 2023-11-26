@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Order
+from .models import Order, OrderStatus
 
 
 class OrderForm(forms.ModelForm):
@@ -9,4 +9,10 @@ class OrderForm(forms.ModelForm):
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',
                   'town_or_city', 'county', 'postcode', 'country',
-                  'status',)
+                  )
+
+
+class OrderStatusForm(forms.ModelForm):
+    class Meta:
+        model = OrderStatus
+        fields = ('status',)

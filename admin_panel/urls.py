@@ -10,4 +10,6 @@ urlpatterns = [
     path('discount_codes_edit/<str:pk>/',
          views.admin_discounts_edit, name='admin-discounts-edit'),
     path('orders/', views.admin_orders, name='admin-orders'),
+    path('orders_edit/<str:pk>/', views.admin_orders_edit,
+         name='admin-orders-edit'),
 ]

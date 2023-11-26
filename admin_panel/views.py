@@ -4,7 +4,8 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.db.models import Sum
 from django.shortcuts import get_object_or_404, redirect, render
 
-from checkout.models import Order
+from checkout.forms import OrderStatusForm
+from checkout.models import Order, OrderStatus
 from discount_codes.forms import DiscountCodeForm
 from discount_codes.models import DiscountCode
 from products.models import Book
@@ -114,15 +115,44 @@ def admin_orders(request):
         return redirect('home')
 
     orders = Order.objects.all().order_by('-date')
-    orders_count = orders.count()
-    orders_in_progress = orders.filter(status='in_progress')
-    orders_completed = orders.filter(status='completed')
-    orders_cancelled = orders.filter(status='cancelled')
+    orders_in_progress = Order.objects.filter(
+        orderstatus__status='in_progress')
+    orders_completed = Order.objects.filter(orderstatus__status='completed')
+    orders_cancelled = Order.objects.filter(orderstatus__status='cancelled')
+
     context = {
         'orders': orders,
-        'orders_count': orders_count,
         'orders_in_progress': orders_in_progress,
         'orders_completed': orders_completed,
         'orders_cancelled': orders_cancelled,
+
     }
     return render(request, 'admin_panel/admin_orders.html', context)
+
+
+@login_required
+def admin_orders_edit(request, pk):
+    '''A view to edit orders address and status '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    order = get_object_or_404(Order, pk=pk)
+    order_status = get_object_or_404(OrderStatus, order=order)
+    form = OrderStatusForm(instance=order_status)
+
+    if request.method == 'POST':
+        form = OrderStatusForm(request.POST, instance=order_status)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Status updated successfully')
+        else:
+            messages.error(request, 'Invalid form. Try again')
+        return redirect('admin-orders')
+
+    context = {
+        'order': order,
+        'order_form': form,
+    }
+
+    return render(request, 'admin_panel/edit_order.html', context)

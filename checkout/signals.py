@@ -1,7 +1,7 @@
 from django.db.models.signals import post_delete, post_save
 from django.dispatch import receiver
 
-from .models import OrderLineItem
+from .models import Order, OrderLineItem, OrderStatus
 
 
 @receiver(post_save, sender=OrderLineItem)
@@ -18,3 +18,10 @@ def delete_on_save(sender, instance, **kwargs):
     Update order total on lineitem delete
     '''
     instance.order.update_total()
+
+
+@receiver(post_save, sender=Order)
+def create_order_status(sender, instance, created, **kwargs):
+    ''' Create OrderStatus when Order is created'''
+    if created:
+        OrderStatus.objects.create(order=instance)

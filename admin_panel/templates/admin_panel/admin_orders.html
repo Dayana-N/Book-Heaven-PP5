@@ -36,7 +36,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <p class="fw-bold fs-4 mt-4">Orders: {{ orders_count }}</p>
+            <p class="fw-bold fs-4 mt-4">Orders: {{ orders.count }}</p>
             {% if orders %}
             <div class="order-history table-responsive mt-3">
                 <table class="table table-borderless table-striped table-hover">
@@ -47,6 +47,7 @@
                             <th>Items</th>
                             <th>Order Total</th>
                             <th>Status</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,19 +63,23 @@
                                 {{ order.lineitems.count }}
                             </td>
                             <td class="text-center">€{{ order.grand_total }}</td>
-                            {% if order.status == 'in_progress' %}
+                            {% if order.orderstatus.status == 'in_progress' %}
                             <td id="status-cell-progress">
-                                {{ order.get_status_display }}
+                                {{ order.orderstatus.get_status_display }}
                             </td>
-                            {% elif order.status == 'completed' %}
+                            {% elif order.orderstatus.status == 'completed' %}
                             <td id="status-cell-completed">
-                                {{ order.get_status_display }}
+                                {{ order.orderstatus.get_status_display }}
                             </td>
                             {% else %}
                             <td id="status-cell-cancelled">
-                                {{ order.get_status_display }}
+                                {{ order.orderstatus.get_status_display }}
                             </td>
                             {% endif %}
+                            <td class="text-center">
+                                <a href="{% url 'admin-orders-edit' order.id %}" class="text-orange" title="Edit"><i
+                                        class="fa-solid fa-pen"></i></a>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -83,7 +88,6 @@
             {% else %}
             <div class="d-grid gap-2">
                 <p class="text-center">No orders to display</p>
-
             </div>
             {% endif %}
         </div>

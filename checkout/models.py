@@ -42,8 +42,6 @@ class Order(models.Model):
     original_cart = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(
         max_length=254, null=False, blank=False, default='')
-    status = models.CharField(
-        max_length=200, null=True, blank=True, choices=STATUS, default=STATUS[0][0])
 
     def _generate_order_number(self):
         '''
@@ -78,6 +76,15 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_number
+
+
+class OrderStatus(models.Model):
+    order = models.OneToOneField(Order, on_delete=models.CASCADE)
+    status = models.CharField(
+        max_length=200, null=True, blank=True, choices=STATUS, default=STATUS[0][0])
+
+    def __str__(self):
+        return f'{self.order.order_number} - {self.status}'
 
 
 class OrderLineItem(models.Model):
