@@ -1,4 +1,5 @@
 {% extends 'admin_panel/admin_base.html' %}
+{% load widget_tweaks %}
 {% block admin_content %}
 <h3 class="text-black">Discount Codes</h3>
 <hr>
@@ -6,7 +7,7 @@
 <div class="row d-flex justify-content-around">
     <div class="col-12 text-center">
 
-        <button type="button" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#formModal">
+        <button type="button" class="btn btn-lg btn-orange hero-btn mb-4" data-bs-toggle="modal" data-bs-target="#formModal">
             Create Code
         </button>
 
@@ -20,7 +21,29 @@
                     <div class="modal-body">
                         <form action="{% url 'admin-discounts' %}" method="POST">
                             {% csrf_token %}
-                            {{ form.as_p }}
+                            <!-- Code -->
+                            <div class="form-floating mb-2">
+                                {% render_field form.code class="form-control" placeholder=form.code.label %}
+                                <label for="{{ form.code.id_for_label }}" class="form-label">Code:*</label>
+                                {% for error in form.code.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                            <!-- Discount -->
+                            <div class="form-floating mb-2">
+                                {% render_field form.discount class="form-control" placeholder=form.discount.label%}
+                                <label for="{{ form.discount.id_for_label }}" class="form-label">Discount:*</label>
+                                {% for error in form.discount.errors %}
+                                <span class="text-danger">{{ error }}</span>
+                                {% endfor %}
+                            </div>
+                            <!-- Active -->
+                            <div class="form-check">
+                                {% render_field form.active %}
+                                <label class="form-check-label" for="{{ form.active.id_for_label }}">
+                                    Active
+                                </label>
+                            </div>
                             <hr>
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="submit" class="btn btn-orange">Create Code</button>
@@ -33,7 +56,7 @@
     </div>
     {% if discount_codes %}
     {% for code in discount_codes %}
-    <div class="card custom-border code-card col-10 col-md-4 m-2">
+    <div class="card custom-border code-card col-10 col-sm-8 col-md-4 m-2">
         <div class="card-body text-center">
             <h5 class="card-title">{{ code.code }}</h5>
             <p class="card-text">Discount: {{ code.discount }}%</p>
@@ -42,8 +65,9 @@
             {% else %}
             <p class="text-danger fw-bold">Not Active</p>
             {% endif %}
-            <a href="#" class="card-link">Edit</a>
-            <a href="{% url 'admin-discounts-delete' code.id %}" class="btn btn-danger">Delete</a>
+            <hr>
+            <a href="{% url 'admin-discounts-delete' code.id %}" class="btn btn-danger mx-2">Delete</a>
+            <a href="{% url 'admin-discounts-edit' code.id %}" class="btn btn-brown mx-2">Edit</a>
         </div>
     </div>
     {% endfor %}

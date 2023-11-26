@@ -77,3 +77,30 @@ def admin_discounts_delete(request, pk):
         'code': code,
     }
     return render(request, 'admin_panel/delete_confirmation.html', context)
+
+
+@login_required
+def admin_discounts_edit(request, pk):
+    '''A view to edit discount codes '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    code = get_object_or_404(DiscountCode, pk=pk)
+    form = DiscountCodeForm(instance=code)
+
+    if request.method == 'POST':
+        form = DiscountCodeForm(request.POST, instance=code)
+
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Code editted successfully.')
+        else:
+            messages.error(request, 'Invalid form. Please try again.')
+        return redirect('admin-discounts')
+    context = {
+        'form': form,
+        'code': code,
+    }
+
+    return render(request, 'admin_panel/edit_code.html', context)

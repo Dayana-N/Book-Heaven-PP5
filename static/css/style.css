@@ -443,6 +443,9 @@ button.wishlist {
 }
 
 /*admin codes*/
+.modal-content {
+    background-color: #ebeae5;
+}
 .code-card {
     background: linear-gradient(to bottom, #a58b53, #ffe4a9, #9f9153);
     border: #635b3d 1px solid;
