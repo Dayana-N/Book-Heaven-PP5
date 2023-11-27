@@ -9,8 +9,8 @@
     <div class="col-10 col-md-3 stats-container orders p-3 my-1">
         <div class="row">
             <div class="col-8">
-                <p class="fw-bold">{{ orders_in_progress.count }}</p>
-                <p class="fw-bold">In Progress</p>
+                <p class="fw-bold fs-3">{{ orders_in_progress.count }}</p>
+                <p class="fw-bold fs-3">In Progress</p>
             </div>
             <div class="col-4 my-auto"><i class="fa-solid fa-basket-shopping fa-2xl"></i></div>
         </div>
@@ -18,8 +18,8 @@
     <div class="col-10 col-md-3 stats-container products p-3 my-1">
         <div class="row">
             <div class="col-8">
-                <p class="fw-bold">{{ orders_cancelled.count }}</p>
-                <p class="fw-bold">Cancelled</p>
+                <p class="fw-bold fs-3">{{ orders_cancelled.count }}</p>
+                <p class="fw-bold fs-3">Cancelled</p>
             </div>
             <div class="col-4 my-auto"><i class="fa-solid fa-ban fa-2xl"></i></div>
         </div>
@@ -27,8 +27,8 @@
     <div class="col-10 col-md-3 stats-container users p-3 my-1">
         <div class="row">
             <div class="col-8">
-                <p class="fw-bold">{{ orders_completed.count }}</p>
-                <p class="fw-bold">Completed</p>
+                <p class="fw-bold fs-3">{{ orders_completed.count }}</p>
+                <p class="fw-bold fs-3">Completed</p>
             </div>
             <div class="col-4 my-auto"><i class="fa-solid fa-list-check fa-2xl"></i>
             </div>
@@ -115,5 +115,5 @@
 
 {% block extra_js %}
 {{ block.super }}
-<script src="{% static 'js/orders.js' %}"></script>
+<script src="{% static 'js/admin_filter.js' %}"></script>
 {% endblock%}

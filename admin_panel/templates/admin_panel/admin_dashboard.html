@@ -50,7 +50,7 @@
                     <div class="sort-select-wrapper">
                         <select id="sort-selector" class="form-select">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Refine by...</option>
-                            <option value="products" {% if current_sorting == 'recent' %}selected{% endif %}>All Products</option>
+                            <option value="products" {% if current_sorting == 'products' %}selected{% endif %}>All Products</option>
                             <option value="in_stock" {% if current_sorting == 'in_stock' %}selected{% endif %}> In Stock
                             </option>
                             <option value="low_stock" {% if current_sorting == 'low_stock' %}selected{% endif %}>Low Stock
@@ -128,5 +128,5 @@
 
 {% block extra_js %}
 {{ block.super }}
-<script src="{% static 'js/admin_products.js' %}"></script>
+<script src="{% static 'js/admin_filter.js' %}"></script>
 {% endblock%}

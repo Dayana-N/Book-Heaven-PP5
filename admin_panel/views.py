@@ -56,7 +56,21 @@ def admin_discounts(request):
         return redirect('home')
 
     discount_codes = DiscountCode.objects.all().order_by('-active')
+    codes_total = discount_codes.count
+    active_codes = DiscountCode.objects.filter(active=True)
+    not_active_codes = DiscountCode.objects.filter(active=False)
     form = DiscountCodeForm()
+
+    if request.GET:
+        if 'refine' in request.GET:
+            refine_value = request.GET['refine']
+            orders = Order.objects.filter(orderstatus__status=refine_value)
+            if refine_value == 'active':
+                discount_codes = DiscountCode.objects.filter(active=True)
+            elif refine_value == 'not_active':
+                discount_codes = DiscountCode.objects.filter(active=False)
+            else:
+                discount_codes = DiscountCode.objects.all().order_by('-active')
 
     if request.method == 'POST':
         form = DiscountCodeForm(request.POST)
@@ -69,6 +83,9 @@ def admin_discounts(request):
 
         return redirect('admin-discounts')
     context = {'discount_codes': discount_codes,
+               'active_codes': active_codes,
+               'not_active_codes': not_active_codes,
+               'codes_total': codes_total,
                'form': form, }
     return render(request, 'admin_panel/admin_discount.html', context)
 
