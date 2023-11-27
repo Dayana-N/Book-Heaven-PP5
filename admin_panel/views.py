@@ -21,13 +21,29 @@ def admin_dashboard(request):
 
     orders = Order.objects.all()
     products = Book.objects.all()
+    total_product_count = products.count()
     total_grand_total = Order.objects.aggregate(
         total_grand_total=Sum('grand_total'))
     grand_total_sum = total_grand_total['total_grand_total']
+
+    if request.GET:
+        if 'refine' in request.GET:
+            refine_value = request.GET['refine']
+            if refine_value == 'low_stock':
+                products = Book.objects.filter(
+                    stock_amount__gt=0, stock_amount__lte=5)
+            elif refine_value == 'out_of_stock':
+                products = Book.objects.filter(stock_amount=0)
+            elif refine_value == 'in_stock':
+                products = Book.objects.filter(stock_amount__gt=5)
+            else:
+                products = Book.objects.all().order_by('-created')
+
     context = {
         'orders': orders,
         'products': products,
-        'total': grand_total_sum, }
+        'total': grand_total_sum,
+        'total_product_count': total_product_count, }
     return render(request, 'admin_panel/admin_dashboard.html', context)
 
 

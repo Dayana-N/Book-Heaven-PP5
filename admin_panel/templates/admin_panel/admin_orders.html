@@ -42,7 +42,6 @@
                     <p class="fw-bold fs-4 mt-4">Orders: {{ orders.count }}</p>
                 </div>
                 <div class="col-12 col-md-6  my-auto order-md-last d-flex justify-content-center justify-content-md-end">
-
                     <div class="sort-select-wrapper">
                         <select id="sort-selector" class="form-select">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Refine by...</option>
@@ -52,13 +51,8 @@
                             <option value="completed" {% if current_sorting == 'completed' %}selected{% endif %}>Completed
                             </option>
                             <option value="cancelled" {% if current_sorting == 'cancelled' %}selected{% endif %}>Cancelled</option>
-
                         </select>
                     </div>
-
-
-
-
                 </div>
             </div>
             {% if orders %}
