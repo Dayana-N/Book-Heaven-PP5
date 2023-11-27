@@ -19,16 +19,15 @@ def admin_dashboard(request):
         messages.error(request, 'You need admin rights to access this page.')
         return redirect('home')
 
-    orders = Order.objects.all().order_by('-date')
-    orders_count = orders.count()
-    books_count = Book.objects.all().count()
+    orders = Order.objects.all()
+    products = Book.objects.all()
     total_grand_total = Order.objects.aggregate(
         total_grand_total=Sum('grand_total'))
     grand_total_sum = total_grand_total['total_grand_total']
-    context = {'orders': orders,
-               'orders_count': orders_count,
-               'books_count': books_count,
-               'total': grand_total_sum, }
+    context = {
+        'orders': orders,
+        'products': products,
+        'total': grand_total_sum, }
     return render(request, 'admin_panel/admin_dashboard.html', context)
 
 

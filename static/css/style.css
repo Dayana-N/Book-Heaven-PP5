@@ -403,7 +403,7 @@ button.wishlist {
     border-right: 1px solid gray;
 }
 
-/*Admin section */
+/*Admin dashboard */
 #admin-nav .nav-link.active {
     border-bottom: 1px solid var(--orange);
 }
@@ -442,6 +442,16 @@ button.wishlist {
     background-color: rgb(241 161 139);
 }
 
+#status-cell-instock {
+    background-color: #c7dbd2 !important;
+}
+#status-cell-nostock {
+    background-color: #eccccf !important;
+}
+#status-cell-warning {
+    background-color: #f2e8c5 !important;
+}
+
 /*admin codes*/
 .code-card {
     background-color: #ebeae5;
@@ -466,6 +476,7 @@ button.wishlist {
 #status-cell-progress {
     background-color: #c5d7f2 !important;
 }
+
 /* footer */
 #footer {
     background-color: var(--orange);

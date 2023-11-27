@@ -7,8 +7,8 @@
     <div class="col-10 col-md-3 stats-container orders p-3 my-1">
         <div class="row">
             <div class="col-8">
-                <p class="fw-bold">{{ orders_count }}</p>
-                <p class="fw-bold">Orders</p>
+                <p class="fw-bold fs-3">{{ orders.count }}</p>
+                <p class="fw-bold fs-3">Orders</p>
             </div>
             <div class="col-4 my-auto"><i class="fa-solid fa-basket-shopping fa-2xl"></i></div>
         </div>
@@ -16,8 +16,8 @@
     <div class="col-10 col-md-3 stats-container products p-3 my-1">
         <div class="row">
             <div class="col-8">
-                <p class="fw-bold">{{ books_count }}</p>
-                <p class="fw-bold">Products</p>
+                <p class="fw-bold fs-3">{{ products.count }}</p>
+                <p class="fw-bold fs-3">Products</p>
             </div>
             <div class="col-4 my-auto"><i class="fa-solid fa-book fa-2xl"></i></div>
         </div>
@@ -26,11 +26,11 @@
         <div class="row">
             <div class="col-8">
                 {% if total %}
-                <p class="fw-bold">€{{ total|floatformat:2 }}</p>
+                <p class="fw-bold fs-3">€{{ total|floatformat:2 }}</p>
                 {% else %}
-                <p class="fw-bold">€0</p>
+                <p class="fw-bold fs-3">€0</p>
                 {% endif %}
-                <p class="fw-bold">Revenue</p>
+                <p class="fw-bold fs-3">Revenue</p>
             </div>
             <div class="col-4 my-auto"><i class="fa-solid fa-hand-holding-dollar fa-2xl"></i>
             </div>
@@ -39,43 +39,49 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <p class="fw-bold fs-4 mt-4">Orders:</p>
-            {% if orders %}
+            <p class="fw-bold fs-4 mt-4">Products: {{ products.count }}</p>
+            {% if products %}
             <div class="order-history table-responsive mt-3">
                 <table class="table table-borderless table-striped table-hover">
                     <thead>
                         <tr class="order-table-row">
-                            <th>Order Number</th>
-                            <th>Date</th>
-                            <th>Items</th>
-                            <th>Order Total</th>
-                            <th>Status</th>
+                            <th>Title</th>
+                            <th>On Sale</th>
+                            <th>Price</th>
+                            <th>Reviews</th>
+                            <th>Stock</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {% for order in orders %}
+                        {% for product in products %}
                         <tr>
                             <td>
-                                <a href="{% url 'order-history' order.id %}" title="{{ order.order_number }}">
-                                    {{ order.order_number|truncatechars:15 }}
+                                <a href="{% url 'product' product.id %}" title="{{ product.title }}">
+                                    {{ product.title }}
                                 </a>
                             </td>
-                            <td>{{ order.date|date:"SHORT_DATE_FORMAT" }}</td>
                             <td class="text-center">
-                                {{ order.lineitems.count }}
+                                {% if product.on_sale %}
+                                Yes
+                                {% else %}
+                                No
+                                {% endif %}
                             </td>
-                            <td class="text-center">€{{ order.grand_total }}</td>
-                            <td class="
-                            {% if order.status == 'in_progress' %}
-                            table-primary
-                            {% elif order.status == 'completed' %}
-                            table-success
+                            <td>€{{ product.product_price|floatformat:'2' }}</td>
+                            <td class="text-center">{{ product.reviews.count }}</td>
+                            {% if product.stock_amount == 0 %}
+                            <td id="status-cell-nostock">
+                                {{ product.stock_amount }}
+                            </td>
+                            {% elif product.stock_amount <= 5 %}
+                            <td id="status-cell-warning">
+                                {{ product.stock_amount }}
+                            </td>
                             {% else %}
-                            table-danger
-                            {% endif %}
-                            ">
-                                {{ order.get_status_display }}
+                            <td id="status-cell-instock">
+                                {{ product.stock_amount }}
                             </td>
+                            {% endif %}
                         </tr>
                         {% endfor %}
                     </tbody>
@@ -83,7 +89,7 @@
             </div>
             {% else %}
             <div class="d-grid gap-2">
-                <p class="text-center">No orders to display</p>
+                <p class="text-center">No Products to display</p>
 
             </div>
             {% endif %}
