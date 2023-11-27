@@ -184,15 +184,51 @@ def admin_orders_edit(request, pk):
     return render(request, 'admin_panel/edit_order.html', context)
 
 
-def create_update_product(request):
+def admin_add_product(request):
     '''A view to edit orders address and status '''
     if not request.user.is_superuser:
         messages.error(request, 'You need admin rights to access this page.')
         return redirect('home')
 
     form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Product added successfully.')
+            return redirect('product', product.id)
+        else:
+            messages.error(request, 'Invalid form. Try again')
     context = {
         'form': form,
     }
 
-    return render(request, 'admin_panel/create_product.html', context)
+    return render(request, 'admin_panel/product_form.html', context)
+
+
+def admin_edit_product(request, pk):
+    '''A view to edit orders address and status '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    product = get_object_or_404(Book, pk=pk)
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product updated successfully.')
+            return redirect('admin-panel')
+        else:
+            messages.error(request, 'Invalid form! Please try again.')
+    else:
+        form = ProductForm(instance=product)
+        messages.info(request, f'You are editing {product.title}')
+
+    context = {
+        'edit': True,
+        'form': form,
+        'product': product,
+    }
+    return render(request, 'admin_panel/product_form.html', context)

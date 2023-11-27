@@ -53,7 +53,7 @@ class Book(models.Model):
     stock_amount = models.IntegerField(
         default=1, validators=[MinValueValidator(0), MaxValueValidator(1000)])
     in_stock = models.BooleanField(default=True)
-    on_sale = models.BooleanField(default=False, null=True, blank=True)
+    on_sale = models.BooleanField(default=False)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     discount = models.IntegerField(null=True, blank=True)
     sale_price = models.DecimalField(

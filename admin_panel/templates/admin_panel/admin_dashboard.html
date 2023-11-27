@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-12 col-md-6  my-auto order-md-last d-flex justify-content-between justify-content-md-end">
 
-                    <a href="{% url 'create-update-product' %}" class="btn btn-orange mx-md-auto">Add Products</a>
+                    <a href="{% url 'admin-add-product' %}" class="btn btn-orange mx-md-auto">Add Products</a>
                     <div class="sort-select-wrapper">
                         <select id="sort-selector" class="form-select">
                             <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Refine by...</option>
@@ -70,6 +70,8 @@
                             <th>Price</th>
                             <th>Reviews</th>
                             <th>Stock</th>
+                            <th>Actions</th>
+
                         </tr>
                     </thead>
                     <tbody>
@@ -102,6 +104,11 @@
                                 {{ product.stock_amount }}
                             </td>
                             {% endif %}
+                            <td class="text-center">
+                                <a href="{% url 'admin-edit-product' product.id %}" class="text-black" title="Edit"><i
+                                        class="fa-solid fa-pen"></i></a>
+                                <a href="" class="text-danger" title="Delete"><i class="fa-solid fa-trash"></i></a>
+                            </td>
                         </tr>
                         {% endfor %}
                     </tbody>

@@ -12,6 +12,8 @@ urlpatterns = [
     path('orders/', views.admin_orders, name='admin-orders'),
     path('orders_edit/<str:pk>/', views.admin_orders_edit,
          name='admin-orders-edit'),
-    path('product_form/', views.create_update_product,
-         name='create-update-product')
+    path('add_product/', views.admin_add_product,
+         name='admin-add-product'),
+    path('edit_product/<str:pk>/', views.admin_edit_product,
+         name='admin-edit-product'),
 ]
