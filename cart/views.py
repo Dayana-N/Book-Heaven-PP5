@@ -91,7 +91,7 @@ def add_discount(request):
     if request.method == 'POST':
         code = request.POST.get('discount-code')
         try:
-            code = DiscountCode.objects.get(code__iexact=code)
+            code = DiscountCode.objects.get(code__exact=code)
             if code.active:
                 discount = code.discount
                 request.session['discount'] = discount
