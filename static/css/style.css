@@ -452,6 +452,12 @@ button.wishlist {
     background-color: #f2e8c5 !important;
 }
 
+/*Create product page*/
+.author-input {
+    height: 130px !important;
+    overflow-y: scroll;
+}
+
 /*admin codes*/
 .code-card {
     background-color: #ebeae5;

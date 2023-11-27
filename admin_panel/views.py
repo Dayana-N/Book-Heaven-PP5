@@ -8,6 +8,7 @@ from checkout.forms import OrderStatusForm
 from checkout.models import Order, OrderStatus
 from discount_codes.forms import DiscountCodeForm
 from discount_codes.models import DiscountCode
+from products.forms import ProductForm
 from products.models import Book
 
 
@@ -181,3 +182,17 @@ def admin_orders_edit(request, pk):
     }
 
     return render(request, 'admin_panel/edit_order.html', context)
+
+
+def create_update_product(request):
+    '''A view to edit orders address and status '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    form = ProductForm()
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'admin_panel/create_product.html', context)
