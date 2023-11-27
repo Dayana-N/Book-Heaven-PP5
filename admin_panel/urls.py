@@ -16,4 +16,6 @@ urlpatterns = [
          name='admin-add-product'),
     path('edit_product/<str:pk>/', views.admin_edit_product,
          name='admin-edit-product'),
+    path('delete_product/<str:pk>/', views.admin_delete_product,
+         name='admin-delete-product'),
 ]

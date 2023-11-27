@@ -185,7 +185,7 @@ def admin_orders_edit(request, pk):
 
 
 def admin_add_product(request):
-    '''A view to edit orders address and status '''
+    '''A view to create products '''
     if not request.user.is_superuser:
         messages.error(request, 'You need admin rights to access this page.')
         return redirect('home')
@@ -207,7 +207,7 @@ def admin_add_product(request):
 
 
 def admin_edit_product(request, pk):
-    '''A view to edit orders address and status '''
+    '''A view to edit products '''
     if not request.user.is_superuser:
         messages.error(request, 'You need admin rights to access this page.')
         return redirect('home')
@@ -232,3 +232,27 @@ def admin_edit_product(request, pk):
         'product': product,
     }
     return render(request, 'admin_panel/product_form.html', context)
+
+
+def admin_delete_product(request, pk):
+    '''A view to delete products '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    product = get_object_or_404(Book, pk=pk)
+
+    if request.method == 'POST':
+        try:
+            product.delete()
+            messages.success(request, f'{product.title} deleted successfully.')
+        except ObjectDoesNotExist:
+            messages.error(
+                request, 'The product cannot be found in the database.')
+        return redirect('admin-panel')
+
+    context = {
+        'product': product,
+    }
+
+    return render(request, 'admin_panel/delete_confirmation.html', context)
