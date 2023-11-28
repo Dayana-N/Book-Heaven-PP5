@@ -1,5 +1,6 @@
 import uuid
 
+from django.conf import settings
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from django.db.models import Avg
@@ -37,6 +38,17 @@ class Author(models.Model):
     def __str__(self):
         return str(self.name)
 
+    @property
+    def author_image(self):
+        if self.image:
+            url = self.image.url
+        else:
+            url = (
+                settings.STATIC_URL +
+                'authors/default-author.png'
+            )
+        return url
+
 
 class Book(models.Model):
     genre = models.ForeignKey(Genre, on_delete=models.SET_NULL, null=True)
@@ -64,6 +76,17 @@ class Book(models.Model):
 
     def __str__(self):
         return str(self.title)
+
+    @property
+    def book_image(self):
+        if self.image:
+            url = self.image.url
+        else:
+            url = (
+                settings.STATIC_ROOT +
+                'images/books/product-not-found.png'
+            )
+        return url
 
     @property
     def product_reviews(self):
