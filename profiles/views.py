@@ -65,7 +65,7 @@ def wishlist_add(request, pk):
 def my_orders(request, pk):
     ''' Renders my orders page '''
     profile = get_object_or_404(UserProfile, id=pk)
-    orders = profile.orders.all()
+    orders = profile.orders.all().order_by('-date')
     context = {
         'orders': orders,
     }

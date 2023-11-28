@@ -385,18 +385,11 @@ button.wishlist {
 }
 
 /* Sidebar profile page */
-.btn-sidebar {
-    color: var(--dark-gray);
-    text-decoration: none;
+#profile-nav .nav-link {
+    width: fit-content;
 }
-.btn-sidebar:hover {
-    color: black;
-    cursor: pointer;
-    font-weight: 500;
-}
-.btn-sidebar.active {
-    color: var(--dark-orange);
-    font-weight: 500;
+#profile-nav .nav-link.active {
+    border-bottom: 1px solid var(--orange);
 }
 
 .sidebar {

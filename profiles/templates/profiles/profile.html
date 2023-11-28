@@ -25,7 +25,8 @@ Profile
                         {% include 'profiles/partials/sidebar.html' %}
 
                         <div class="col-12 col-lg-10 mt-4 mt-lg-0 d-flex flex-column justify-content-center">
-                            <p class="text-start">My Details:</p>
+                            <p class="text-start fs-3 fw-4">My Details:</p>
+                            <hr>
                             <form class="checkout-form mt-2" id="checkout-form" method="POST" action="">
                                 {% csrf_token %}
                                 <!-- Phone Field -->
