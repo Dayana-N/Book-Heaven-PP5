@@ -45,7 +45,7 @@ class Author(models.Model):
         else:
             url = (
                 settings.STATIC_URL +
-                'authors/default-author.png'
+                'images/authors/default-author.png'
             )
         return url
 
@@ -83,7 +83,7 @@ class Book(models.Model):
             url = self.image.url
         else:
             url = (
-                settings.STATIC_ROOT +
+                settings.STATIC_URL +
                 'images/books/product-not-found.png'
             )
         return url

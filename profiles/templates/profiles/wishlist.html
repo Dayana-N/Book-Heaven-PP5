@@ -33,9 +33,9 @@ Profile
                                     <div class="product-grid d-flex flex-column align-items-center">
                                         <div class="product-image">
                                             <a href="{% url 'product' item.product.id %}" class="image">
-                                                {% if item.product.image %}
-                                                <img src="{{ item.product.image.url }}">
-                                                {% endif %}
+
+                                                <img src="{{ item.product.book_image }}">
+
                                             </a>{% if item.product.price_discount %}
                                             <span class="product-discount-label">-{{ item.product.price_discount }}%</span>
                                             {% endif %}

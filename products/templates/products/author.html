@@ -16,7 +16,7 @@
             <div class="col-12 col-md-10 custom-border py-4">
                 <div class="row">
                     <div class="col-12 col-md-6 d-flex justify-content-center">
-                        <img class="author-image img-fluid" src="{{ author.image.url }}" alt="{{ author.name }} image">
+                        <img class="author-image img-fluid" src="{{ author.author_image }}" alt="{{ author.name }} image">
                     </div>
                     <div class="col-12 col-md-6">
                         <h4>{{ author.name }}</h4>
@@ -35,9 +35,7 @@
                                 <div class="product-grid d-flex flex-column align-items-center">
                                     <div class="product-image">
                                         <a href="{% url 'product' book.id %}" class="image">
-                                            {% if book.image %}
-                                            <img src="{{ book.image.url }}">
-                                            {% endif %}
+                                            <img src="{{ book.book_image }}">
                                         </a>{% if book.price_discount %}
                                         <span class="product-discount-label">-{{ book.price_discount }}%</span>
                                         {% endif %}
@@ -58,7 +56,7 @@
                                         </form>
                                     </div>
                                     <div class="product-content">
-                                        <h3 class="title text-truncate"><a href="#">{{ book.title }}</a></h3>
+                                        <h3 class="title text-truncate"><a href="{% url 'product' book.id %}">{{ book.title }}</a></h3>
                                         {% for author in book.author.all|slice:':1'  %}
                                         <p class="mb-0">{{ author }}</p>
                                         {% endfor %}
