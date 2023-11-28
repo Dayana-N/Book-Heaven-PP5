@@ -1,0 +1,53 @@
+{% extends 'admin_panel/admin_base.html' %}
+{% load widget_tweaks %}
+{% block title %} Admin Orders{% endblock title %}
+{% block admin_content %}
+<h3 class="text-black">Admin Products</h3>
+<hr>
+
+<div class="row d-flex justify-content-around">
+    <div class="col-12 col-md-8 col-lg-6 p-3 my-1 form-border">
+        <p class="fs-3">Add Author:</p>
+        <form action="{% url 'admin-add-author' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+
+            <div class="row">
+                <div class="col-12 mx-auto">
+                    <!-- Name-->
+                    <div class="form-floating mb-2">
+                        {% render_field form.name|add_required_class:"is-required" class="form-control" placeholder="form.name.label" %}
+                        <label for="{{ form.name.id_for_label }}" class="form-label">Name:*</label>
+                        {% for error in form.name.errors %}
+                        <span class="text-danger">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <!-- Image -->
+                    <div class="form-group mb-4">
+                        <label for="id_image" class="form-label">Image:</label>
+                        {% render_field form.image class="form-control" %}
+                        {% for error in field.errors %}
+                        <span class="text-danger">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <!-- Description -->
+                    <div class="form-control mb-1">
+                        <label for="{{ form.bio.id_for_label }}" class="form-label">Bio</label>
+                        {% render_field form.bio|attr:"maxlength:2500" class="form-control" placeholder='Max 2500 characters' %}
+                        {% for error in form.bio.errors %}
+                        <span class="text-danger">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                    <button class="btn btn-brown mt-2" onclick="history.back()">Back</button>
+                    {% if edit %}
+                    <button type="submit" class="btn btn-orange mt-2">Edit</button>
+                    {% else %}
+                    <button type="submit" class="btn btn-orange mt-2">Create</button>
+                    {% endif %}
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+{% endblock admin_content %}

@@ -447,10 +447,14 @@ button.wishlist {
 
 /*Create product page*/
 .author-input {
-    height: 150px !important;
+    height: 124px !important;
     overflow-y: scroll;
 }
 
+.form-border {
+    border: var(--orange) 1px solid;
+    border-radius: 20px;
+}
 /*admin codes*/
 .code-card {
     background-color: #ebeae5;

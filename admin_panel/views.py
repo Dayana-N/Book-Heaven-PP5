@@ -8,7 +8,7 @@ from checkout.forms import OrderStatusForm
 from checkout.models import Order, OrderStatus
 from discount_codes.forms import DiscountCodeForm
 from discount_codes.models import DiscountCode
-from products.forms import ProductForm
+from products.forms import AuthorForm, ProductForm
 from products.models import Book
 
 
@@ -273,3 +273,27 @@ def admin_delete_product(request, pk):
     }
 
     return render(request, 'admin_panel/delete_confirmation.html', context)
+
+
+def admin_add_author(request):
+    '''A view to add authors '''
+    if not request.user.is_superuser:
+        messages.error(request, 'You need admin rights to access this page.')
+        return redirect('home')
+
+    form = AuthorForm()
+
+    if request.method == 'POST':
+        form = AuthorForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Author added successfully.')
+            return redirect('admin-add-product')
+        else:
+            messages.error(request, 'Invalid form. Please try again.')
+
+    context = {
+        'form': form,
+    }
+
+    return render(request, 'admin_panel/add_author.html', context)

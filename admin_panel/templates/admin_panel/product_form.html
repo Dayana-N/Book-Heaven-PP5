@@ -6,7 +6,7 @@
 <hr>
 
 <div class="row d-flex justify-content-around">
-    <div class="col-12 col-md-8 col-lg-6 p-3 my-1">
+    <div class="col-12 col-md-8 col-lg-6 p-3 my-1 form-border">
         {% if edit %}
         <p class="fs-3">Edit Product: {{ product.title }}</p>
         {% else %}
@@ -39,6 +39,11 @@
                         {% for error in form.author.errors %}
                         <span class="text-danger">{{ error }}</span>
                         {% endfor %}
+                    </div>
+                    <!-- Add author -->
+                    <div class="add-author-link mb-2 ms-3">
+                        <a href="{% url 'admin-add-author' %}" class="text-orange text-decoration-none class"><i
+                                class="fa-solid fa-user-plus"></i> Add Author</a>
                     </div>
                     <!-- Publisher -->
                     <div class="form-floating mb-2">
@@ -99,7 +104,7 @@
                         {% endfor %}
                     </div>
                     <!-- On Sale -->
-                    <div class="form-check">
+                    <div class="form-check mb-2">
                         {% render_field form.on_sale class="form-check-input"%}
                         <label class="form-check-label" for="{{ form.on_sale.id_for_label }}">
                             On Sale:
