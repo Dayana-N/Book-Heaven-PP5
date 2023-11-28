@@ -40,6 +40,10 @@ class Author(models.Model):
 
     @property
     def author_image(self):
+        ''' 
+        Replaces the image url if deleted
+        with default one
+        '''
         if self.image:
             url = self.image.url
         else:
@@ -79,6 +83,10 @@ class Book(models.Model):
 
     @property
     def book_image(self):
+        ''' 
+        Replaces the image url if deleted
+        with default one
+        '''
         if self.image:
             url = self.image.url
         else:

@@ -29,8 +29,8 @@
                                 <tr>
                                     <th scope="col">Item</th>
                                     <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Sub-total</th>
+                                    <th scope="col" class="text-end">Price</th>
+                                    <th scope="col" class="text-end">Sub-total</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -56,12 +56,12 @@
                                     </td>
                                     <td>
                                         <div class="cart-item-price">
-                                            <p>€{{ item.product.product_price }}</p>
+                                            <p class="text-end">€{{ item.product.product_price }}</p>
                                         </div>
                                     </td>
                                     <td>
                                         <div class="cart-item-total-price">
-                                            <p>€ {{ item.lineitem_total}}</p>
+                                            <p class="text-end">€ {{ item.lineitem_total}}</p>
                                         </div>
                                     </td>
                                 </tr>

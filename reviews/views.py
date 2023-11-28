@@ -33,20 +33,27 @@ def create_review(request, pk):
 @login_required
 def delete_review(request, pk):
     '''A view to handle deleting reviews,
-    takes request and book id
+    takes request and review id
     '''
+    review = get_object_or_404(ProductReview, pk=pk)
+    book = review.product
+
     if request.method == 'POST':
         user = request.user.userprofile
-        review_id = request.POST.get('review_id')
-        review = get_object_or_404(ProductReview, id=review_id)
         if request.user.is_superuser or user == review.user:
-            review.delete()
-            messages.success(request, 'Review deleted successfully')
-        else:
-            messages.error(
-                request, 'You are not allowed to delete this review')
+            try:
+                review.delete()
+                messages.success(request, 'Review deleted successfully.')
+            except ObjectDoesNotExist:
+                messages.error(
+                    request, 'This review cannot be found in the database.')
+            return redirect('product', book.id)
 
-    return redirect('product', pk=pk)
+    context = {
+        'review': review,
+    }
+
+    return render(request, 'reviews/delete_review.html', context)
 
 
 @login_required

@@ -22,6 +22,8 @@ def all_products(request):
     category = None
     sort = None
     direction = None
+    deals = None
+    new_arrivals = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -53,9 +55,11 @@ def all_products(request):
 
         if 'deals' in request.GET:
             books = books.filter(on_sale=True)
+            deals = True
 
         if 'new_arrivals' in request.GET:
             books = books[:6]
+            new_arrivals = True
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -77,6 +81,8 @@ def all_products(request):
         'category': category,
         'current_sorting': current_sorting,
         'values': request.GET,
+        'new_arrivals': new_arrivals,
+        'deals': deals,
     }
     return render(request, 'products/products.html', context)
 
@@ -96,7 +102,7 @@ def product(request, pk):
 
     # reviews
     review_form = ProductReviewForm()
-    reviews = ProductReview.objects.all().filter(product=pk)
+    reviews = ProductReview.objects.all().filter(product=pk).order_by('-created')
 
     context = {
         'book': book,
