@@ -92,7 +92,7 @@ class Book(models.Model):
         else:
             url = (
                 settings.STATIC_URL +
-                'images/books/product-not-found.png'
+                'images/books/product-not-found.webp'
             )
         return url
 

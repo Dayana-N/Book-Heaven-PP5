@@ -29,20 +29,21 @@ Profile
                             <div class="row mt-3 d-flex justify-content-center">
                                 {% if wishlist %}
                                 {% for item in wishlist %}
-                                <div class="col-12 col-md-3 col-sm-6">
-                                    <div class="product-grid d-flex flex-column align-items-center">
+                                <!-- Product Card -->
+                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
+                                    <div class="product-grid d-flex flex-column align-items-center h-100">
                                         <div class="product-image">
                                             <a href="{% url 'product' item.product.id %}" class="image">
-
-                                                <img src="{{ item.product.book_image }}">
-
+                                                <img src="{{ item.product.book_image }}" alt="{{ item.product.title}} book cover image"
+                                                    class="img-fluid img-top">
                                             </a>{% if item.product.price_discount %}
                                             <span class="product-discount-label">-{{ item.product.price_discount }}%</span>
                                             {% endif %}
                                             <form class="product-links" method="POST" action="{% url 'wishlist-add' item.product.id %}">
                                                 {% csrf_token %}
-                                                <button type="submit" class="wishlist" name="wishlist" value="submit"><i
-                                                        class="fa fa-heart"></i></button>
+                                                <button type="submit" name="wishlist" value="submit">
+                                                    <i class="fa fa-heart"></i>
+                                                </button>
                                                 <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
                                             </form>
                                             <form action="{% url 'add-to-cart' item.product.id %}" method="POST">
@@ -57,7 +58,8 @@ Profile
                                             </form>
                                         </div>
                                         <div class="product-content">
-                                            <h3 class="title text-truncate"><a href="#">{{ item.product.title }}</a></h3>
+                                            <h3 class="title text-truncate"><a
+                                                    href="{% url 'product' item.product.id %}">{{ item.product.title }}</a></h3>
                                             {% for author in item.product.author.all|slice:':1'  %}
                                             <p class="mb-0">{{ author }}</p>
                                             {% endfor %}
@@ -72,6 +74,7 @@ Profile
                                         </div>
                                     </div>
                                 </div>
+                                <!-- End Product Card -->
                                 {% endfor %}
                                 {% else %}
                                 <div class="d-grid gap-2">
@@ -80,16 +83,11 @@ Profile
                                 </div>
                                 {% endif %}
                             </div>
-
-
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
 </section>
 {% endblock content %}

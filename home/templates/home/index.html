@@ -64,11 +64,13 @@ Home
     <div class="container text-center mt-5">
         <div class="row mt-5 justify-content-center">
             {% for book in books %}
-            <div class="col-12 col-md-3 col-sm-6 mb-3">
-                <div class="product-grid d-flex flex-column align-items-center">
+            {% if book.stock_amount >= 1%}
+            <!-- Product Card -->
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
+                <div class="product-grid d-flex flex-column align-items-center h-100">
                     <div class="product-image">
                         <a href="{% url 'product' book.id %}" class="image">
-                            <img src="{{ book.book_image }}" alt="{{ book.title}} book cover image">
+                            <img src="{{ book.book_image }}" alt="{{ book.title}} book cover image" class="img-fluid img-top">
                         </a>{% if book.price_discount %}
                         <span class="product-discount-label">-{{ book.price_discount }}%</span>
                         {% endif %}
@@ -106,6 +108,8 @@ Home
                     </div>
                 </div>
             </div>
+            <!-- End Product Card -->
+            {% endif %}
             {% endfor %}
         </div>
     </div>

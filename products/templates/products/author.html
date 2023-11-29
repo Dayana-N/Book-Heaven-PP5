@@ -31,17 +31,21 @@
                         <div class="row">
 
                             {% for book in books %}
-                            <div class="col-12 col-md-3 col-sm-6 mb-3">
-                                <div class="product-grid d-flex flex-column align-items-center">
+                            <!-- Product Card -->
+                            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-3">
+                                <div class="product-grid d-flex flex-column align-items-center h-100">
                                     <div class="product-image">
                                         <a href="{% url 'product' book.id %}" class="image">
-                                            <img src="{{ book.book_image }}" alt="{{ book.title}} book cover image">
+                                            <img src="{{ book.book_image }}" alt="{{ book.title}} book cover image"
+                                                class="img-fluid img-top">
                                         </a>{% if book.price_discount %}
                                         <span class="product-discount-label">-{{ book.price_discount }}%</span>
                                         {% endif %}
                                         <form class="product-links" method="POST" action="{% url 'wishlist-add' book.id %}">
                                             {% csrf_token %}
-                                            <button type="submit" name="wishlist" value="submit"><i class="fa fa-heart"></i></button>
+                                            <button type="submit" name="wishlist" value="submit">
+                                                <i class="fa fa-heart"></i>
+                                            </button>
                                             <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
                                         </form>
                                         <form action="{% url 'add-to-cart' book.id %}" method="POST">
@@ -71,6 +75,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- End Product Card -->
                             {% endfor %}
                         </div>
                     </div>

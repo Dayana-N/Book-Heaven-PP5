@@ -100,12 +100,12 @@ body {
     border: transparent 1px solid;
 }
 
-.product-grid:hover {
+/* .product-grid:hover {
     border: var(--orange) 1px solid;
     box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
     -webkit-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
     -moz-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-}
+} */
 .product-grid .product-image {
     overflow: hidden;
     position: relative;
@@ -116,8 +116,8 @@ body {
 }
 .product-grid .product-image img {
     width: 100%;
-    max-height: 395px;
-    object-fit: contain;
+    max-height: 430px;
+    object-fit: cover;
 }
 .product-grid .product-discount-label {
     color: #fff;
