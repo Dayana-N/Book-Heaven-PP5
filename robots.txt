@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
+Sitemap: https://book-heaven-e537b3f88787.herokuapp.com/sitemap.xml
