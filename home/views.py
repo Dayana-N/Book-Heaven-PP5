@@ -24,3 +24,8 @@ def faq_page(request):
 def about_page(request):
     ''' Renders About us page '''
     return render(request, 'home/about.html')
+
+
+def privacy_page(request):
+    ''' Renders Privacy Policy page '''
+    return render(request, 'home/privacy_policy.html')
