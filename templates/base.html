@@ -43,8 +43,6 @@
 
     {% block content %}
     {% endblock %}
-
-
     <footer class="text-center text-lg-start" id="footer">
         <div class="container d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <div class="me-5 d-none d-lg-block">
@@ -68,7 +66,7 @@
         </div>
         <div class="container  mt-5">
             <div class="row mt-3 d-flex align-items-center">
-                <div class="col-md-3 col-lg-4 mx-auto mb-4 text-sm-center ">
+                <div class="col-md-4 col-lg-4 mx-auto mb-4 text-sm-center ">
                     <h4 class="fw-bold mb-4">BookHeaven</h4>
                     <h5 class="fw-bold mb-4">Contact:</h5>
                     <p class="mb-0"><i class="fas fa-home me-3 text-white"></i>
@@ -79,14 +77,27 @@
                     <p class="mb-0"><i class="fas fa-phone me-3 text-white"></i>Phone: 01 123456</p>
                     <p><i class="fas fa-envelope me-3 text-white"></i>Email: bookheavenpp5@gmail.com</p>
                 </div>
-                <div class="col-md-3 col-lg-4 mx-auto mb-4 text-sm-center text-md-start ">
-                    <h5>Links:</h5>
-                    <ul class="list-unstyled">
-                        <li><a class="text-decoration-none text-black" href="#">Fiction</a></li>
-                        <li><a class="text-decoration-none text-black" href="#">Non-Fiction</a></li>
-                        <li><a class="text-decoration-none text-black" href="#">Children</a></li>
-                        <li><a class="text-decoration-none text-black" href="{% url 'privacy-page' %}">Privacy Policy</a></li>
+                <div class="col-md-3 col-lg-2 d-flex justify-content-center ">
+                    <ul class="list-unstyled custom-list">
+                        <h6 class="footer-heading">Useful Links</h6>
+                        <li><a class="text-decoration-none text-start text-black" href="{% url 'about-page' %}">About Us</a></li>
+                        <li><a class="text-decoration-none text-start text-black" href="{% url 'faq-page' %}">FAQ</a></li>
+                        <li><a class="text-decoration-none text-start text-black" href="{% url 'privacy-page' %}">Privacy Policy</a></li>
                     </ul>
+                </div>
+                <div class="col-md-3 col-lg-2 d-flex justify-content-center ">
+                    <ul class="list-unstyled custom-list">
+                        <h6 class="footer-heading">Browse:</h6>
+                        <li><a class="text-decoration-none text-start text-black"
+                                href="{% url 'all-products' %}?category=Fiction">Fiction</a></li>
+                        <li><a class="text-decoration-none text-start text-black"
+                                href="{% url 'all-products' %}?category=Non-Fiction">Non-Fiction</a></li>
+                        <li><a class="text-decoration-none text-start text-black"
+                                href="{% url 'all-products' %}?category=Children">Children</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-2 d-flex justify-content-center mb-4">
+                    <img src="{% static 'images/stripe.png' %}" alt="Powered by Stripe" class="stripe-img">
                 </div>
             </div>
         </div>
@@ -97,8 +108,6 @@
                 </a></p>
         </div>
     </footer>
-
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f6549ef1f7.js" crossorigin="anonymous"></script>
     <!-- JQuery -->
@@ -111,14 +120,9 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
-
     <script src="{% static 'js/toast.js' %}"></script>
     {% block extra_js %}
     {% endblock %}
-
-
-
-
 </body>
 
 </html>

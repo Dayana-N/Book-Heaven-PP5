@@ -52,7 +52,7 @@ Profile
                                                 {% if item.product.in_stock %}
                                                 <input type="submit" class=" add-to-cart" value="Add To Cart">
                                                 {% else %}
-                                                <input type="submit" class="btn-gray add-to-cart" value="Out of stock" disabled>
+                                                <input type="submit" class="btn-not-allowed add-to-cart" value="Out of stock" disabled>
                                                 {% endif %}
                                                 <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
                                             </form>

@@ -87,9 +87,9 @@
                                 <option value="10">10</option>
                             </select>
                             {% if book.in_stock %}
-                            <input type="submit" class="btn-orange" value="Add To Cart">
+                            <input type="submit" class="btn btn-orange" value="Add To Cart">
                             {% else %}
-                            <input type="submit" class="btn-gray" value="Add To Cart" disabled>
+                            <input type="submit" class="btn-not-allowed" value="Add To Cart" disabled>
                             {% endif %}
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </form>

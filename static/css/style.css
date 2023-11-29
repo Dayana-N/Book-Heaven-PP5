@@ -18,6 +18,10 @@ body {
 }
 
 /* Nav */
+.logo-img {
+    height: 50px;
+}
+
 .navbar-nav .nav-link {
     font-weight: 600;
     font-family: 'Libre Baskerville', serif;
@@ -64,8 +68,14 @@ body {
     color: var(--white);
 }
 
-.hero-btn {
-    -webkit-box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
+.btn-gray {
+    background-color: #938c8c;
+    color: var(--white);
+}
+
+.btn-gray:hover {
+    background-color: #6f6a6a;
+    color: var(--white);
 }
 
 .btn-brown:hover {
@@ -73,6 +83,9 @@ body {
     color: var(--white);
 }
 
+.hero-btn {
+    -webkit-box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
+}
 .bg-orange {
     background-color: var(--orange);
 }
@@ -100,12 +113,6 @@ body {
     border: transparent 1px solid;
 }
 
-/* .product-grid:hover {
-    border: var(--orange) 1px solid;
-    box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-} */
 .product-grid .product-image {
     overflow: hidden;
     position: relative;
@@ -258,7 +265,7 @@ body {
     padding: 6px;
 }
 
-.btn-gray {
+.btn-not-allowed {
     background-color: #cdc8c8;
     color: var(--white);
     cursor: not-allowed;
@@ -525,38 +532,32 @@ button.wishlist {
 #social-links a i:hover {
     color: var(--dark-gray);
 }
+
+.custom-list li {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid transparent;
+}
+
+.custom-list li:hover {
+    border-bottom: 1px solid black;
+}
+
+.footer-heading {
+    font-size: 20px;
+    color: var(--brown);
+}
+
+.stripe-img {
+    width: 190px;
+}
 .copyright {
     background-color: var(--dark-orange);
 }
 
 .copyright i:hover {
     color: var(--white);
-}
-/* Media queries */
-
-/* Hero section */
-@media (max-width: 767px) {
-    .hero-image {
-        height: 360px;
-    }
-}
-
-@media (max-width: 460px) {
-    .hero-image {
-        height: 284px;
-    }
-
-    /* Toasts */
-    .message-container {
-        right: 0px;
-        max-width: 310px;
-    }
-}
-/* card */
-@media screen and (max-width: 990px) {
-    .product-grid {
-        margin-bottom: 30px;
-    }
 }
 
 /* Mailchimp */
@@ -585,4 +586,42 @@ button.wishlist {
 
 #mc_embed_signup .mc-field-group {
     padding-bottom: 0 !important;
+}
+
+/* Media queries */
+
+/* Hero section */
+@media (max-width: 767px) {
+    .hero-image {
+        height: 360px;
+    }
+}
+
+@media (max-width: 460px) {
+    .hero-image {
+        height: 284px;
+    }
+
+    /* Toasts */
+    .message-container {
+        right: 0px;
+        max-width: 310px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    /* product card */
+    .product-grid {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    /* footer */
+    .custom-list {
+        text-align: left;
+    }
+    .custom-list li {
+        text-align: left;
+    }
 }
