@@ -116,7 +116,6 @@ body {
 }
 .product-grid .product-image img {
     width: 100%;
-
     max-height: 395px;
     object-fit: contain;
 }

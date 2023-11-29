@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 d-flex justify-content-center">
-                <img src="{{ book.book_image }}" alt="{{ book.title }} image">
+                <img src="{{ book.book_image }}" alt="{{ book.title }} book cover image">
             </div>
             <div class="col-md-6 col-12 mt-3">
                 <h2>{{book.title}}</h2>
@@ -187,7 +187,6 @@
                                     </div>
                                     {% if request.user.userprofile == review.user or request.user.is_superuser %}
                                     <div class="review-actions d-flex">
-
                                         <div class="delete-review">
                                             <a href="{% url 'delete-review' review.id %}" class="btn btn-sm btn-danger mb-2 ms-2">Delete</a>
                                         </div>
