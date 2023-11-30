@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 
 from checkout.models import Order
 from products.models import Book
+from products.utils import products_pagination
 
 from .forms import UserProfileForm
 from .models import UserProfile, Wishlist
@@ -36,6 +37,7 @@ def my_wishlist(request, pk):
     ''' Renders wishlist page '''
     profile = get_object_or_404(UserProfile, id=pk)
     wishlist = Wishlist.objects.filter(user=profile).order_by('-created')
+    wishlist = products_pagination(request, wishlist, 6)
     context = {
         'wishlist': wishlist,
     }

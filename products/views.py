@@ -70,7 +70,7 @@ def all_products(request):
             queries = Q(title__icontains=query) | Q(
                 description__icontains=query) | Q(author__name__icontains=query)
             books = books.filter(queries)
-    books, page_number = products_pagination(request, books)
+    books = products_pagination(request, books, 6)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -124,6 +124,7 @@ def all_authors(request):
 def author(request, pk):
     author = get_object_or_404(Author, pk=pk)
     books = author.books.all()
+    books = products_pagination(request, books, 6)
     context = {'author': author,
                'books': books, }
     return render(request, 'products/author.html', context)

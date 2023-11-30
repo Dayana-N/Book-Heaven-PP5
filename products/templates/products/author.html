@@ -78,6 +78,37 @@
                             <!-- End Product Card -->
                             {% endfor %}
                         </div>
+
+                        <!-- Pagination -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                {% if books.has_other_pages %}
+                                <ul class="pagination justify-content-center">
+                                    {% if books.has_previous %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page=1">&laquo;First</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ books.previous_page_number }}">&laquo;Previous</a>
+                                    </li>
+                                    {% endif %}
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">Page {{ books.number }} of
+                                            {{ books.paginator.num_pages }}</span>
+                                    </li>
+                                    {% if books.has_next %}
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ books.next_page_number }}">&raquo;Next</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="?page={{ books.paginator.num_pages }}">Last &raquo;</a>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                                {% endif %}
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 

@@ -375,6 +375,10 @@ button.wishlist {
 
 /* Pagination */
 .page-link {
+    color: var(--dark-gray);
+}
+
+.page-link:hover {
     color: var(--orange);
 }
 
