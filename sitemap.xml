@@ -9,2503 +9,453 @@
 
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/accounts/login/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/cart/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=historical_fiction</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=horror</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=fantasy</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=fantasy_romance</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?category=Fiction</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=biography</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=history</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=educational</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=computing_it</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=automotive</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=cookery</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?category=Non-Fiction</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=toddler</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?genre=teenage</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?category=Children</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?new_arrivals</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?deals</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/faq/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/about/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/productd89dd217-526c-45cb-b6fc-3ac046ec9168/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/bcc987f1-de93-42e6-a7c1-92f334f3f0be/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/productd581a694-ac89-454c-8c8c-304bc19e164b/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/a7ca8cb7-9f60-4b0b-bd67-7598d5dcee13/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/productf5604c36-bcf4-41fd-9acd-c67caf25ba24/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/4e85784e-43d6-4ee7-92e4-1164253a45a1/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product55b3aac3-69fd-4fb1-9e18-db32995b00c5/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/6717ef37-5bb7-4a27-aea6-0e307e6004eb/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/productd2d43307-a5f1-49c9-af3c-e602bc9eae23/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/5177a979-ed80-46de-ab61-07abe4fc657d/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/productbd14ea5f-edb8-499f-a9ea-206b6292cbe4/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/ecd02bf5-02e0-43f2-a973-ab0503370316/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/599dccc5-d959-49cc-91f1-46f238c6c49b/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/beb0a9c3-c3dd-49ad-9ef2-87819fd8aacd/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/privacy_policy/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://book-heaven-e537b3f88787.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=5</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/ec742707-3c56-49a4-ac8f-4c2f3cc52022/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/d777f9de-6706-42ba-8267-7290b0202a37/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/b125c43c-0eb0-452f-adb2-3e6cff235ef1/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/09d0a982-dd74-4b77-8114-7522da6f2c0b/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/1db61b82-0ef0-44c0-bb94-74906d0f496f/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/31c43397-21ed-4ea2-9ccd-46e5d933c101/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/dc066709-7f7c-4edc-9b43-4decb804093a/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/f0cd531c-29c7-4594-acbb-0549c1d25cbc/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/3ece864d-5896-455e-9260-70136dc62147/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/7248917d-5f88-4edd-b5d7-d77acfc5878e/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/45dac8fe-16d2-4633-99f6-6037a2e0555a/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/af20aee8-fb26-44fd-9d14-b3528bdf34f3/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product3aa85906-84fb-4fe8-97a1-dc8539a72c37/</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/b0949e98-ad92-4de3-9cda-d2bd79a00c65/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/84f6033a-d23c-4684-8315-58c01e3352d4/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/85b75446-5733-4297-9baf-caaced2f924a/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/da374f24-e405-46f7-8961-c72698d03cae/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/26a387c2-d229-493b-96f8-3726ecd78429/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/948e189b-063f-4622-b806-db864ab5d4f5/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/a7163089-f1ad-4a07-a65b-7016cabf435e/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/14418b92-2994-413f-862c-eb4081ae7d61/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/05630b9b-4bed-4f3b-9a62-60fcdabd71fa/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/1e501deb-5598-4add-a7a0-c542e3e60ca7/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/e6a7d42f-db0e-4b98-9990-e1f3ed1ed22d/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/ebfd6b15-f595-40a9-9bc6-cb40bbee9771/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/8c7d6c60-08e7-4cd5-943e-72d519d3a3cd/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/7ddd9cae-1120-413b-9fbf-abc3c0b78dd5/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/143cffce-5c84-455b-a197-a06cc50095f9/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/8e980286-cb0e-4c7b-8639-780665817013/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/920f25ab-a518-4cbf-abb7-c08e8e7f0ba8/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/5499c8d2-94e8-4f7a-8cfd-af213e972629/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/71ef226f-66fc-4434-9be7-4181cdd1dff4/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/f34e297e-1d6f-4f2b-a877-f755f3ccf06e/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/bf5b73c9-9e0b-4723-953c-c0f577e3e532/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/d8098c7b-fdeb-4cbd-8076-70d27cb5b644/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/b224396e-63db-4414-9ef4-42a5b000d01f/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/5893705a-a17d-41da-bf8d-11cab8f97422/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/79ad325a-72f0-41b8-aaa3-c55559df8345/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/d3dfc86f-82b5-4843-b544-ecc4c403e659/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/3df7d3d5-eb8d-4d45-b6e9-0e463da8ce67/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/b4a865fd-1eea-4013-8ce1-11b1e8be3898/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/2e01c70b-8920-4e08-ad0e-615b046c15b5/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/f42e956d-f60d-40cb-8eca-6b816e238fbe/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/a4967383-532f-4c1c-8e44-7329e76019f0/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/4db5d182-7ed5-46c1-aa87-945d57652bb1/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/3afe79de-1eec-49ec-b74c-8b14305ce9bc/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/9b46a4ad-5862-4577-ad2b-2f27d113d966/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/ab5b762e-0c12-409c-b90f-435b689aa15c/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/468b74cd-d1c5-4bdd-8368-0f9f1f7b84f3/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/a0df223f-d08b-4710-906d-13d1c43551fd/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/e0ea5fda-62a0-4bf5-9386-c410479774fc/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/f3148967-0d38-412f-bf8c-51e0f98e5af2/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/0c581bea-aed6-465f-afbf-947b230fdca1/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/f7cfc423-4ecc-45dc-b9cd-09ae67b3142b/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/fc339f74-bcc4-4719-a4d3-ba8e6642b83f/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/product/a11021a1-be9b-448e-9883-1af15392d7e0/</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=3</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=4</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/948e189b-063f-4622-b806-db864ab5d4f5/?page=2</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
+  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/authors/948e189b-063f-4622-b806-db864ab5d4f5/?page=1</loc>
+  <lastmod>2023-12-01T21:58:50+00:00</lastmod>
   <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.33</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.26</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.21</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.17</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=2&amp;page=2&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=1&amp;page=2</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
-</url>
-<url>
-  <loc>https://book-heaven-e537b3f88787.herokuapp.com/products/?page=2&amp;page=2&amp;page=1&amp;page=2&amp;page=1&amp;page=1&amp;page=2&amp;page=1</loc>
-  <lastmod>2023-11-29T12:50:42+00:00</lastmod>
-  <priority>0.13</priority>
 </url>
 
 
