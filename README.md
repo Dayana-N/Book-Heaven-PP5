@@ -1,5 +1,6 @@
 # Book-Heaven-PP5
 ![BookHeaven website preview](./assets/readme-images/responsive.PNG)
+
 [Link to deployed site](https://book-heaven-e537b3f88787.herokuapp.com/)
 Book Heaven is an online book shop, built using Python, Django, HTML, CSS, JavaScript, Amazon S3 and Stripe. 
 
@@ -92,6 +93,10 @@ Book Heaven is an online book shop, built using Python, Django, HTML, CSS, JavaS
 29. As a user, I want to be able to view testimonials submitted by other users so that I can read about the experiences and feedback of fellow users on BookHeaven.
 30. As a website owner, I want to improve the website's search engine optimization (SEO) so that the website can rank higher in search engine results and attract more organic traffic.
 31. As a user, I want to sign up for newsletters on the website so that I can keep up with updates and deals.
+32. As a user I want to be able to sort the list of available products by name and price so that I can easily find books that match my interests
+33. As a User I want to be able to complete the checkout process for my shopping cart so that I can purchase the items I've added to my cart
+34. As a an authenticated user I want to be able to delete my reviews for a book product so that I can manage and maintain the accuracy and relevance of my feedback
+35. As a an authenticated user I want to be able to edit my reviews for a book product so that I can manage and maintain the accuracy and relevance of my feedback
 
 ### Site Goals
 1. To provide users with a place to purchase books of their interest.
@@ -99,3 +104,66 @@ Book Heaven is an online book shop, built using Python, Django, HTML, CSS, JavaS
 3. To provide the users with the ability to save books to their wishlist
 4. To provide the users with the ability to check their order history.
 5. To provide the users with the most recents titles on the market.
+6. To provide the users with the ability to leave a feedback for books they have purchased.
+
+### Scope
+The project aims to develop an e-commerce website offering books to customers. The website will be responsive and user-friendly, providing the user with the ability to:
+ - Register and Login
+ - Reset Password
+ - Browse, search and refine books for sale
+ - Add books to shopping cart
+ - Apply discount codes
+ - View product stock levels
+ - Update quantity in shopping cart
+ - Delete items from shopping cart
+ - Pay for items securely by using the integrated Stripe payment system
+ - Save books to wishlist
+ - Update personal information
+ - View past orders
+
+Key Features:
+
+1. Initial Project Setup:
+- Developers can set up a new Django project to create the project's structure.
+- Database and media storage will be connected to ensure data storage and retrieval.
+- An early deployment of the application will be carried out to confirm the initial setup's functionality.
+2. Products:
+- Users can view books for sale and refine them by category and genre
+- Users can sort products by price, title, genre or category
+- Users can view details about each product including image, description, author, stock level and reviews
+- Search products by title, author or description
+- Registered users can leave reviews.
+3. User Authentication:
+- Users can register an account, allowing them access to all of the website's functionality.
+- Registered users can login and access wishlist, reviews, past orders and saving personal details.
+- Users can reset their password
+- Users can add or remove items from their wishlist
+4. Orders and checkout:
+- Users can add items to their shopping cart
+- Users can update the quantity of the items in the shopping cart
+- Users can remove products from their shoppingcart
+- Users can apply discount codes
+- Users can use secure checkout functionality to pay for their items
+5. Admin functionality:
+The functionality in this section is limited to superusers or admins.
+- Admins can access the admin dashboard, containing of a list of products and summary of orders and revenue.
+- Admins can add products (books) for sale.
+- Admins can delete products from the system.
+- Admins can edit products and stock levels.
+- Admins can access Orders section, where the order status can be updated.
+- Admins can sort orders by status (In Progress, Completed, Cancelled)
+- Admins can access the discount codes page, where codes can be created, deactivated or deleted.
+6. Notification Messages:
+Users will receive notification messages when performing CRUD operations, login/logout, and signup actions.
+
+Benefits:
+
+1. User-Centric Experience: The platform focuses on the user's needs, allowing efficient browsing and product purchasing.
+2. Efficient Navigation: Users can easily navigate through different sections of the website for seamless access.
+4. Effective Communication: Sending emails and notification messages features, enhances user interaction.
+
+## Design
+### Colour Scheme
+The website harmoniously blends warm tones of light coral and red-orange with accents of light grey and white, all anchored by a cool grey undertone. This carefully curated color scheme establishes a sense of vibrancy and professionalism while ensuring a visually engaging experience for the users.
+![Colour Schema](./assets/readme-images/colour-schema.PNG)
+### Database Schema

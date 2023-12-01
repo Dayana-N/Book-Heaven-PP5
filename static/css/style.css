@@ -8,13 +8,15 @@
     --dark-gray: #574c49;
     --white: #ffff;
     --brown: #63453d;
+    --background: #ebeae5;
+    --gray: #938c8c;
 }
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #ebeae5;
+    background-color: var(--background);
 }
 
 /* Nav */
@@ -69,7 +71,7 @@ body {
 }
 
 .btn-gray {
-    background-color: #938c8c;
+    background-color: var(--gray);
     color: var(--white);
 }
 
@@ -84,6 +86,7 @@ body {
 }
 
 .hero-btn {
+    box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
     -webkit-box-shadow: 1px 9px 26px -4px rgba(0, 0, 0, 0.66);
 }
 .bg-orange {
@@ -493,19 +496,6 @@ button.wishlist {
     border-color: #dc3545;
     border-radius: 0;
 }
-/*admin codes*/
-.code-card {
-    background-color: #ebeae5;
-    padding: 0;
-    box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-    -webkit-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-    -moz-box-shadow: 5px 7px 26px -4px rgba(0, 0, 0, 0.66);
-}
-.code-card .card-body {
-    background: rgb(244, 174, 137);
-    background: linear-gradient(287deg, rgba(244, 174, 137, 1) 8%, rgba(251, 204, 179, 1) 100%);
-    margin-bottom: 10px;
-}
 
 /*Admin Orders*/
 #status-cell-completed {
@@ -546,11 +536,6 @@ button.wishlist {
 
 .custom-list li:hover {
     border-bottom: 1px solid black;
-}
-
-.footer-heading {
-    font-size: 20px;
-    color: var(--brown);
 }
 
 .stripe-img {
