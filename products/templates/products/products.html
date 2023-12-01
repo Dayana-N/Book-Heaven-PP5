@@ -69,7 +69,7 @@
                     </div>
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
-                            {{ books|length }} Products
+                            {{ books_count }} Products
                         </p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         <div class="product-grid d-flex flex-column align-items-center h-100">
                             <div class="product-image">
                                 <a href="{% url 'product' book.id %}" class="image">
-                                    <img src="{{ book.book_image }}" alt="{{ book.title}} book cover image" class="img-fluid img-top">
+                                    <img src="{{ book.book_image }}" alt="{{ book.title}} book cover image">
                                 </a>{% if book.price_discount %}
                                 <span class="product-discount-label">-{{ book.price_discount }}%</span>
                                 {% endif %}
@@ -98,7 +98,7 @@
                                     {% if book.in_stock %}
                                     <input type="submit" class=" add-to-cart" value="Add To Cart">
                                     {% else %}
-                                    <input type="submit" class="btn-not-allowed add-to-cart" value="Out of stock" disabled>
+                                    <input type="submit" class="btn-gray add-to-cart" value="Out of stock" disabled>
                                     {% endif %}
                                     <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
                                 </form>

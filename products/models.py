@@ -60,7 +60,7 @@ class Book(models.Model):
     author = models.ManyToManyField(Author, related_name='books')
     description = models.TextField()
     image = models.ImageField(
-        null=True, blank=True, upload_to='books/', default='books/product-not-found.png')
+        null=True, blank=True, upload_to='books/', default='books/product-not-found.webp')
     publisher = models.CharField(max_length=200)
     date_published = models.DateField()
     language = models.CharField(max_length=200)

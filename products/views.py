@@ -58,7 +58,7 @@ def all_products(request):
             deals = True
 
         if 'new_arrivals' in request.GET:
-            books = books[:6]
+            books = books[:8]
             new_arrivals = True
 
         if 'q' in request.GET:
@@ -70,12 +70,15 @@ def all_products(request):
             queries = Q(title__icontains=query) | Q(
                 description__icontains=query) | Q(author__name__icontains=query)
             books = books.filter(queries)
-    books = products_pagination(request, books, 6)
+
+    books_count = books.count()
+    books = products_pagination(request, books, 8)
 
     current_sorting = f'{sort}_{direction}'
 
     context = {
         'books': books,
+        'books_count': books_count,
         'search_query': query,
         'genre': genre,
         'category': category,
