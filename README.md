@@ -165,5 +165,108 @@ Benefits:
 ## Design
 ### Colour Scheme
 The website harmoniously blends warm tones of light coral and red-orange with accents of light grey and white, all anchored by a cool grey undertone. This carefully curated color scheme establishes a sense of vibrancy and professionalism while ensuring a visually engaging experience for the users.
-![Colour Schema](./assets/readme-images/colour-schema.PNG)
+The main colours set as variables are
+    1. --orange: #f58669;
+    2. --dark-orange: #de502c;
+    3. --white: #ffff;
+    4. --brown: #63453d;
+    5. --background: #ebeae5;
+    6. --gray: #938c8c;
+
+The below colours were used to compliment the main colours. Due to the fact that these colours have been used with very little repetition, there was no need to set them as variables
+- #6f6a6a
+- #2b221f
+- #333
+- #0d0d0d
+- #888
+- #97908e
+- #eeebe3
+- #8f8f8f
+- #a5d9a5
+- #f1f1f1
+- #ff7a7a
+- #cdc8c8
+- #f0bc00
+- #aab7c4
+- #c7dbd2
+- #eccccf
+- #f2e8c5
+- #dc3545
+- #c5d7f2
+
+
+![Colour Scheme](./assets/readme-images/colour-schema.PNG)
 ### Database Schema
+![database schema](./assets/readme-images/database.png)
+
+1. User:
+The User model is part of Django Allauth. The model comes with predefined fields as standard. Some of them are username, email, name, password, and more. This model is used for user authentication, hence why changes directly to this model are not advisory. The User model is connected to the UserProfile model with one to one relationship.
+
+2. UserProfile:
+The UserProfile model is a custom custom-created model to handle the user profile details. Signals are used to reflect the changes between the User and UserProfile models.
+
+3. Category
+This model was created for the purpose of defining categories for the products
+
+4. Genre
+This model was created to add genre section for the products. It is connected to Category with a ForeignKey
+
+5. Author
+This model stores the infor for each author. It consist of name, image, bio and id.
+
+6. Book
+This is a custom product model. It is connected to Genre as a ForeignKey and author as ManyToManyField. This allows adding more than one author per book. In addition to that it has fields for handling stock. Stock_amount holds the integer value of the stock levels. In_stock is a Boolean field which sets the product to being in stock or not. A method called product_in_stock determines if a product is in stock based on the stock_amount value. The result of this method updates the in_stock boolean field. 
+
+7. Wishlist
+This model stores the books or products to a wishlist for authenticated users. It is connected to UserProfile and Book models as a ForeignKey
+
+8. ProductReview 
+This model stores the user's reviews for a product. It is connected to the UserProfile and the Book models as a ForeignKey
+
+9. Order 
+This model holds all the information of the user's order. It is connected to the UserProfile as a ForeignKey.
+
+10. OrderStatus
+This model is connected to the Order model with OneToOneField. When an Order is created a signal creates OrderStatus. The default value is 'in progress' with additional options of Completed and Cancelled. 
+
+11. OrderLineItem
+This model is connected to the Order and Book as a ForeignKey. It is created for each item in the order
+
+12. DiscountCode
+This model has no specified relationship to the other models. It contains three fields - code, discount and active. It allows the admin to create discount codes, determine the amount of a discount and if the code is active. 
+
+### Fonts
+In addition to Bootstrap 5 built in font family the below two fonts were used throughout the application
+1. Poppins
+![Poppins](./assets/readme-images/font-poppins.PNG)
+2. Libre Baskerville
+![Libre Baskerville](./assets/readme-images/font-libre-baskerville.PNG)
+
+### Wireframes
+### Agile Methodology
+#### Overview
+This project was created using agile principles. As this is my second full-stack project, using agile, it was easier to identify the relevant milestones. Using the agile approach allowed me to plan all the features of the website through user stories. Each user story has acceptance criteria and tasks to clearly outline the requirements for each feature to be completed.
+
+#### Epics(Milestones)
+The user stories are grouped into eight EPICS or Milestones. An additional Milestone called Project Backlog was created to manage any additional features, bugs, or tasks that may arise during development.
+
+![Milestones](./assets/readme-images/milestones.PNG)
+
+#### User Stories Issues
+The structure of the user story issue consists of the user story, acceptance criteria, and tasks that outline the steps that are required for this issue to be completed. During development where possible, the commit messages are connected to their corresponding issues.
+
+![User Story](./assets/readme-images/user-stories.PNG)
+
+![User Story](./assets/readme-images/commits.PNG)
+
+#### MoSCoW prioritization
+This prioritization technique was used to effectively prioritize the features and requirements of the project based on their importance. The acronym "MoSCoW" stands for "Must have, Should have, Could have, and Won't have." Each category helps categorize and prioritize features to guide the development process and ensure that the most critical elements are addressed first.
+
+![MoSCoW](./assets/readme-images/moscow.PNG)
+
+#### GitHub Projects
+The project was created using a basic Kanban Board structure, divided into columns such as Todo, In Progress, Done, and Backlog. This setup provides a clear and organized way to track the status of tasks and visualize and manage the workflow.
+
+![Project](./assets/readme-images/agile-project.PNG)
+
+### Features
