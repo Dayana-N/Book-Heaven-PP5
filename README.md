@@ -166,6 +166,7 @@ Benefits:
 ### Colour Scheme
 The website harmoniously blends warm tones of light coral and red-orange with accents of light grey and white, all anchored by a cool grey undertone. This carefully curated color scheme establishes a sense of vibrancy and professionalism while ensuring a visually engaging experience for the users.
 The main colours set as variables are
+
     1. --orange: #f58669;
     2. --dark-orange: #de502c;
     3. --white: #ffff;
@@ -238,8 +239,10 @@ This model has no specified relationship to the other models. It contains three 
 ### Fonts
 In addition to Bootstrap 5 built in font family the below two fonts were used throughout the application
 1. Poppins
+
 ![Poppins](./assets/readme-images/font-poppins.PNG)
 2. Libre Baskerville
+
 ![Libre Baskerville](./assets/readme-images/font-libre-baskerville.PNG)
 
 ### Wireframes
@@ -270,3 +273,66 @@ The project was created using a basic Kanban Board structure, divided into colum
 ![Project](./assets/readme-images/agile-project.PNG)
 
 ### Features
+#### Navbar
+The navbar was built using bootstrap 5 and it is fully responsive. The search bar allows the users to search for products by keywords from any page of the website. The My Account drop down gives the user the option to log in or sign up. If the user is authenticated additional menu options are displayed like my profile and admin (if the user is a superuser). The shopping cart icon is a link to the shopping cart and it also displays the total of the items in the cart.
+The nav links allow the user to refine the products by category, genre, special offers or to browse through the authors page, FAQ and about us. The is a dropdown for special offers which allows the user to see the new arrivals and deals.
+
+![navbar desktop](./assets/readme-images/features/nav-desktop.PNG)
+
+![navbar desktop](./assets/readme-images/features/nav-mobile.PNG)
+
+![navbar desktop](./assets/readme-images/features/nav-open-mobile.PNG)
+
+### Toasts
+Toasts from Bootstrap were implemented to provide customers with feedback regarding their actions on the website.
+
+![toasts](./assets/readme-images/features/messages.PNG)
+
+### Breadcrumbs
+The implementation of breadcrumbs allows users to keep track of their current location on the website. Breadcrumbs are present on most pages throught the website including the products pages. They are located on the top left corner of the page.
+
+![breadcrumbs](./assets/readme-images/features/breadcrumbs.PNG)
+
+#### Footer
+The footer consist of links to social media, business address and useful links including about us, faq, privacy policy and the main product categories
+
+![footer](./assets/readme-images/features/footer.PNG)
+
+### Home Page
+#### Hero Section
+The hero section is the beginning of the whole customer's journey. That is why I made it a priority to create appealing hero section. 
+The text on the left communicates the essence of BookHeaven, portraying it as a Dublin-based family business offering a diverse range of books for different audiences
+The hero section image was designed using photoshop by combining images of book covers. The added shadows made the hero section blend well with the rest of the website.
+This is then followed by call-to-action button Shop Now which invites the user to browse through the available products.
+
+![hero section](./assets/readme-images/features/hero-section.PNG)
+
+#### Trust Badges
+The trust badges serve as visual indicators to reassure the visitors about specific aspects of the services available. Animation effect was added to the icons to make them more eye catching.
+
+![trust badges](./assets/readme-images/features/trust-badges.PNG)
+
+#### Products
+The products displayed on the home page are the most recently added 8 products which are in stock.
+
+![products](./assets/readme-images/features/products-home.PNG)
+
+#### Newsletter
+The users can sign up to a newsletter to recieve the most recent offers and discount codes. The form was integrated using MailChimp.
+
+![newsletter](./assets/readme-images/features/newsletter.PNG)
+
+### Products Page
+The all books page renders all products to the user. They have the option to sort the products by title, price, genre and category. This page also displays the number of the products available. The pages, which refine the products by category or genre render the same template as all products, prefilled with the relevant data.
+At the end of the products result there is pagination to help the user navigate easily through multiple pages of products
+
+![pagination](./assets/readme-images/features/pagination.PNG)
+
+![all products](./assets/readme-images/features/all-products.PNG)
+
+### Products Card
+The product card consist of an image of the book cover, title, author and price. When hovered over the add to cart button appears at the bottom and a heart at the top to add to favourites. If the product is on sale, then the old price will be displayed with line through, followed by the new price and a little label at the top of the image showing the percentage of the discount.
+
+![product card](./assets/readme-images/features/card.png)
+
+![product card sale](./assets/readme-images/features/card-sale.PNG)
