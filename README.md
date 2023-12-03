@@ -412,7 +412,7 @@ Testing documentation can be found [here.](TESTING.md)
 ## Bugs
 |Bug|Status|
 | ---| ---|
-|[BUG: Total was calculated as integer #35](https://github.com/Dayana-N/Book- -PP5/issues/35)|Closed|
+|[BUG: Total was calculated as integer #35](https://github.com/Dayana-N/Book-PP5/issues/35)|Closed|
 |[BUG: Items can be added to cart even when they exceed the stock levels #36](https://github.com/Dayana-N/Book-Heaven-PP5/issues/36)|Closed|
 |[BUG: When item is not on sale anymore the sale price is displayed #37](https://github.com/Dayana-N/Book-Heaven-PP5/issues/37)|Closed|
 |[BUG: Error on checkout if the item's quantity has been updated #39](https://github.com/Dayana-N/Book-Heaven-PP5/issues/39)|Closed|
@@ -459,6 +459,8 @@ Testing documentation can be found [here.](TESTING.md)
 - [Google Fonts](https://fonts.google.com/) was used to import fonts.
 - [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) was used during the testing of the website.
 - [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/) was used during testing, debugging and making the website responsive.
+- [AWS](https://aws.amazon.com/) was used to store media files.
+- [Stripe](https://stripe.com/en-ie) was integrated to handle payment processing in a secure and convenient way.
 - [W3C HTML Validator](https://validator.w3.org/) was used to check for errors in the HTML code.
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check for errors in the CSS code
 - [Js Hint](https://jshint.com/) was used to validate the JavaScript code.
@@ -466,6 +468,7 @@ Testing documentation can be found [here.](TESTING.md)
 - [Online Convert](https://image.online-convert.com/convert-to-webp) used to convert images to webp format
 - [Coolors.co](https://coolors.co/) was used to display the colour scheme.
 - [Box Shadow Generator](https://cssgenerator.org/box-shadow-css-generator.html) was used to generate the shadows
+
 
 ## Deployment
 ### Before Deployment
@@ -475,19 +478,133 @@ To ensure the application is deployed correctly on Heroku it is mandatory to upd
 - Then commit and push the changes to GitHub.
 
 ! Before pushing code to GitHub ensure all credentials are in an env.py file, which is included in the .gitignore file. This tells Git not to track this file which will prevent it from being added to Github and the credentials being exposed.
+
+### Stripe setup
+- Log in to [Stripe](https://stripe.com/en-ie)
+- Navigate to developers section (link located at the top right)
+- Go to API keys tab and copy the values of PUBLIC_KEY and SECRET_KEY and add them to your env.py file
+- Navigate to the Webhooks page from the tab in the menu at the top and click on add endpoint.
+- This section requires a link to the deployed application. The link should look like this https://your_website.herokuapp.com/checkout/wh/ 
+- Choose the events the webhook should recieve and add endpoint.
+- When the application is deployed, run a test transaction to ensure the webhooks are working. The events chan be checked in the webhooks page.
+
+### AWS setup
+- Log in to [AWS](https://aws.amazon.com/)
+1. Create a new S3 bucket:
+- Choose the closest AWS region.
+- Add unique bucket name.
+- Under Object Ownership select ACLs enabled to allow access to the objects in the bucket.
+- Under Block Public Access settings unselect block all public access as the application will need access to the objects in the bucket.
+- Click on create bucket.
+2. Edit bucket settings.
+- Bucket properties
+  - Open the bucket page.
+  - Go to properties tab and scroll down to website hosting and click on edit.
+  - Enable static website hosting
+  - Under the Hosting type section ensure Host a static website is selected.
+  - Add Index.html to index document field and error.html to error document field and click save.
+- Bucket permissions
+    - Navigate and Click on the "Permissions" tab.
+    - Scroll down to the "CORS configuration" section and click edit.
+    - Enter the following snippet into the text box and click on save changes.
+
+    ```
+    [
+    {
+        "AllowedHeaders": [
+            "Authorization"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "*"
+        ],
+        "ExposeHeaders": []
+    }
+    ]
+    ```
+    - Scroll to bucket policy section and click edit. Take note of the bucket arn (Example: arn:aws:s3:::test-bucket)
+    - Click on policy generator and set the following settings:
+
+        1. Select Type of Policy - S3 Bucket Policy
+        2. Effect Allow
+        3. Principal *
+        4. AWS Service Amazon S3
+        5. Actions: GetObject
+        6. Amazon arn: your arn from the previous page
+
+    - Click on add statement and then generate policy.Copy the policy
+    - Paste the policy into the bucket policy editor.
+    - Add "/*" to the end of the resource key to allow access to all resources in this bucket.
+    - Navigate and Click Save changes.
+    - For the Access control list (ACL) section, click edit and enable List for Everyone (public access) and accept the warning box. If the edit button is disabled, you need to change the Object Ownership section above to ACLs enabled (refer to Create Bucket section above).
+
+3. Identify and Access Management (IAM)
+- Create User group
+    - In the search bar, search for IAM. 
+    - On the IAM page select user groups in the menu on the left.
+    - Click on create user group, add a name and click create group. The users and permission policies will be added later.
+- Create Permissions policy for the user group
+    - Go to Policies in the left-hand menu and click create policy
+    - Click on actions and import policy.
+    - Search for "AmazonS3FullAccess", select this policy, and click "Import".
+    - Click "JSON" under "Policy Document" to see the imported policy
+    - Copy the bucket ARN from the bucket policy page and paste it into the "Resource" section of the JSON snippet. Be sure to remove the default value of the resource key ("*") and replace it with the bucket ARN.
+    Copy the bucket ARN a second time into the "Resource" section of the JSON snippet. This time, add "/*" to the end of the ARN to allow access to all resources in this bucket.
+
+    ``````
+        {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Effect": "Allow",
+                "Action": [
+                    "s3:*",
+                    "s3-object-lambda:*"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::your-project",
+                    "arn:aws:s3:::your-project/*"
+                ]
+            }
+        ]
+    }
+
+    ``````
+
+
+    - On the next page add polcity name and description and click create policy.
+
+- Attach Policy to User Group
+    - Click on User Groups in the left-hand menu.
+    - Click on the user group name created during the above step and select the permissions tab.
+    - Click Attach Policy.
+    - Search for the policy created during the above step, select it and click attach policy.
+
+- Create User
+    - Click on Users in the left-hand menu and click on add user.
+    - Enter a User name .
+    - Select Programmatic access and AWS Management Console access and click next.
+    - Click on add user to group, select the user group created earlier and click create user.
+    - Take note of the Access key ID and Secret access key as these will be needed to connect to the S3 bucket.
+    - To save a copy of the credentials click Download .csv
+
+
 ### Deployment on Heroku
 - To deploy the project on Heroku, first create an account.
 - Once logged in, create a new app by clicking on the create app button
 - Pick a unique name for the app, select a region, and click Create App.
 - On the next page select the settings tab and scroll down to Config Vars. If there are any files that should be hidden like credentials and API keys they should be added here. In this project, there are credentials that need to be protected. This project requires credentials added for:
-1. Django's secret key
-2. Database Credentials
-3. AWS access key 
-3. AWS secret key
-4. Email host password.
-5. Stripe public key
-6. stripe secret key
-7. Stripe wh secret
+
+        1. Django's secret key
+        2. Database Credentials
+        3. AWS access key 
+        3. AWS secret key
+        4. Email host password.
+        5. Stripe public key
+        6. stripe secret key
+        7. Stripe wh secret
 
 - Scroll down to Buildpacks. The buildpacks will install further dependencies that are not included in the requirements.txt. For this project, the buildpack required is Python
 - From the tab above select the deploy section.
