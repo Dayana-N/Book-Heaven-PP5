@@ -33,7 +33,6 @@
             <div class="col-4 my-auto"><i class="fa-solid fa-list-check fa-2xl"></i>
             </div>
         </div>
-
     </div>
     <div class="row">
         <div class="col-12">
@@ -44,13 +43,13 @@
                 <div class="col-12 col-md-6  my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                     <div class="sort-select-wrapper">
                         <select id="sort-selector" class="form-select">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Refine by...</option>
-                            <option value="recent" {% if current_sorting == 'recent' %}selected{% endif %}>Most Recent (All)</option>
-                            <option value="in_progress" {% if current_sorting == 'in_progress' %}selected{% endif %}> In Progress
+                            <option value="reset" {% if sort == 'None_None' %}selected{% endif %}>Refine by...</option>
+                            <option value="recent" {% if sort == 'recent' %}selected{% endif %}>Most Recent (All)</option>
+                            <option value="in_progress" {% if sort == 'in_progress' %}selected{% endif %}> In Progress
                             </option>
-                            <option value="completed" {% if current_sorting == 'completed' %}selected{% endif %}>Completed
+                            <option value="completed" {% if sort == 'completed' %}selected{% endif %}>Completed
                             </option>
-                            <option value="cancelled" {% if current_sorting == 'cancelled' %}selected{% endif %}>Cancelled</option>
+                            <option value="cancelled" {% if sort == 'cancelled' %}selected{% endif %}>Cancelled</option>
                         </select>
                     </div>
                 </div>
@@ -82,15 +81,15 @@
                             </td>
                             <td class="text-center">€{{ order.grand_total }}</td>
                             {% if order.orderstatus.status == 'in_progress' %}
-                            <td id="status-cell-progress">
+                            <td class="status-cell-progress">
                                 {{ order.orderstatus.get_status_display }}
                             </td>
                             {% elif order.orderstatus.status == 'completed' %}
-                            <td id="status-cell-completed">
+                            <td class="status-cell-completed">
                                 {{ order.orderstatus.get_status_display }}
                             </td>
                             {% else %}
-                            <td id="status-cell-cancelled">
+                            <td class="status-cell-cancelled">
                                 {{ order.orderstatus.get_status_display }}
                             </td>
                             {% endif %}

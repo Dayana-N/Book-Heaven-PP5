@@ -445,13 +445,16 @@ button.wishlist {
     background-color: rgb(241 161 139);
 }
 
-#status-cell-instock {
+.status-cell-instock,
+.status-cell-completed {
     background-color: #c7dbd2 !important;
 }
-#status-cell-nostock {
+.status-cell-nostock,
+.status-cell-cancelled {
     background-color: #eccccf !important;
 }
-#status-cell-warning {
+.status-cell-warning,
+.status-cell-progress {
     background-color: #f2e8c5 !important;
 }
 
@@ -492,17 +495,6 @@ button.wishlist {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
-}
-
-/*Admin Orders*/
-#status-cell-completed {
-    background-color: #c7dbd2 !important;
-}
-#status-cell-cancelled {
-    background-color: #eccccf !important;
-}
-#status-cell-progress {
-    background-color: #c5d7f2 !important;
 }
 
 /* footer */

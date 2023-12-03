@@ -90,11 +90,11 @@
                     </div>
                     <div class="sort-select-wrapper">
                         <select id="sort-selector" class="form-select">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Refine by...</option>
-                            <option value="codes" {% if current_sorting == 'codes' %}selected{% endif %}>All Products</option>
-                            <option value="active" {% if current_sorting == 'active' %}selected{% endif %}> Active
+                            <option value="reset" {% if sort == 'None_None' %}selected{% endif %}>Refine by...</option>
+                            <option value="codes" {% if sort == 'codes' %}selected{% endif %}>All Codes</option>
+                            <option value="active" {% if sort == 'active' %}selected{% endif %}> Active
                             </option>
-                            <option value="not_active" {% if current_sorting == 'not_active' %}selected{% endif %}>Not Active
+                            <option value="not_active" {% if sort == 'not_active' %}selected{% endif %}>Not Active
                             </option>
                         </select>
                     </div>
@@ -117,11 +117,11 @@
                             <td> {{ code.code }}</td>
                             <td class="text-center">{{ code.discount }}%</td>
                             {% if code.active  %}
-                            <td id="status-cell-completed">
+                            <td class="status-cell-completed">
                                 Active
                             </td>
                             {% else %}
-                            <td id="status-cell-cancelled">Not Active</td>
+                            <td class="status-cell-cancelled">Not Active</td>
                             {% endif %}
                             <td class="text-center">
                                 <a href="{% url 'admin-discounts-edit' code.id %}" class="text-black" title="Edit"><i

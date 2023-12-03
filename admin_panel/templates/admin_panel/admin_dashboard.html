@@ -49,13 +49,13 @@
                     <a href="{% url 'admin-add-product' %}" class="btn btn-orange mx-md-auto">Add Products</a>
                     <div class="sort-select-wrapper">
                         <select id="sort-selector" class="form-select">
-                            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Refine by...</option>
-                            <option value="products" {% if current_sorting == 'products' %}selected{% endif %}>All Products</option>
-                            <option value="in_stock" {% if current_sorting == 'in_stock' %}selected{% endif %}> In Stock
+                            <option value="reset" {% if sort == 'None_None' %}selected{% endif %}>Refine by...</option>
+                            <option value="products" {% if sort == 'products' %}selected{% endif %}>All Products</option>
+                            <option value="in_stock" {% if sort == 'in_stock' %}selected{% endif %}> In Stock
                             </option>
-                            <option value="low_stock" {% if current_sorting == 'low_stock' %}selected{% endif %}>Low Stock
+                            <option value="low_stock" {% if sort == 'low_stock' %}selected{% endif %}>Low Stock
                             </option>
-                            <option value="out_of_stock" {% if current_sorting == 'out_of_stock' %}selected{% endif %}>Out Of Stock</option>
+                            <option value="out_of_stock" {% if sort == 'out_of_stock' %}selected{% endif %}>Out Of Stock</option>
                         </select>
                     </div>
                 </div>
@@ -92,15 +92,15 @@
                             <td>€{{ product.product_price|floatformat:'2' }}</td>
                             <td class="text-center">{{ product.reviews.count }}</td>
                             {% if product.stock_amount == 0 %}
-                            <td id="status-cell-nostock">
+                            <td class="status-cell-nostock">
                                 {{ product.stock_amount }}
                             </td>
                             {% elif product.stock_amount <= 5 %}
-                            <td id="status-cell-warning">
+                            <td class="status-cell-warning">
                                 {{ product.stock_amount }}
                             </td>
                             {% else %}
-                            <td id="status-cell-instock">
+                            <td class="status-cell-instock">
                                 {{ product.stock_amount }}
                             </td>
                             {% endif %}

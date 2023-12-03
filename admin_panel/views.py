@@ -26,10 +26,12 @@ def admin_dashboard(request):
     total_grand_total = Order.objects.aggregate(
         total_grand_total=Sum('grand_total'))
     grand_total_sum = total_grand_total['total_grand_total']
+    sort = None
 
     if request.GET:
         if 'refine' in request.GET:
             refine_value = request.GET['refine']
+            sort = refine_value
             if refine_value == 'low_stock':
                 products = Book.objects.filter(
                     stock_amount__gt=0, stock_amount__lte=5)
@@ -44,7 +46,8 @@ def admin_dashboard(request):
         'orders': orders,
         'products': products,
         'total': grand_total_sum,
-        'total_product_count': total_product_count, }
+        'total_product_count': total_product_count,
+        'sort': sort, }
     return render(request, 'admin_panel/admin_dashboard.html', context)
 
 
@@ -59,12 +62,14 @@ def admin_discounts(request):
     codes_total = discount_codes.count
     active_codes = DiscountCode.objects.filter(active=True)
     not_active_codes = DiscountCode.objects.filter(active=False)
+    sort = None
     form = DiscountCodeForm()
 
     if request.GET:
         if 'refine' in request.GET:
             refine_value = request.GET['refine']
-            orders = Order.objects.filter(orderstatus__status=refine_value)
+            sort = refine_value
+            # orders = Order.objects.filter(orderstatus__status=refine_value)
             if refine_value == 'active':
                 discount_codes = DiscountCode.objects.filter(active=True)
             elif refine_value == 'not_active':
@@ -86,7 +91,8 @@ def admin_discounts(request):
                'active_codes': active_codes,
                'not_active_codes': not_active_codes,
                'codes_total': codes_total,
-               'form': form, }
+               'form': form,
+               'sort': sort, }
     return render(request, 'admin_panel/admin_discount.html', context)
 
 
@@ -149,10 +155,12 @@ def admin_orders(request):
 
     refine_value = None
     orders = Order.objects.all().order_by('-date')
+    sort = None
 
     if request.GET:
         if 'refine' in request.GET:
             refine_value = request.GET['refine']
+            sort = refine_value
             orders = Order.objects.filter(orderstatus__status=refine_value)
             if refine_value == 'recent':
                 orders = Order.objects.all().order_by('-date')
@@ -168,6 +176,7 @@ def admin_orders(request):
         'orders_completed': orders_completed,
         'orders_cancelled': orders_cancelled,
         'current_sorting': refine_value,
+        'sort': sort,
 
     }
     return render(request, 'admin_panel/admin_orders.html', context)
