@@ -336,3 +336,68 @@ The product card consist of an image of the book cover, title, author and price.
 ![product card](./assets/readme-images/features/card.png)
 
 ![product card sale](./assets/readme-images/features/card-sale.PNG)
+
+### Single Products Page
+On the page's left side, a product image is displayed. On the right side, the most important information about the product is displayed. This includes the title, author, publisher, reviews rating, price, stock levels, add to wishlist icon, and add to cart button with quantity dropdown. 
+Implementing stock levels in the product model, allowed for adding custom logic when it comes to adding items to the cart. The user should not be able to add to their cart a higher quantity than the stock levels and this logic also needs to account for items already in the cart. If the user tries to add more than what is in stock an error message appears to notify that there is not enough stock to fulfill the order.
+Below the top section, there is a section with tabs allowing the user to switch between description, details, and reviews. The reviews section allows an authenticated user to submit a review for a product. The overall rating is calculated and the number of starts are displayed in the top section of the page. Authenticated users can edit and delete their reviews from the same tab. 
+The description tab includes a short description of the book which helps the users in making informed decision if they wish to purchase this book
+The details tab includes some book information like ISBN number, number of pages, and language.
+
+![product page](./assets/readme-images/features/single-product.PNG)
+
+![reviews](./assets/readme-images/features/reviews.PNG)
+
+![not enough stock](./assets/readme-images/features/not-enough-stock.PNG)
+
+![add to wishlist](./assets/readme-images/features/add-to-wishlist.PNG)
+
+### Edit review page
+This page allows the user to edit their review in the event they changed their mind. It renders prefilled with the original data. 
+
+![edit-review](./assets/readme-images/features/edit-review.PNG)
+
+### Delete review confirmation
+This page asks the user for confirmation if they wish to delete their review
+
+![delete-review](./assets/readme-images/features/delete-review.PNG)
+
+### FAQ Page
+The FAQ page consists of the most frequently asked questions.
+
+![faq-page](./assets/readme-images/features/faq-page.PNG)
+
+### About Us Page
+The About Us Page consists of a bookshop image followed by a short About Us description. Below that there is an embedded Google map with the location and contact details.
+
+![about-us](./assets/readme-images/features/about-us.PNG)
+
+### All Authors Page
+This page allows the users to browse through the available authors on the website.
+
+![all authors](./assets/readme-images/features/authors.PNG)
+
+### Author Page
+This page allows the user to learn more about the author and find other books by this author available on the system.
+It consists of the author's image, name, short bio, and product cards with the books available.
+
+![author](./assets/readme-images/features/author.PNG)
+
+### My Profile Page
+This section is accessible only to authenticated users.
+This section contains three pages - my profile, my orders, and my wishlist
+
+#### Profile
+This page renders a form for the user's address and phone number. If the user has any details saved, it renders prefilled.
+
+![profile](./assets/readme-images/features//profile.PNG)
+
+#### Order History
+This page displays the past orders of this user.
+
+![orders](./assets/readme-images/features/order-history.PNG)
+
+#### My Wishlist
+This page displays the items in the wishlist
+
+![wishlist](./assets/readme-images/features/my-wishlist.PNG)

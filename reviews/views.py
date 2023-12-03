@@ -51,6 +51,7 @@ def delete_review(request, pk):
 
     context = {
         'review': review,
+        'book': book,
     }
 
     return render(request, 'reviews/delete_review.html', context)
