@@ -272,7 +272,7 @@ The project was created using a basic Kanban Board structure, divided into colum
 
 ![Project](./assets/readme-images/agile-project.PNG)
 
-### Features
+## Features
 #### Navbar
 The navbar was built using bootstrap 5 and it is fully responsive. The search bar allows the users to search for products by keywords from any page of the website. The My Account drop down gives the user the option to log in or sign up. If the user is authenticated additional menu options are displayed like my profile and admin (if the user is a superuser). The shopping cart icon is a link to the shopping cart and it also displays the total of the items in the cart.
 The nav links allow the user to refine the products by category, genre, special offers or to browse through the authors page, FAQ and about us. The is a dropdown for special offers which allows the user to see the new arrivals and deals.
@@ -401,3 +401,114 @@ This page displays the past orders of this user.
 This page displays the items in the wishlist
 
 ![wishlist](./assets/readme-images/features/my-wishlist.PNG)
+
+
+
+## Future Features
+## Marketing
+## Search Engine Optimization SEO
+## Testing
+Testing documentation can be found [here.](TESTING.md)
+## Bugs
+|Bug|Status|
+| ---| ---|
+|[BUG: Total was calculated as integer #35](https://github.com/Dayana-N/Book- -PP5/issues/35)|Closed|
+|[BUG: Items can be added to cart even when they exceed the stock levels #36](https://github.com/Dayana-N/Book-Heaven-PP5/issues/36)|Closed|
+|[BUG: When item is not on sale anymore the sale price is displayed #37](https://github.com/Dayana-N/Book-Heaven-PP5/issues/37)|Closed|
+|[BUG: Error on checkout if the item's quantity has been updated #39](https://github.com/Dayana-N/Book-Heaven-PP5/issues/39)|Closed|
+|[BUG: Genre doesn't display correctly on all products page #40](https://github.com/Dayana-N/Book-Heaven-PP5/issues/40)|Closed|
+|[BUG: Discount code case sensitivity #43](https://github.com/Dayana-N/Book-Heaven-PP5/issues/43)|Closed|
+|[BUG: Error when adding item to cart with quantity above stock level #44](https://github.com/Dayana-N/Book-Heaven-PP5/issues/44)|Closed|
+|[BUG: Pagination URL #45](https://github.com/Dayana-N/Book-Heaven-PP5/issues/45)|Closed|
+
+
+## Technologies And Languages
+
+### Languages Used
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- Python
+- Django
+
+### Python Modules
+- Boto3 is the Amazon Web Services (AWS) SDK for Python. It allows to interact with AWS services, such as S3
+
+- dj-database-url - This library is used to parse the database URL specified in the DATABASE_URL environment variable, which is commonly used for configuring database connections in Django projects.
+
+
+- django-storages - Django Storages is a collection of custom storage backends for Django, including support for storing files on remote services like AWS S3.
+
+- django-widget-tweaks - Django Widget Tweaks is a package that simplifies working with form widgets and templates in Djang
+
+- gunicorn - Gunicorn is a popular WSGI (Web Server Gateway Interface) HTTP server for running Python web applications, including Django applications, in a production environment.
+
+- Pillow - Pillow is a Python Imaging Library (PIL) fork that provides tools for working with images in various formats.
+
+- psycopg2 - Psycopg2 is a PostgreSQL adapter for Python. It allows Django to connect to PostgreSQL databases.
+
+- s3transfer - S3 Transfer is a library for managing file transfers to and from Amazon S3 storage.
+
+- whitenoise - Whitenoise is a middleware for serving static files directly from your Django application.
+### Technologies and programs
+ - [Favicon Generator](https://favicon.io/favicon-converter/) was used to generate Favicon
+ - [GitHub](https://github.com/) is the hosting site used to store the code for the website.
+- [Git](https://git-scm.com/) was used as a version control software to commit and push the code to the GitHub repository.
+- [Photoshop](https://www.adobe.com/ie/products/photoshop.html) was used for creating the mockup images of the website during planning stage.
+- [Google Fonts](https://fonts.google.com/) was used to import fonts.
+- [Google Chrome Lighthouse](https://developers.google.com/web/tools/lighthouse) was used during the testing of the website.
+- [Google Chrome Developer Tools](https://developer.chrome.com/docs/devtools/overview/) was used during testing, debugging and making the website responsive.
+- [W3C HTML Validator](https://validator.w3.org/) was used to check for errors in the HTML code.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check for errors in the CSS code
+- [Js Hint](https://jshint.com/) was used to validate the JavaScript code.
+- [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the Python code.
+- [Online Convert](https://image.online-convert.com/convert-to-webp) used to convert images to webp format
+- [Coolors.co](https://coolors.co/) was used to display the colour scheme.
+- [Box Shadow Generator](https://cssgenerator.org/box-shadow-css-generator.html) was used to generate the shadows
+
+## Deployment
+### Before Deployment
+To ensure the application is deployed correctly on Heroku it is mandatory to update the requirements.txt. This is a list of requirements that the application needs in order to run.
+
+- To create the list of requirements we use the command pip3 freeze > requirements.txt. This will ensure the file with the requirements is updated.
+- Then commit and push the changes to GitHub.
+
+! Before pushing code to GitHub ensure all credentials are in an env.py file, which is included in the .gitignore file. This tells Git not to track this file which will prevent it from being added to Github and the credentials being exposed.
+### Deployment on Heroku
+- To deploy the project on Heroku, first create an account.
+- Once logged in, create a new app by clicking on the create app button
+- Pick a unique name for the app, select a region, and click Create App.
+- On the next page select the settings tab and scroll down to Config Vars. If there are any files that should be hidden like credentials and API keys they should be added here. In this project, there are credentials that need to be protected. This project requires credentials added for:
+1. Django's secret key
+2. Database Credentials
+3. AWS access key 
+3. AWS secret key
+4. Email host password.
+5. Stripe public key
+6. stripe secret key
+7. Stripe wh secret
+
+- Scroll down to Buildpacks. The buildpacks will install further dependencies that are not included in the requirements.txt. For this project, the buildpack required is Python
+- From the tab above select the deploy section.
+- The deployment method for this project is GitHub. Once selected, confirm that we want to connect to GitHub, search for the repository name, and click connect to connect the Heroku app to our GitHub code.
+- Scroll further down to the deploy section where automatic deploys can be enabled, which means that the app will update every time code is pushed to GitHub. Click deploy and wait for the app to be built. Once this is done, a message should appear letting us know that the app was successfully deployed with a view button to see the app.
+### Creating a fork
+1. Navigate to the [repository](https://github.com/Dayana-N/Book-Heaven-PP5)
+2. In the top-right corner of the page click on the fork button and select create a fork.
+3. You can change the name of the fork and add description 
+4. Choose to copy only the main branch or all branches to the new fork. 
+5. Click Create a Fork. A repository should appear in your GitHub
+
+### Cloning Repository
+1. Navigate to the [repository](https://github.com/Dayana-N/Book-Heaven-PP5)
+2. Click on the Code button on top of the repository and copy the link. 
+3. Open Git Bash and change the working directory to the location where you want the cloned directory. 
+4. Type git clone and then paste the link.
+5. Press Enter to create your local clone.
+
+## Credits
+### Media
+### Code
+### Acknowledgements
+### Comments
