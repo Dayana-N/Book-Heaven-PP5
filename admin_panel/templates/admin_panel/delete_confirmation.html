@@ -22,13 +22,13 @@
                     {% if product %}
                     <form action="{% url 'admin-delete-product' product.id %}" method="POST">
                         {% csrf_token %}
-                        <a href="{% url 'admin-panel' %}" class="btn btn-orange">Back</a>
+                        <a href="{% url 'admin-panel' %}" class="btn btn-gray">Back</a>
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                     {% else %}
                     <form action="{% url 'admin-discounts-delete' code.id %}" method="POST">
                         {% csrf_token %}
-                        <a href="{% url 'admin-discounts' %}" class="btn btn-orange">Back</a>
+                        <a href="{% url 'admin-discounts' %}" class="btn btn-gray">Back</a>
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
                     {% endif %}

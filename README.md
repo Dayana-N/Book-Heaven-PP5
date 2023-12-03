@@ -402,6 +402,81 @@ This page displays the items in the wishlist
 
 ![wishlist](./assets/readme-images/features/my-wishlist.PNG)
 
+### Admin
+The admin section can be accessed only by admin or superuser. This section allows admins to manage stock, orders and discount codes without the need of the built in Django admin.
+#### Dashboard
+The dashboard offers a quick overview of the number of orders to date, the number of products in the system, and the total revenue to date.
+Below that the admin is presented with a button to add products which leads to the product creation page. This is followed by a drop-down offering the ability to refine by stock with the options of in-stock, low-stock, or out-of-stock.
+A table with all the products is displayed below showing the title of the product and general stats like price, reviews, on sale, and stock amount. The admin is also presented with the action buttons to edit and delete products.
+The stock level field clearly indicates the level of stock by using green colour for in stock, yellow colour for low stock (items with 5 or under units), and red for items out of stock.
+
+Admin dashboard:
+
+![admin dashboard](./assets/readme-images/features/admin-dashboard.PNG)
+
+Refine Products:
+![refine products admin](./assets/readme-images/features/refine-products.PNG)
+
+#### Add Products
+This page renders the product creation form and all required fields to add an item to the database. Admins can add products on sale by checking the on-sale box and adding the sale price. If the on_sale box is not checked the product will display with the original price. The Author field allows for multiple authors to be selected. If the author's name does not exist in the list, it can be added by clicking on the add author link
+
+![add products](./assets/readme-images/features/add-product.PNG)
+
+#### Add author
+This page renders the add author form. The required fields are name and bio. The image is not manadatory and if none is uploaded a generic image appears.
+![add author](./assets/readme-images/features/add-author.PNG)
+
+#### Edit Product
+This page renders the product form prefilled with the existing data in the database. It allows the admin to modify the stock levels and any other details about the products.
+
+![edit product](./assets/readme-images/features/edit-product.PNG)
+
+#### Delete Product
+![delete product](./assets/readme-images/features/delete-product-confirmation.PNG)
+
+#### Orders Admin
+The orders page in the admin section provides a breakdown of the order stats based on status.
+Below that there is a drop-down offering the ability to refine by order status. The options are In Progress, Completed, Cancelled, and All.
+Below that the orders are displayed in a table with the order number, date, amount of items, order total, and status. The status field clearly indicates the status of the order. The used colours are red for canceled, green for completed, and blue for in progress. The admin can edit the order status by using the pencil icon on the side of each row.
+
+About the order status feature:
+    The orders, when created have a default status of In Progress. When developing this feature the initial idea was to add a status field to the order model. This led to some issues with the form when making a purchase. After some investigation the error was related to the fact that this field is not rendered on the checkout page or handled when making a purchase, however in the model blank was set to False as default. By allowing blank to be True this resolved the submission issue. Later on in the development process, I came up with a better solution. The order status was created as a separate model, which is connected to the order with the One-to-one relationship. When an order is created, signals are used to create the OrderStatus. Separating the status from the order allows for easier manipulation of the status field without the need to handle the rest of the fields in the order.
+
+Admin Orders;
+
+![admin orders](./assets/readme-images/features/admin-orders.PNG)
+
+Orders Refine:
+
+![admin orders refine](./assets/readme-images/features/admin-orders-refine.PNG)
+
+#### Edit Order Status
+This page renders a one-field form with a drop-down. It allows the admin the select from the available status choices.
+
+![edit order status](./assets/readme-images/features/admin-order-edit-status.PNG)
+
+#### Admin Discount Codes
+This page has similar layout to the orders and dashboard. It presents the admin with a breakdown of the number of discount codes on the system by status.
+There is a button to create code which opens a modal with the creation form. The discount code consist of the code, the amount of the discount in percentage and a checkbox to determine if the code is active or not.
+The discount codes can be editted and deleted from this section without the need of using Django admin.
+
+Admin Discounts
+
+![admin codes](./assets/readme-images/features/admin-codes.PNG)
+
+Admin Refine Codes
+
+![admin refine codes](./assets/readme-images/features/admin-code-refine.PNG)
+
+Admin Add Code
+
+![admin add code](./assets/readme-images/features/admin-code-add.PNG)
+
+Admin Edit Code
+
+![admin edit codes](./assets/readme-images/features/admin-code-edit.PNG)
+
+
 
 
 ## Future Features
@@ -440,7 +515,7 @@ Testing documentation can be found [here.](TESTING.md)
 
 - django-storages - Django Storages is a collection of custom storage backends for Django, including support for storing files on remote services like AWS S3.
 
-- django-widget-tweaks - Django Widget Tweaks is a package that simplifies working with form widgets and templates in Djang
+- django-widget-tweaks - Django Widget Tweaks is a package that simplifies working with form widgets and templates in Django
 
 - gunicorn - Gunicorn is a popular WSGI (Web Server Gateway Interface) HTTP server for running Python web applications, including Django applications, in a production environment.
 

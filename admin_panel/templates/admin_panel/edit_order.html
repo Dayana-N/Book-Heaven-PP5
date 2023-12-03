@@ -6,7 +6,7 @@
 <hr>
 
 <div class="row d-flex justify-content-around">
-    <div class="col-10 p-3 my-1">
+    <div class="col-10 col-md-6 p-3 my-1">
         <p class="fs-3">Update order:</p>
         <form action="{% url 'admin-orders-edit' order.id %}" method="POST">
             {% csrf_token %}

@@ -20,7 +20,7 @@
             <!-- Discount -->
             <div class="form-floating mb-2">
                 {% render_field form.discount class="form-control" %}
-                <label for="{{ form.discount.id_for_label }}" class="form-label">Discount:*</label>
+                <label for="{{ form.discount.id_for_label }}" class="form-label">Discount % :*</label>
                 {% for error in form.discount.errors %}
                 <span class="text-danger">{{ error }}</span>
                 {% endfor %}
