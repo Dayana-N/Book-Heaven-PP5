@@ -526,10 +526,37 @@ Once the order is processed and payment has been received, the user will receive
 
 ![email confirmation](./assets/readme-images/features/confirmation-email.PNG)
 
+### User Authentication
+The website uses django allauth's built in functionality which allows the users to register and log in securely. There is also a reset password functionality which allows the user to input their email address and recieve a link where they can securely reset their password.
 
 ## Future Features
-## Marketing
-## Search Engine Optimization SEO
+- Add a pop up with the current discount code which can be updated by the admin.
+- Make dinamic the genres displayed in the nav. Every time new genre is added to the database should automatically be added to the nav.
+- Allow admin to update only stock level fields as a quicker option to restock items. 
+- Send email to customers when their order changes status.
+
+## Search Engine Optimization SEO and Marketing
+
+### Business Model
+The B2C (Business-to-Consumer) ecommerce model for this online bookshop operates as a platform catering to individual consumers looking to purchase a wide array of books conveniently from their homes. This model revolves around offering a selection of genres, ranging from fantasy, fiction, horror, automotive, cookery, computing, to niche categories, providing an accessible and user-friendly interface for browsing, selecting, purchasing, and receiving books.
+
+The target customers for this online bookshop encompass diverse demographics, including keen readers, students, professionals, and individuals passionate about learning and leisure reading. The business aims to attract book enthusiasts seeking convenience, variety, competitive pricing, and an engaging shopping experience. 
+
+### SEO
+- Descriptive meta tags were added to the main template, including title, description and keywords.
+- A sitemap was generated using [xml-sitemaps](https://www.xml-sitemaps.com/) This was generated using the deployed website. The file is included in the root level of the project.
+- Robots.txt file was created at the root level of the project. This file tells the search engine crawlers which URLs they can access on the website.
+
+
+### Marketing
+- Newsletter is included in the home page. This section facilitates user engagement and promotes the e-commerce store through effective email marketing and social media presence.
+
+- Facebook Page
+
+[Book Heaven](https://www.facebook.com/profile.php?id=61554036458390)
+![Facebook Page](./assets/readme-images/facebook-page.PNG)
+
+
 ## Testing
 Testing documentation can be found [here.](TESTING.md)
 ## Bugs
@@ -749,6 +776,18 @@ To ensure the application is deployed correctly on Heroku it is mandatory to upd
 
 ## Credits
 ### Media
+- [Defaut avatar image](https://www.pngwing.com/en/free-png-azzyd)
+- [Default product image](https://birkhauser.com/product-not-found.png)
+- [Book Shop Image](https://pixabay.com/photos/books-bookstore-book-reader-985954/)
+- [Logo](https://www.pngegg.com/en/png-znuhb)
+- [Stripe Image](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwheelsinspain.com%2Fwp-content%2Fuploads%2F2017%2F09%2Fstripe.png&tbnid=u2zXJc4_mGU7EM&vet=12ahUKEwjk9dKiqeqCAxVaX0EAHebLAH8QMygCegQIARBO..i&imgrefurl=https%3A%2F%2Fwheelsinspain.com%2Fpayment%2F&docid=BGGpjBgfFZahZM&w=432&h=200&q=cars%20accepted%20by%20stripe&ved=2ahUKEwjk9dKiqeqCAxVaX0EAHebLAH8QMygCegQIARBO)
+
+
+
 ### Code
+- Boutique Ado Walkthrough was used for the base of this project
+- [Styling django all auth pages](https://builtwithdjango.com/blog/styling-authentication-pages)
+- [The right way to use Many To Many Field](https://www.reddit.com/r/django/comments/l937f1/the_right_way_to_use_a_manytomanyfield_in_django/)
+- [Looping through integer in templates](https://copyprogramming.com/howto/how-do-i-loop-a-intergerfield-in-django-templates#how-do-i-loop-a-intergerfield-in-django-templates)
 ### Acknowledgements
 ### Comments
