@@ -476,7 +476,55 @@ Admin Edit Code
 
 ![admin edit codes](./assets/readme-images/features/admin-code-edit.PNG)
 
+Admin Delete Code
 
+![admin delete codes](./assets/readme-images/features/admin-code-delete.PNG)
+
+### Shopping Cart
+The shopping cart can be accessed from the main nav menu. The shopping cart table section provides a clear and organized representation of the items added to the shopping cart. Each item has a small image, title, author, price, quantity, and subtotal. The users can upgrade the quantity or delete items from the cart with the help of the buttons provided.
+On the right side, there is a section allowing the user to input discount codes and view their subtotal, delivery charges, and total. 
+
+![shopping cart](./assets/readme-images/features/cart.PNG)
+![shopping cart empty](./assets/readme-images/features/cart-empty.PNG)
+
+##### Stock Quantity
+Stock amounts have been implemented into the product model. Every time a user adds an item or updates quantity the shopping cart checks the quantity selected + the quantity of that item in the cart (if any) and compares it to the stock levels of the product. The user cannot add to the cart more items that there are in stock. 
+In the event that another user purchases all units of a product while the product is sitting in another cart, when the user refreshes the page or continues to checkout, the item will be removed from their cart and an error message will be displayed letting them know that this item is not out of stock. In the event that 2 orders go through at the same time, the admin can cancel the status of the order and contact the customer for a refund. 
+
+Trying to update quantity to levels above stock
+
+![shopping cart no stock](./assets/readme-images/features/cart-no-stock.PNG)
+
+##### Discount Codes
+When an active discount code is applied to subtotal is calculated minus the percentage of the discount code. This excludes delivery fees. The discount amount is presented to the user and the total is updated. The code can be removed by clicking the remove button. A notification message is displayed to the user and the total price is adjusted accordingly.
+
+![discount code success](./assets/readme-images/features/discount-code-success.PNG)
+
+The error messages recognise invalid and not active codes as well. 
+
+![discount code invalid](./assets/readme-images/features/discount-code-invalid.PNG)
+
+![discount code inactive](./assets/readme-images/features/discount-code-inactive.PNG)
+
+### Checkout
+This page contains a form for the user's delivery and payment information and a summary of the user's order. If the user has an account, they can save their delivery information on their profile to automatically be filled in the checkout.
+- The checkout Form
+In the checkout the user can add their details and if they're logged in, can check the box to save their details for future transactions. Users must enter their payment information before completing the checkout and all payments are handled via Stripe.
+
+- Order summary
+A final summary of the user's order is shown containing all the user's basket items, quantity and subtotal for each item. The user can also see their order total, delivery costs, any discounts that have been applied and the grand total in the summary.
+
+![checkout](./assets/readme-images/features/checkout.PNG)
+
+### Order confirmation page
+After the order has been completed, the user is redirected to a confirmation page containing a final rundown of the order and what the user purchased. This page can be accessed again from the user's profile if they have an account on the site by clicking the order number from the list of past orders.
+
+![order confirmation](./assets/readme-images/features/order-confirmation.PNG)
+
+### Confirmation email
+Once the order is processed and payment has been received, the user will receive an email with the order details.
+
+![email confirmation](./assets/readme-images/features/confirmation-email.PNG)
 
 
 ## Future Features
