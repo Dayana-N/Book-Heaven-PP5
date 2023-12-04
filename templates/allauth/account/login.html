@@ -55,11 +55,9 @@
     <span class="text-danger form-error "> {{ form.non_field_errors  }}</span>
   </div>
   {% endif %}
-
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
   {% endif %}
-
   <div>
     <button class="btn btn-orange" type="submit">{% trans "Sign In" %}</button>
   </div>

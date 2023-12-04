@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block title %} Order Summary {% endblock title %}
 {% block content %}
 <section class="checkout-success">
     <div class="container">
@@ -19,7 +20,6 @@
                         <p class="order-number"><strong>Order number: {{ order.order_number }}</strong></p>
                     </div>
                 </div>
-
                 <div class="row text-start">
                     <div class="col-12 col-lg-6 mt-3 mt-md-0">
                         <p>Order summary:</p>

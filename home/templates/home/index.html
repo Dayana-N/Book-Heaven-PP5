@@ -1,17 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
-
 {% block title %}
 Home
 {% endblock title %}
 {% block extra_css %}
 <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
 {% endblock extra_css %}
-
 {% block content %}
-
 {% include 'partials/hero-section.html' %}
-
 <section class="trust-badges mt-5 py-4">
     <div class="container">
         <div class="row">
@@ -19,7 +15,7 @@ Home
                 <figure class="itemside">
                     <div class="aside text-center">
                         <span class="custom-icon">
-                            <i class="fa-solid fa-truck fa-fade"></i>
+                            <i class="fa-solid fa-truck"></i>
                         </span>
                     </div>
                     <figcaption class="info text-center">
@@ -28,12 +24,11 @@ Home
                     </figcaption>
                 </figure>
             </div>
-
             <div class="col-12 col-sm-4">
                 <figure class="itemside">
                     <div class="aside text-center">
                         <span class="custom-icon">
-                            <i class="fa-regular fa-credit-card fa-flip"></i>
+                            <i class="fa-regular fa-credit-card"></i>
                         </span>
                     </div>
                     <figcaption class="info text-center">
@@ -42,12 +37,11 @@ Home
                     </figcaption>
                 </figure>
             </div>
-
             <div class="col-12 col-sm-4">
                 <figure class="itemside">
                     <div class="aside text-center">
                         <span class="custom-icon">
-                            <i class="fa-solid fa-rotate-left fa-spin"></i>
+                            <i class="fa-solid fa-rotate-left"></i>
                         </span>
                     </div>
                     <figcaption class="info text-center">
@@ -59,7 +53,6 @@ Home
         </div>
     </div>
 </section>
-
 <section class="products">
     <div class="container text-center mt-5">
         <div class="row mt-5 justify-content-center">
@@ -155,7 +148,7 @@ Home
                                         <div class="clear foot">
                                             <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button"
                                                 value="Subscribe">
-                                            <p style="margin: 0px auto;"><a href="http://eepurl.com/iE4wCA"
+                                            <p style="margin: 0px auto;"><a target="_blank" rel="noopener" href="http://eepurl.com/iE4wCA"
                                                     title="Mailchimp - email marketing made easy and fun"><span
                                                         style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
                                                             class="refferal_badge"
@@ -175,7 +168,6 @@ Home
         </div>
     </div>
 </section>
-
 {% endblock %}
 {% block extra_js %}
 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>

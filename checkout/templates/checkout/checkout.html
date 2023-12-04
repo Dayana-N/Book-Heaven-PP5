@@ -2,7 +2,7 @@
 {% load static %}
 {% load widget_tweaks %}
 {% load bag_tools %}
-
+{% block title %} Checkout {% endblock title %}
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/checkout.css' %}">
 {% endblock extra_css %}
@@ -90,7 +90,6 @@
                                 <span class="text-danger">{{ error }}</span>
                                 {% endfor %}
                             </div>
-
                             <div class="form-check form-check-inline float-right mr-0">
                                 {% if user.is_authenticated %}
                                 <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
@@ -116,7 +115,6 @@
                             <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                             <!-- Pass the client secret to the view -->
                             <input type="hidden" value="{{ client_secret }}" name="client_secret">
-
                             <!-- Form buttons -->
                             <div class="row justify-content-end">
                                 <div class="col-10 text-end">

@@ -68,7 +68,7 @@ def all_products(request):
                 return redirect(reverse('all-products'))
 
             queries = Q(title__icontains=query) | Q(
-                description__icontains=query) | Q(author__name__icontains=query)
+                description__icontains=query) | Q(author__name__icontains=query) | Q(isbn__icontains=query)
             books = books.filter(queries)
 
     books_count = books.count()

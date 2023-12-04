@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-
+{% block title %} Products {% endblock title %}
 {% block content %}
 <div class="container">
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -16,16 +16,13 @@
         <div class="row">
             <div class="col-12 mx-auto text-center">
                 {% if category %}
-
                 {% for item in category %}
                 <h3>{{ item.name }}</h3>
                 {% endfor %}
-
                 {% elif genre %}
                 {% for item in genre %}
                 <h3>{{ item.friendly_name }}</h3>
                 {% endfor %}
-
                 {% elif search_query %}
                 <h3>Results</h3>
                 {% elif deals %}
@@ -35,7 +32,6 @@
                 {% else %}
                 <h3>All Books</h3>
                 {% endif %}
-
                 <hr>
             </div>
         </div>
@@ -155,9 +151,6 @@
             {% endif %}
         </div>
     </div>
-
-
-
 </section>
 {% endblock content %}
 

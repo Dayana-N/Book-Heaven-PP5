@@ -578,6 +578,7 @@ Testing documentation can be found [here.](TESTING.md)
 - HTML
 - CSS
 - JavaScript
+- jQuery
 - Bootstrap
 - Python
 - Django

@@ -45,7 +45,6 @@
                     <p class="fw-bold fs-4 justify-content-md-start">Products: {{ products.count }}</p>
                 </div>
                 <div class="col-12 col-md-6  my-auto order-md-last d-flex justify-content-between justify-content-md-end">
-
                     <a href="{% url 'admin-add-product' %}" class="btn btn-orange mx-md-auto">Add Products</a>
                     <div class="sort-select-wrapper">
                         <select id="sort-selector" class="form-select">
@@ -71,7 +70,6 @@
                             <th>Reviews</th>
                             <th>Stock</th>
                             <th>Actions</th>
-
                         </tr>
                     </thead>
                     <tbody>
@@ -118,7 +116,6 @@
             {% else %}
             <div class="d-grid gap-2">
                 <p class="text-center">No Products to display</p>
-
             </div>
             {% endif %}
         </div>
