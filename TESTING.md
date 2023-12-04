@@ -54,4 +54,18 @@ Go back to [README.md](/README.md)
 | password reset 3 |![password reset ](./assets/readme-images/testing/html/pass-reset-email-sent.PNG) | <mark>PASS<mark> |
 | password reset 4 |![password reset ](./assets/readme-images/testing/html/pass-reset-done.PNG) | <mark>PASS<mark> |
 
+### CSS
+|file|Validator|Result|
+| --- | --- | --- |
+| style.css |![style](./assets/readme-images/testing/style.PNG) | <mark>PASS<mark> |
+| checkout.css |![style](./assets/readme-images/testing/checkout.PNG) | <mark>PASS<mark> |
+
+## JavaScript
+|file|Validator|Result|Comment|
+| --- | --- | --- |----|
+| admin_filter.js |![js](./assets/readme-images/testing/js/admin_filter.PNG) | <mark>PASS<mark> ||
+| index page |![js](./assets/readme-images/testing/js/index.PNG) | <mark>PASS<mark> |This is mailchimp js script. It has 2 warning and 2 undefined variables|
+| products.js |![js](./assets/readme-images/testing/js/products.PNG) | <mark>PASS<mark> ||
+| stripe |![js](./assets/readme-images/testing/js/stripe.PNG) | <mark>PASS<mark> |This is Stripe js script. It has one undefined variable|
+| toast.js |![js](./assets/readme-images/testing/js/toasts.PNG) | <mark>PASS<mark> ||
 
