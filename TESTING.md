@@ -12,6 +12,7 @@ Go back to [README.md](/README.md)
 - [Manual Testing](#manual-testing)
 - [Automated Testing](#automated-testing)
 - [User Story Testing](#user-story-testing)
+- [Stripe](#stripe)
 
 ## Code Validation
 ### HTML
@@ -147,6 +148,10 @@ During development the pages were created to be responsive from 320px and above.
 | admin Desktop |![home](./assets/readme-images/testing/lighthouse/admin-desktop.PNG) | <mark>PASS<mark> |
 | admin mobile |![home](./assets/readme-images/testing/lighthouse/admin-desktop.PNG) | <mark>PASS<mark> |
 
+## Manual Testing
+## Automated testing
+Some automated testing was done to check if the pages return the correct response and template. Due to time limits there was no scope to expand.
+
 ## User Story Testing
 
 |User Story|Screenshot|Result|
@@ -186,3 +191,16 @@ During development the pages were created to be responsive from 320px and above.
 |As a User I want to be able to complete the checkout process for my shopping cart so that I can purchase the items I've added to my cart |![feature](./assets/readme-images/checkout.PNG)| <mark>PASS<mark> |
 |As a an authenticated user I want to be able to delete my reviews for a book product so that I can manage and maintain the accuracy and relevance of my feedback |![feature](./assets/readme-images/delete-review.PNG)| <mark>PASS<mark> |
 |As a an authenticated user I want to be able to edit my reviews for a book product so that I can manage and maintain the accuracy and relevance of my feedback |![feature](./assets/readme-images/edit-review.PNG)| <mark>PASS<mark> |
+
+## Stripe
+- Order created successfully
+
+![order](./assets/readme-images/order.PNG)
+
+- Stripe webhooks
+
+![order](./assets/readme-images/webhooks.PNG)
+
+- Stripe Events
+
+![order](./assets/readme-images/events.PNG)
