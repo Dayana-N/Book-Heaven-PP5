@@ -10,7 +10,7 @@ Go back to [README.md](/README.md)
 - [Browser Compatibility](#browser-compatibility)
 - [Lighthouse](#Lighthouse)
 - [Manual Testing](#manual-testing)
--[Automated Testing](#automated-testing)
+- [Automated Testing](#automated-testing)
 - [User Story Testing](#user-story-testing)
 
 ## Code Validation
@@ -116,3 +116,35 @@ Go back to [README.md](/README.md)
 | models | reviews |![python](./assets/readme-images/testing/python/reviews-models.PNG )| <mark>PASS<mark> ||
 | url | reviews |![python](./assets/readme-images/testing/python/profiles-urls.PNG )| <mark>PASS<mark> ||
 | views | reviews |![python](./assets/readme-images/testing/python/profiles-views.PNG )| <mark>PASS<mark> ||
+
+## Responsiveness
+During development the pages were created to be responsive from 320px and above. No specific breakpoint were used, instead I made sure that the content appears as it should on all sizes.
+
+![responsiveness](./assets/readme-images/testing/responsive.PNG)
+
+## Browser Compatibility
+
+|Browser|Result|Pass/Fail|Notes|
+| --- | --- | --- | ---|
+| Google Chrome | All pages, load as expected. All features work as expected | PASS | --- |
+| Firefox | All pages, load as expected. All features work as expected | PASS | --- |
+| Edge | All pages, load as expected. All features work as expected | PASS | ---|
+
+## Lighthouse
+
+|Page|Validator|Result|
+| --- | --- | --- |
+| Home Desktop |![home](./assets/readme-images/testing/lighthouse/home-desktop.PNG) | <mark>PASS<mark> |
+| Home mobile |![home](./assets/readme-images/testing/lighthouse/home-desktop.PNG) | <mark>PASS<mark> |
+| products Desktop |![home](./assets/readme-images/testing/lighthouse/products-desktop.PNG) | <mark>PASS<mark> |
+| products mobile |![home](./assets/readme-images/testing/lighthouse/products-desktop.PNG) | <mark>PASS<mark> |
+| Profile Desktop |![home](./assets/readme-images/testing/lighthouse/my-profile-desktop.PNG) | <mark>PASS<mark> |
+| Profile mobile |![home](./assets/readme-images/testing/lighthouse/my-profile-desktop.PNG) | <mark>PASS<mark> |
+| checkout Desktop |![home](./assets/readme-images/testing/lighthouse/checkout-desktop.PNG) | <mark>PASS<mark> |
+| checkout mobile |![home](./assets/readme-images/testing/lighthouse/checkout-desktop.PNG) | <mark>PASS<mark> |
+| cart Desktop |![home](./assets/readme-images/testing/lighthouse/cart-desktop.PNG) | <mark>PASS<mark> |
+| cart mobile |![home](./assets/readme-images/testing/lighthouse/cart-desktop.PNG) | <mark>PASS<mark> |
+| admin Desktop |![home](./assets/readme-images/testing/lighthouse/admin-desktop.PNG) | <mark>PASS<mark> |
+| admin mobile |![home](./assets/readme-images/testing/lighthouse/admin-desktop.PNG) | <mark>PASS<mark> |
+
+## User Story Testing
