@@ -225,6 +225,10 @@ body {
 
 /* Single product page */
 
+.product-form {
+    width: fit-content;
+}
+
 .nav-tabs .nav-link {
     border: var(--bs-nav-tabs-border-width) solid #97908e;
 }
@@ -298,6 +302,9 @@ button.wishlist {
     min-height: 150px !important;
 }
 /* Shopping cart page */
+.discount-form {
+    max-width: 220px;
+}
 .cart-item-picture img {
     height: 70px;
 }

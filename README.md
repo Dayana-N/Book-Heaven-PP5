@@ -790,5 +790,6 @@ To ensure the application is deployed correctly on Heroku it is mandatory to upd
 - [Styling django all auth pages](https://builtwithdjango.com/blog/styling-authentication-pages)
 - [The right way to use Many To Many Field](https://www.reddit.com/r/django/comments/l937f1/the_right_way_to_use_a_manytomanyfield_in_django/)
 - [Looping through integer in templates](https://copyprogramming.com/howto/how-do-i-loop-a-intergerfield-in-django-templates#how-do-i-loop-a-intergerfield-in-django-templates)
+- [Product Card](https://bestjquery.com/tutorial/product-grid/demo199/) - the product cards were modified to suit the project
 ### Acknowledgements
 ### Comments

@@ -62,19 +62,20 @@
                         <form class="product-links" method="POST" action="{% url 'wishlist-add' book.id %}">
                             {% csrf_token %}
                             {% if wishlist %}
-                            <button type="submit" class="wishlist" name="wishlist" value="submit"><i class="fa-solid fa-heart"></i></button>
+                            <button type="submit" class="wishlist" name="wishlist" value="submit" aria-label="remove from wishlist"><i
+                                    class="fa-solid fa-heart"></i></button>
                             <p>Added to wishlist</p>
                             {% else %}
-                            <button type="submit" class="wishlist" name="wishlist" value="submit"><i
+                            <button type="submit" class="wishlist" name="wishlist" value="submit" aria-label="add to wishlist"><i
                                     class="fa-regular fa-heart fa-flip"></i></button>
                             <p>Add to wishlist</p>
                             {% endif %}
                             <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
                         </form>
-                        <form action="{% url 'add-to-cart' book.id %}" method="POST">
+                        <form action="{% url 'add-to-cart' book.id %}" method="POST" class="d-flex flex-column product-form">
                             {% csrf_token %}
-                            <p>Quantity:</p>
-                            <select name="quantity" id="id_qty_{{ book.id }}" data-item-id="{{ book.id }}">
+                            <label for="id_qty_{{ book.id }}" class="mb-2">Quantity:</label>
+                            <select name="quantity" id="id_qty_{{ book.id }}" data-item-id="{{ book.id }}" class="mb-3">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>

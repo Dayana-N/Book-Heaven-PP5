@@ -62,7 +62,7 @@
                                                     <option value="9" {% if item.quantity == 9 %} selected {% endif %}>9</option>
                                                     <option value="10" {% if item.quantity == 10 %} selected {% endif %}>10</option>
                                                 </select>
-                                                <button type="submit"><i class="fa-solid fa-rotate-right"
+                                                <button type="submit" aria-label="update quantity"><i class="fa-solid fa-rotate-right"
                                                         style="color: #e66e2d;"></i></button>
                                             </form>
                                         </div>
@@ -75,7 +75,8 @@
                                     <td>
                                         <form action="{% url 'remove-item-cart' item.book.id %}" method="POST">
                                             {% csrf_token %}
-                                            <button type="submit"><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></button>
+                                            <button type="submit" aria-label="remove item"><i class="fa-solid fa-trash-can"
+                                                    style="color: #e66e2d;"></i></button>
                                         </form>
                                     </td>
                                 </tr>
@@ -124,7 +125,7 @@
                                                         <option value="9" {% if item.quantity == 9 %} selected {% endif %}>9</option>
                                                         <option value="10" {% if item.quantity == 10 %} selected {% endif %}>10</option>
                                                     </select>
-                                                    <button type="submit"><i class="fa-solid fa-rotate-right"
+                                                    <button type="submit" aria-label="update quantity"><i class="fa-solid fa-rotate-right"
                                                             style="color: #e66e2d;"></i></button>
                                                 </form>
                                             </div>
@@ -140,7 +141,8 @@
                                             <p>€{{ item.book.product_price|calc_subtotal:item.quantity }}</p>
                                             <form action="{% url 'remove-item-cart' item.book.id %}" method="POST">
                                                 {% csrf_token %}
-                                                <button type="submit"><i class="fa-solid fa-trash-can" style="color: #e66e2d;"></i></button>
+                                                <button type="submit" aria-label="remove item"><i class="fa-solid fa-trash-can"
+                                                        style="color: #e66e2d;"></i></button>
                                             </form>
                                         </div>
                                     </td>
@@ -157,16 +159,16 @@
                 <div class="col-12 col-md-8 col-lg-3 mt-3 mt-lg-0 custom-border p-4">
                     <div class="row">
                         <div class="col-12">
-                            <h5>Discount Code</h5>
                             {% if discount_amount > 0 %}
                             <p class="text-success">Discount code applied.</p>
                             <a href="{% url 'remove-discount' %}" class="btn btn-sm btn-brown"><i class="fa-solid fa-trash-can"></i>
                                 Remove</a>
                             {% else %}
-                            <form action="{% url 'add-discount' %}" method="POST">
+                            <form action="{% url 'add-discount' %}" method="POST" class="d-flex flex-column discount-form">
                                 {% csrf_token %}
+                                <label for="discount-code">Discount Code</label>
                                 <input class="mb-md-0 mb-2" type="text" name="discount-code" id="discount-code">
-                                <button type="submit" class="btn-orange mt-md-2">Add</button>
+                                <button type="submit" class="btn btn-orange mt-md-2" aria-label="add discount code">Add</button>
                             </form>
                             {% endif %}
                         </div>

@@ -19,7 +19,9 @@ Home
                         </span>
                     </div>
                     <figcaption class="info text-center">
-                        <h6 class="title">Fast Delivery</h6>
+                        <strong>
+                            <p class="title fs-5 mb-2">Fast Delivery</p>
+                        </strong>
                         <p class="text-muted">Same Day Shipping!</p>
                     </figcaption>
                 </figure>
@@ -32,7 +34,9 @@ Home
                         </span>
                     </div>
                     <figcaption class="info text-center">
-                        <h6 class="title">Secure Payment</h6>
+                        <strong>
+                            <p class="title fs-5 mb-2">Secure Payment</p>
+                        </strong>
                         <p class="text-muted">Payment system by Stripe.</p>
                     </figcaption>
                 </figure>
@@ -45,7 +49,9 @@ Home
                         </span>
                     </div>
                     <figcaption class="info text-center">
-                        <h6 class="title">Free Returns!</h6>
+                        <strong>
+                            <p class="title fs-5 mb-2">Free Returns!</p>
+                        </strong>
                         <p class="text-muted">Free returns on all books within 30 days! </p>
                     </figcaption>
                 </figure>
@@ -68,7 +74,7 @@ Home
                         {% endif %}
                         <form class="product-links" method="POST" action="{% url 'wishlist-add' book.id %}">
                             {% csrf_token %}
-                            <button type="submit" name="wishlist" value="submit">
+                            <button type="submit" name="wishlist" value="submit" aria-label="add to wishlist">
                                 <i class="fa fa-heart"></i>
                             </button>
                             <input type="hidden" name="redirect_url" value="{{ request.get_full_path }}">
