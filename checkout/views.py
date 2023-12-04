@@ -72,8 +72,8 @@ def checkout(request):
                         book.stock_amount -= int(item_quantity)
                         book.save()
                     else:
-                        messages.error(
-                            request, f'{book.title} is out of stock. Please remove this item and try again.')
+                        messages.error(request,
+                                       f'{book.title} is out of stock')
                         return redirect('view-cart')
 
                     order_line_item = OrderLineItem(
@@ -85,7 +85,7 @@ def checkout(request):
 
                 except Book.DoesNotExist:
                     messages.error(
-                        request, 'Unknown item in shopping cart. Please try again later.')
+                        request, 'Unknown item in shopping cart.')
                     order.delete()
                     return redirect('view-cart')
 
@@ -100,7 +100,7 @@ def checkout(request):
             return redirect('checkout-success', order.order_number)
         else:
             messages.error(
-                request, 'There was an error with this form. Please enter valid information.')
+                request, 'There was an error with this form. Please try again')
     else:
         cart = request.session.get('cart', {})
         if not cart:
@@ -116,7 +116,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-        # Attempt to prefill the form with any info the user maintains in their profile
+        # Attempt to prefill the form with any info the user
+        # maintains in their profile
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)

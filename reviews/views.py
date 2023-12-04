@@ -26,7 +26,8 @@ def create_review(request, pk):
             messages.success(request, 'Review added successfully.')
         else:
             messages.error(
-                request, 'Something went wrong. Please fill in the form again.')
+                request, 'Something went wrong. Please fill in the form again.'
+            )
     return redirect('product', pk)
 
 
@@ -59,7 +60,7 @@ def delete_review(request, pk):
 
 @login_required
 def edit_review(request, pk):
-    ''' A view to handle edit review, 
+    ''' A view to handle edit review,
     it takes request and review id '''
     review = get_object_or_404(ProductReview, pk=pk)
     book = review.product

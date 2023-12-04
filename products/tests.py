@@ -14,7 +14,9 @@ class ProductsPageTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/products.html')
         self.assertContains(
-            response, '<li class="breadcrumb-item active" aria-current="page">Books</li>')
+            response,
+            '<li class="breadcrumb-item active" aria-current="page">Books</li>'
+        )
         self.assertNotContains(response, 'Not on the page')
 
 
@@ -44,11 +46,12 @@ class ProductPageTests(TestCase):
 
     def test_single_product_page(self):
         '''
-        Test if the single product page can be accessed 
+        Test if the single product page can be accessed
         and it returns the correct template
         '''
         response = self.client.get(
-            reverse('product', kwargs={'pk': 'f5604c36-bcf4-41fd-9acd-c67caf25ba24'}))
+            reverse('product',
+                    kwargs={'pk': 'f5604c36-bcf4-41fd-9acd-c67caf25ba24'}))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/single-product.html')
         self.assertContains(
@@ -85,7 +88,8 @@ class AuthorPageTests(TestCase):
         and it returns the correct template
         '''
         response = self.client.get(
-            reverse('author', kwargs={'pk': 'ec742707-3c56-49a4-ac8f-4c2f3cc52022'}))
+            reverse('author',
+                    kwargs={'pk': 'ec742707-3c56-49a4-ac8f-4c2f3cc52022'}))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'products/author.html')
         self.assertNotContains(response, 'Not on the page')

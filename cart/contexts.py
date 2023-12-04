@@ -35,8 +35,8 @@ def cart_contents(request):
 
     for item_id in items_to_remove:
         cart.pop(item_id)
-        messages.error(
-            request, f'{book.title} is out of stock and has been removed from your cart.')
+        messages.error(request,
+                       f'{book.title} is out of stock and has been removed')
 
     request.session['cart'] = cart
 

@@ -38,7 +38,8 @@ class FaqPageTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'home/faq.html')
         self.assertContains(
-            response, '<strong>Why did I receive only part of my order?</strong>')
+            response,
+            '<strong>Why did I receive only part of my order?</strong>')
         self.assertNotContains(response, 'Not on the page')
 
 

@@ -68,7 +68,8 @@ def all_products(request):
                 return redirect(reverse('all-products'))
 
             queries = Q(title__icontains=query) | Q(
-                description__icontains=query) | Q(author__name__icontains=query) | Q(isbn__icontains=query)
+                description__icontains=query) | Q(
+                author__name__icontains=query) | Q(isbn__icontains=query)
             books = books.filter(queries)
 
     books_count = books.count()
@@ -99,13 +100,15 @@ def product(request, pk):
     book = get_object_or_404(Book, pk=pk)
     if request.user.is_authenticated:
         profile = request.user.userprofile
-        user_review = ProductReview.objects.all().filter(product=pk, user=profile)
+        user_review = ProductReview.objects.all().filter(
+            product=pk, user=profile)
         if Wishlist.objects.filter(user=profile, product=book).exists():
             wishlist = True
 
     # reviews
     review_form = ProductReviewForm()
-    reviews = ProductReview.objects.all().filter(product=pk).order_by('-created')
+    reviews = ProductReview.objects.all().filter(
+        product=pk).order_by('-created')
 
     context = {
         'book': book,

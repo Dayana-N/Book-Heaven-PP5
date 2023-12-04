@@ -20,7 +20,8 @@ STATUS = (
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     user_profile = models.ForeignKey(
-        UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
+        UserProfile, on_delete=models.SET_NULL, null=True, blank=True,
+        related_name='orders')
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
     phone_number = models.CharField(max_length=20, null=False, blank=False)
@@ -81,7 +82,8 @@ class Order(models.Model):
 class OrderStatus(models.Model):
     order = models.OneToOneField(Order, on_delete=models.CASCADE)
     status = models.CharField(
-        max_length=200, null=True, blank=True, choices=STATUS, default=STATUS[0][0])
+        max_length=200, null=True, blank=True, choices=STATUS,
+        default=STATUS[0][0])
 
     def __str__(self):
         return f'{self.order.order_number} - {self.status}'
@@ -89,12 +91,14 @@ class OrderStatus(models.Model):
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False,
-                              on_delete=models.CASCADE, related_name='lineitems')
+                              on_delete=models.CASCADE,
+                              related_name='lineitems')
     product = models.ForeignKey(
         Book, null=False, blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=0, null=False, blank=False)
     lineitem_total = models.DecimalField(
-        max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+        max_digits=6, decimal_places=2, null=False, blank=False,
+        editable=False)
 
     def save(self, *args, **kwargs):
         ''' Set the line item total '''

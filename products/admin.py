@@ -6,7 +6,7 @@ from .models import Author, Book, Category, Genre
 class BookAdmin(admin.ModelAdmin):
     list_display = ['title', 'genre', 'date_published']
     list_filter = ['genre', 'date_published']
-    search_fields = ['title', 'author__name',]
+    search_fields = ['title', 'author__name', ]
 
     ordering = ('-created',)
 

@@ -16,7 +16,7 @@ def view_cart(request):
 
 def add_to_cart(request, item_id):
     '''
-    A view that handles adding items to cart 
+    A view that handles adding items to cart
     '''
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
@@ -29,7 +29,7 @@ def add_to_cart(request, item_id):
             if total_quantity <= book.stock_amount:
                 cart[item_id] = int(cart[item_id]) + quantity
                 messages.success(
-                    request, f'{book.title} was successfully added to your cart')
+                    request, f'{book.title} was successfully added to cart')
             else:
                 messages.error(
                     request, 'Not enough stock to fulfil this order.')

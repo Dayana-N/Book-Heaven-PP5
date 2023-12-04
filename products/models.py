@@ -30,7 +30,8 @@ class Genre(models.Model):
 class Author(models.Model):
     name = models.CharField(max_length=200)
     image = models.ImageField(
-        null=True, blank=True, upload_to='authors/', default='authors/default-author.png')
+        null=True, blank=True, upload_to='authors/',
+        default='authors/default-author.png')
     bio = models.TextField()
     id = models.UUIDField(default=uuid.uuid4, unique=True,
                           primary_key=True, editable=False)
@@ -40,7 +41,7 @@ class Author(models.Model):
 
     @property
     def author_image(self):
-        ''' 
+        '''
         Replaces the image url if deleted
         with default one
         '''
@@ -60,7 +61,8 @@ class Book(models.Model):
     author = models.ManyToManyField(Author, related_name='books')
     description = models.TextField()
     image = models.ImageField(
-        null=True, blank=True, upload_to='books/', default='books/product-not-found.webp')
+        null=True, blank=True, upload_to='books/',
+        default='books/product-not-found.webp')
     publisher = models.CharField(max_length=200)
     date_published = models.DateField()
     language = models.CharField(max_length=200)
@@ -83,7 +85,7 @@ class Book(models.Model):
 
     @property
     def book_image(self):
-        ''' 
+        '''
         Replaces the image url if deleted
         with default one
         '''
@@ -121,8 +123,8 @@ class Book(models.Model):
 
     @property
     def price_discount(self):
-        ''' 
-        Calculate discount based on new price 
+        '''
+        Calculate discount based on new price
         '''
         if self.sale_price:
             discount = ((self.price - self.sale_price) / self.price) * 100
@@ -132,7 +134,7 @@ class Book(models.Model):
 
     @property
     def product_in_stock(self):
-        ''' 
+        '''
         Determines if the product is in stock
         based on the stock amount.
         '''
@@ -143,7 +145,7 @@ class Book(models.Model):
 
     @property
     def product_price(self):
-        ''' 
+        '''
         Returns the price of item based on
         if item is on sale
         '''
