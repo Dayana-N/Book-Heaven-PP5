@@ -21,9 +21,9 @@ Profile
                     <div class="row">
                         {% include 'profiles/partials/sidebar.html' %}
                         <div class="col-12 col-lg-10 mt-4 mt-lg-0 d-flex flex-column justify-content-center">
-                            <p class="text-start fs-3 fw-4">My Details:</p>
+                            <h4 class="text-start fs-3 fw-4">My Details:</h4>
                             <hr>
-                            <form class="checkout-form mt-2" id="checkout-form" method="POST" action="">
+                            <form class="checkout-form mt-2" id="checkout-form" method="POST" action="{% url 'profile' profile.id %}">
                                 {% csrf_token %}
                                 <!-- Phone Field -->
                                 <div class="form-floating mb-2">

@@ -302,9 +302,6 @@ button.wishlist {
     min-height: 150px !important;
 }
 /* Shopping cart page */
-.discount-form {
-    max-width: 220px;
-}
 .cart-item-picture img {
     height: 70px;
 }
@@ -378,6 +375,9 @@ button.wishlist {
     justify-content: center;
     margin: 0;
     height: 100%;
+}
+.loading-spinner .icon i {
+    font-size: 5rem;
 }
 
 /* Pagination */

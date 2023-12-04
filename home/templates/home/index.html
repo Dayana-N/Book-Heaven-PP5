@@ -8,7 +8,7 @@ Home
 {% endblock extra_css %}
 {% block content %}
 {% include 'partials/hero-section.html' %}
-<section class="trust-badges mt-5 py-4">
+<div class="trust-badges mt-5 py-4">
     <div class="container">
         <div class="row">
             <div class="col-12 col-sm-4">
@@ -19,9 +19,7 @@ Home
                         </span>
                     </div>
                     <figcaption class="info text-center">
-                        <strong>
-                            <p class="title fs-5 mb-2">Fast Delivery</p>
-                        </strong>
+                        <p class="title fs-5 mb-2 fw-bold">Fast Delivery</p>
                         <p class="text-muted">Same Day Shipping!</p>
                     </figcaption>
                 </figure>
@@ -34,9 +32,7 @@ Home
                         </span>
                     </div>
                     <figcaption class="info text-center">
-                        <strong>
-                            <p class="title fs-5 mb-2">Secure Payment</p>
-                        </strong>
+                        <p class="title fs-5 mb-2 fw-bold">Secure Payment</p>
                         <p class="text-muted">Payment system by Stripe.</p>
                     </figcaption>
                 </figure>
@@ -49,16 +45,14 @@ Home
                         </span>
                     </div>
                     <figcaption class="info text-center">
-                        <strong>
-                            <p class="title fs-5 mb-2">Free Returns!</p>
-                        </strong>
+                        <p class="title fs-5 mb-2 fw-bold">Free Returns!</p>
                         <p class="text-muted">Free returns on all books within 30 days! </p>
                     </figcaption>
                 </figure>
             </div>
         </div>
     </div>
-</section>
+</div>
 <section class="products">
     <div class="container text-center mt-5">
         <div class="row mt-5 justify-content-center">
@@ -174,8 +168,8 @@ Home
 </section>
 {% endblock %}
 {% block extra_js %}
-<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-<script type="text/javascript">
+<script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+<script>
     (function ($) {
         window.fnames = new Array(); window.ftypes = new Array();
         fnames[0] = 'EMAIL';

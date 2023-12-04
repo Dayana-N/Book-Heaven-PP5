@@ -20,7 +20,7 @@
                             {% csrf_token %}
                             <!-- Name Field -->
                             <div class="form-floating mb-2">
-                                {% render_field order_form.full_name|add_required_class:"is-required"|attr:"autofocus:True"|attr:"title:Please enter valid name"|attr:"pattern=^[A-Za-z\s\-]+$" class="form-control" placeholder=order_form.full_name.label %}
+                                {% render_field order_form.full_name|add_required_class:"is-required"|attr:"autofocus"|attr:"title:Please enter valid name"|attr:"pattern=^[A-Za-z\s\-]+$" class="form-control" placeholder=order_form.full_name.label %}
                                 <label for="{{ order_form.full_name.id_for_label }}" class="form-label">Name:*</label>
                                 {% for error in  order_form.full_name.errors %}
                                 <span class="text-danger">{{ error }}</span>
@@ -196,11 +196,11 @@
         </div>
     </div>
     <div id="loading-overlay">
-        <h1 class="text-light logo-font loading-spinner">
+        <div class="text-light logo-font loading-spinner">
             <span class="icon">
                 <i class="fa-solid fa-spinner fa-spin-pulse fa-xl"></i>
             </span>
-        </h1>
+        </div>
     </div>
 </section>
 {% endblock content %}

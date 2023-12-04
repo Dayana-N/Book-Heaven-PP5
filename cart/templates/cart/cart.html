@@ -91,7 +91,6 @@
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Sub-total</th>
-                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -164,7 +163,7 @@
                             <a href="{% url 'remove-discount' %}" class="btn btn-sm btn-brown"><i class="fa-solid fa-trash-can"></i>
                                 Remove</a>
                             {% else %}
-                            <form action="{% url 'add-discount' %}" method="POST" class="d-flex flex-column discount-form">
+                            <form action="{% url 'add-discount' %}" method="POST" class="d-flex flex-column">
                                 {% csrf_token %}
                                 <label for="discount-code">Discount Code</label>
                                 <input class="mb-md-0 mb-2" type="text" name="discount-code" id="discount-code">
