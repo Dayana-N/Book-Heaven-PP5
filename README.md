@@ -246,6 +246,23 @@ In addition to Bootstrap 5 built in font family the below two fonts were used th
 ![Libre Baskerville](./assets/readme-images/font-libre-baskerville.PNG)
 
 ### Wireframes
+- Home
+<details>
+<summary>Home</summary>
+
+![Home](./assets/readme-images/home-wireframe.jpg)
+
+</details>
+
+- Product
+
+<details>
+<summary>Product</summary>
+
+![product](./assets/readme-images/product-wireframe.jpg)
+
+</details>
+
 ### Agile Methodology
 #### Overview
 This project was created using agile principles. As this is my second full-stack project, using agile, it was easier to identify the relevant milestones. Using the agile approach allowed me to plan all the features of the website through user stories. Each user story has acceptance criteria and tasks to clearly outline the requirements for each feature to be completed.
@@ -791,5 +808,10 @@ To ensure the application is deployed correctly on Heroku it is mandatory to upd
 - [The right way to use Many To Many Field](https://www.reddit.com/r/django/comments/l937f1/the_right_way_to_use_a_manytomanyfield_in_django/)
 - [Looping through integer in templates](https://copyprogramming.com/howto/how-do-i-loop-a-intergerfield-in-django-templates#how-do-i-loop-a-intergerfield-in-django-templates)
 - [Product Card](https://bestjquery.com/tutorial/product-grid/demo199/) - the product cards were modified to suit the project
+- [How to create automated tests](https://learndjango.com/tutorials/django-testing-tutorial)
+
 ### Acknowledgements
+- Huge thank you to my mentor Ronan McClelland for all the help and resources.
+- The Slack community and especially Indrek who listened to my struggles during development once again.
 ### Comments
+I really enjoyed working on this project. My idea was to develop a real world application with user friendly design. I wish i had more time to add automated testing and to describe in detail the manual testing performed as I usually do. That will be added on a later stage.

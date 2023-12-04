@@ -149,6 +149,107 @@ During development the pages were created to be responsive from 320px and above.
 | admin mobile |![home](./assets/readme-images/testing/lighthouse/admin-desktop.PNG) | <mark>PASS<mark> |
 
 ## Manual Testing
+
+## Manual Testing
+- Home Page 
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Navbar|Click on logo in Navbar|Redirect to Home |Pass|Navbar present on all pages |
+||Click on the links in Navbar|Redirect to correct page |Pass|Navbar present on all pages |
+||Click on the links in My Account|All redirect to correct page |Pass|Navbar present on all pages |
+||Click on the cart icon| Redirect to shopping cart |Pass|Navbar present on all pages |
+|Searchbar|type keywords|returns correct results |Pass|searchabar present on all pages |
+|Hero section|Open Home page. Ensure the hero section loads as it should|Hero section loads as it should |Pass| |
+|Hero section|Click on the shop now button, ensure it leads to products page|It leads to products page |Pass| |
+|Listing Card| Click on the listing card. Ensure it redirects to the correct single product page |When clicked each card redirects to the correct single listing page |Pass| |
+|| Click on the product card button add to cart. Ensure the item is added to cart |When clicked each card button adds the correspondint product to cart |Pass| |
+|| Click on the product card button add to wishlist. Ensure the item is added to wishlist |When clicked each card button adds the correspondint product to wishlist |Pass| |
+|Newsletter| Enter valid email. Ensure the thank you fo subscribing text appears |Pass| |
+|Footer|Click on all of the social links in the footer. Ensure each external link opens the correct page in a new tab |All external links open the correct page in a new tab |Pass| |
+
+- Products Page 
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Pagination| Click on all of the links in the pagination. Ensure they redirect to the appropriate page. |All links redirect to the correct page. |Pass| |
+|Pagination| Use the search bar to search products. Click on all of the links in the pagination. Ensure they redirect to the appropriate page displaying only the search results. |All links redirect to the correct page displaying the correct results. |Pass| |
+|Sorting| Click on the select element and ensure that each sorting method returns the correct results |Each sorting method returns the correct results |Pass| |
+
+- Single Product Page 
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Product details|Open the product page. Ensure all the relevant information is correct for the specific product|All the relevant information is correct for the specific product|Pass||
+|Save to favourites button|Click on the heart icon. Ensure the page reloads, a flash message is displayed with confirmation and the icon changes to full heart|When clicked the page reloads, a flash message is displayed with confirmation and the icon changes to full heart|Pass||
+||As not authenticated user, Click on the heart icon. Ensure the page redirects to the login page|When clicked the page redirects to the login page|Pass||
+||Click add to cart button and ensure the product is added to cart|When clicked the product is added to cart |Pass||
+||Select higher quantity than in stock and click add to cart button and ensure an error message is displayed|When clicked error message is displayed not enough stock |Pass||
+|Description|Select description tag and ensure description is displayed| description is displayed |Pass||
+|details|Select details tag and ensure details is displayed| details is displayed |Pass||
+|reviews|Select reviews tag and ensure reviews is displayed| reviews is displayed |Pass||
+|reviews|As authenticated user fill in the form and add review. Observe if the reating is calculated correctly and the review appears on the page| the reating is calculated correctly and the review appears on the page |Pass||
+
+
+- Shopping Cart 
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Shopping cart|Add product to cart and ensure it appears correctly in the cart|The product appears correctly in the cart|Pass||
+|Product|Click on product link and ensure it leads to the product page.|The link leads to the product page|Pass||
+|Update quantity|From the drop down select new quantity and update. Ensure the total is calculated correctly|The product updates correctly in the cart|Pass||
+|remove product|Click on the remove button and ensure the product is removed from cart|The product is removed from the cart|Pass||
+|add discount|enter a valid discount code and ensure the total is calculated correclty|the total is calculated correclty and a message appears|Pass||
+|add discount|enter a invalid discount code and ensure an error message displays and the total is unchanged|An error message displays and the total is unchanged|Pass||
+|remove discount|After discount has been applied click on the remove button and ensure the total is calculated and a message appears|The total is calculated and a message appears|Pass||
+
+- Checkout
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Checkout|Fill in the form and click on save details. Use stripe test card and confirm the order is successfull by checking stripe. Confirm the address is saved to profile|The address is saved to my profile. The purchase is successfull. Stripe logs show success.|Pass||
+|Checkout|Visit the page as unauthenticated user. Ensure the form is not prefilled and does not allow to save details|The form is not prefilled and does not allow to save details.|Pass||
+|Checkout|Click on back button and ensure it takes the user to the previous page|The back button work as it should.|Pass||
+
+- My Profile
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Profile|Fill in the form and click on update. Ensure the details are updated|The details are updated|Pass||
+
+- My Orders
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Orders|Open the orders page and ensure the orders showing are correct. |The orders are correct|Pass||
+|Orders |Click on the order link and ensure it leads to the order page|The link leads to the order page|Pass||
+
+- My Wishlist
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|wishlist|Visit my wishlist page. Click on the heart button on the card. Ensure the card is removed from favourites |The card is removed from favourites|Pass||
+|wishlist|Visit my wishlist page. Click on the add to cart button on the card. Ensure the product is added to cart |The product is added to cart|Pass||
+|wishlist|Visit my wishlist page. Click on the card. Ensure it redirects to the product's page. |It redirects to product's page|Pass||
+
+- Admin
+
+|Section|Test Action|Expected Result|Pass/Fail|Comments|
+| ---| ---| ---| ---| ---|
+|Admin dashboard|Visit admin page. Ensure the refine drop down works by selecting all available options |The refine drop down works as expected|Pass||
+|Admin dashboard|Click on the edit product button, ensure it redirects to the edit product page |it redirects to the edit product page|Pass||
+|Admin dashboard|Click on the delete product button, ensure it redirects to the delete product page |it redirects to the delete product page|Pass||
+|Admin dashboard|Click on the add product button, ensure it redirects to the add product page |it redirects to the add product page|Pass||
+|Orders|Visit orders page. Ensure the refine drop down works by selecting all available options |The refine drop down works as expected|Pass||
+|Orders|Click on the edit order button, ensure it redirects to the edit order page |it redirects to the edit order page|Pass||
+
+|Discount code|Visit discount code page. Ensure the refine drop down works by selecting all available options |The refine drop down works as expected|Pass||
+|Discount code|Click on the edit code button, ensure it redirects to the edit code page |it redirects to the edit code page|Pass||
+|Discount code|Click on the delete code button, ensure it redirects to the delete code page |it redirects to the delete code page|Pass||
+|Discount code|Click on the add code button, ensure a pop up with form appears to add code | A pop up with form appears to add code|Pass||
+
+
+
 ## Automated testing
 Some automated testing was done to check if the pages return the correct response and template. Due to time limits there was no scope to expand.
 
